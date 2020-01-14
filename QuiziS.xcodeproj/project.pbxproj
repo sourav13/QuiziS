@@ -16,6 +16,8 @@
 		189A8B6923CE5EA80044DCDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 189A8B6723CE5EA80044DCDF /* LaunchScreen.storyboard */; };
 		189A8B7423CE5EA80044DCDF /* QuiziSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189A8B7323CE5EA80044DCDF /* QuiziSTests.swift */; };
 		189A8B7F23CE5EA80044DCDF /* QuiziSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189A8B7E23CE5EA80044DCDF /* QuiziSUITests.swift */; };
+		189A8B8D23CE6CE20044DCDF /* GrammarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189A8B8C23CE6CE20044DCDF /* GrammarTableViewController.swift */; };
+		189A8B8F23CE6DB90044DCDF /* GrammarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189A8B8E23CE6DB90044DCDF /* GrammarTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		189A8B7A23CE5EA80044DCDF /* QuiziSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuiziSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		189A8B7E23CE5EA80044DCDF /* QuiziSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuiziSUITests.swift; sourceTree = "<group>"; };
 		189A8B8023CE5EA80044DCDF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		189A8B8C23CE6CE20044DCDF /* GrammarTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrammarTableViewController.swift; sourceTree = "<group>"; };
+		189A8B8E23CE6DB90044DCDF /* GrammarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrammarTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,8 @@
 				189A8B5B23CE5EA60044DCDF /* SceneDelegate.swift */,
 				189A8B5D23CE5EA60044DCDF /* ViewController.swift */,
 				189A8B5F23CE5EA60044DCDF /* Main.storyboard */,
+				189A8B8E23CE6DB90044DCDF /* GrammarTableViewCell.swift */,
+				189A8B8C23CE6CE20044DCDF /* GrammarTableViewController.swift */,
 				189A8B6523CE5EA80044DCDF /* Assets.xcassets */,
 				189A8B6723CE5EA80044DCDF /* LaunchScreen.storyboard */,
 				189A8B6A23CE5EA80044DCDF /* Info.plist */,
@@ -265,7 +271,9 @@
 				189A8B6423CE5EA60044DCDF /* QuiziS.xcdatamodeld in Sources */,
 				189A8B5E23CE5EA60044DCDF /* ViewController.swift in Sources */,
 				189A8B5A23CE5EA60044DCDF /* AppDelegate.swift in Sources */,
+				189A8B8F23CE6DB90044DCDF /* GrammarTableViewCell.swift in Sources */,
 				189A8B5C23CE5EA60044DCDF /* SceneDelegate.swift in Sources */,
+				189A8B8D23CE6CE20044DCDF /* GrammarTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
