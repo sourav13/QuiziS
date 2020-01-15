@@ -31,3 +31,17 @@ class Grammar{
         return questions
     }
 }
+enum GrammarType:String{
+    case prepositions
+    case irregularverbs
+    case adjectivesandadverbs
+    case modals
+    case linkers
+    case fewandlittle
+    case adverbialclauses
+    case moreorless
+    case countableanduncountables
+    case infinitivesorgerunds
+    case conjunctions
+    case expressionsofcolor
+}

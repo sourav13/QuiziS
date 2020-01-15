@@ -40,19 +40,19 @@ class QuestionViewController: UIViewController {
     func loadRespectiveQuestions(){
 
         switch(selectedGrammarType){
-        case 0: questions = grammer.grammar(grammarType: "prepositions")
-            case 1: questions = grammer.grammar(grammarType: "irregularverbs")
-            case 2: questions = grammer.grammar(grammarType: "adjectivesandadverbs")
-            case 3: questions = grammer.grammar(grammarType: "countableanduncountables")
-            case 4: questions = grammer.grammar(grammarType: "infinitivesorgerunds")
-            case 5: questions = grammer.grammar(grammarType: "moreorless")
-            case 6: questions = grammer.grammar(grammarType: "expressionsofcolor")
-            case 7: questions = grammer.grammar(grammarType: "fewandlittle")
-            case 8: questions = grammer.grammar(grammarType: "adverbialclauses")
-            case 9: questions = grammer.grammar(grammarType: "modals")
-            case 10: questions = grammer.grammar(grammarType: "linkers")
-            case 11: questions = grammer.grammar(grammarType: "conjunctions")
-        default: questions = grammer.grammar(grammarType: "prepositions")
+        case 0: questions = grammer.grammar(grammarType: GrammarType.prepositions.rawValue)
+        case 1: questions = grammer.grammar(grammarType: GrammarType.irregularverbs.rawValue)
+        case 2: questions = grammer.grammar(grammarType: GrammarType.adjectivesandadverbs.rawValue)
+        case 3: questions = grammer.grammar(grammarType: GrammarType.countableanduncountables.rawValue)
+        case 4: questions = grammer.grammar(grammarType: GrammarType.infinitivesorgerunds.rawValue)
+        case 5: questions = grammer.grammar(grammarType: GrammarType.moreorless.rawValue)
+        case 6: questions = grammer.grammar(grammarType: GrammarType.expressionsofcolor.rawValue)
+        case 7: questions = grammer.grammar(grammarType: GrammarType.fewandlittle.rawValue)
+        case 8: questions = grammer.grammar(grammarType: GrammarType.adverbialclauses.rawValue)
+        case 9: questions = grammer.grammar(grammarType: GrammarType.modals.rawValue)
+        case 10: questions = grammer.grammar(grammarType:GrammarType.linkers.rawValue)
+        case 11: questions = grammer.grammar(grammarType:GrammarType.conjunctions.rawValue)
+        default: questions = grammer.grammar(grammarType:GrammarType.prepositions.rawValue)
         }
     }
     func getCurrentQuestion(currentQuestion:Int)->Question{
