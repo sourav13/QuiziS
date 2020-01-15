@@ -10,17 +10,28 @@ import UIKit
 
 class GrammarTableViewController: UITableViewController {
 
-    var grammarTypeLabels = ["Prepositions","Irregular verbs","Adjectives & adverbs","Countable and uncountable","Infinitives or gerunds","More or less","Expressions with colour","Few and little","Adverbial Clauses","Modals","Linkers","Conjunctions"]
+    var grammarTypeLabels = ["Prepositions","Irregular verbs","Adjectives & adverbs","Countable & uncountable","Infinitives or gerunds","More or less","Expressions with colour","Few and little","Adverbial Clauses","Modals","Linkers","Conjunctions"]
+    var wordsTypeLabels = ["Food & Restaurants","Travel & Getting Around","Small Talk","Hobbies","Idioms","Films, TV, Internet","At Work","Taking It Easy","Shopping"]
+    var selectedType:Int = 0 
+    var selectedGrammarType : Int  = 0
+    var selectedtypeArray  = [String]()
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        selectedtypeArray = setSelectedType()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
-
+    func setSelectedType()->[String]{
+        switch selectedType{
+        case 0: return grammarTypeLabels
+        case 1: return wordsTypeLabels
+        case 2: return grammarTypeLabels
+        default: return grammarTypeLabels
+        }
+    }
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -30,15 +41,16 @@ class GrammarTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return grammarTypeLabels.count
+        return selectedtypeArray.count
     }
 
  
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! GrammarTableViewCell
+      
+        cell.grammarTypeButton.setTitle(selectedtypeArray[indexPath.row], for: .normal)
+        cell.grammarTypeButton.tag = indexPath.row
         
-        cell.grammarTypeButton.setTitle(grammarTypeLabels[indexPath.row], for: .normal)
-
         return cell
     }
  
@@ -49,8 +61,8 @@ class GrammarTableViewController: UITableViewController {
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        let questionViewController = segue.destination as? QuestionViewController
+        questionViewController?.selectedGrammarType = (sender as! UIButton).tag
     }
 
 
