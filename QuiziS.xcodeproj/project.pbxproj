@@ -7,6 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		186FB80F23CFA61A00079E32 /* prepositions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 186FB80E23CFA61A00079E32 /* prepositions.plist */; };
+		186FB81023CFA61A00079E32 /* prepositions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 186FB80E23CFA61A00079E32 /* prepositions.plist */; };
+		186FB81123CFA61A00079E32 /* prepositions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 186FB80E23CFA61A00079E32 /* prepositions.plist */; };
+		186FB81323CFB55800079E32 /* irregularverbs.plist in Resources */ = {isa = PBXBuildFile; fileRef = 186FB81223CFB55800079E32 /* irregularverbs.plist */; };
+		186FB81423CFB55800079E32 /* irregularverbs.plist in Resources */ = {isa = PBXBuildFile; fileRef = 186FB81223CFB55800079E32 /* irregularverbs.plist */; };
+		186FB81523CFB55800079E32 /* irregularverbs.plist in Resources */ = {isa = PBXBuildFile; fileRef = 186FB81223CFB55800079E32 /* irregularverbs.plist */; };
+		186FB81723CFB65C00079E32 /* adjectivesandadverbs.plist in Resources */ = {isa = PBXBuildFile; fileRef = 186FB81623CFB65C00079E32 /* adjectivesandadverbs.plist */; };
+		186FB81823CFB65C00079E32 /* adjectivesandadverbs.plist in Resources */ = {isa = PBXBuildFile; fileRef = 186FB81623CFB65C00079E32 /* adjectivesandadverbs.plist */; };
+		186FB81923CFB65C00079E32 /* adjectivesandadverbs.plist in Resources */ = {isa = PBXBuildFile; fileRef = 186FB81623CFB65C00079E32 /* adjectivesandadverbs.plist */; };
+		186FB81B23CFB67600079E32 /* countableanduncountables.plist in Resources */ = {isa = PBXBuildFile; fileRef = 186FB81A23CFB67600079E32 /* countableanduncountables.plist */; };
+		186FB81C23CFB67600079E32 /* countableanduncountables.plist in Resources */ = {isa = PBXBuildFile; fileRef = 186FB81A23CFB67600079E32 /* countableanduncountables.plist */; };
+		186FB81D23CFB67600079E32 /* countableanduncountables.plist in Resources */ = {isa = PBXBuildFile; fileRef = 186FB81A23CFB67600079E32 /* countableanduncountables.plist */; };
+		186FB81F23CFB68800079E32 /* infinitivesorgerunds.plist in Resources */ = {isa = PBXBuildFile; fileRef = 186FB81E23CFB68800079E32 /* infinitivesorgerunds.plist */; };
+		186FB82023CFB68800079E32 /* infinitivesorgerunds.plist in Resources */ = {isa = PBXBuildFile; fileRef = 186FB81E23CFB68800079E32 /* infinitivesorgerunds.plist */; };
+		186FB82123CFB68800079E32 /* infinitivesorgerunds.plist in Resources */ = {isa = PBXBuildFile; fileRef = 186FB81E23CFB68800079E32 /* infinitivesorgerunds.plist */; };
+		186FB82323CFB69C00079E32 /* moreorless.plist in Resources */ = {isa = PBXBuildFile; fileRef = 186FB82223CFB69C00079E32 /* moreorless.plist */; };
+		186FB82423CFB69C00079E32 /* moreorless.plist in Resources */ = {isa = PBXBuildFile; fileRef = 186FB82223CFB69C00079E32 /* moreorless.plist */; };
+		186FB82523CFB69C00079E32 /* moreorless.plist in Resources */ = {isa = PBXBuildFile; fileRef = 186FB82223CFB69C00079E32 /* moreorless.plist */; };
+		186FB82723CFB6AA00079E32 /* expressionsofcolor.plist in Resources */ = {isa = PBXBuildFile; fileRef = 186FB82623CFB6AA00079E32 /* expressionsofcolor.plist */; };
+		186FB82823CFB6AA00079E32 /* expressionsofcolor.plist in Resources */ = {isa = PBXBuildFile; fileRef = 186FB82623CFB6AA00079E32 /* expressionsofcolor.plist */; };
+		186FB82923CFB6AA00079E32 /* expressionsofcolor.plist in Resources */ = {isa = PBXBuildFile; fileRef = 186FB82623CFB6AA00079E32 /* expressionsofcolor.plist */; };
+		186FB82B23CFB6BC00079E32 /* fewandlittle.plist in Resources */ = {isa = PBXBuildFile; fileRef = 186FB82A23CFB6BC00079E32 /* fewandlittle.plist */; };
+		186FB82C23CFB6BC00079E32 /* fewandlittle.plist in Resources */ = {isa = PBXBuildFile; fileRef = 186FB82A23CFB6BC00079E32 /* fewandlittle.plist */; };
+		186FB82D23CFB6BC00079E32 /* fewandlittle.plist in Resources */ = {isa = PBXBuildFile; fileRef = 186FB82A23CFB6BC00079E32 /* fewandlittle.plist */; };
+		186FB82F23CFB6CB00079E32 /* adverbialclauses.plist in Resources */ = {isa = PBXBuildFile; fileRef = 186FB82E23CFB6CB00079E32 /* adverbialclauses.plist */; };
+		186FB83023CFB6CB00079E32 /* adverbialclauses.plist in Resources */ = {isa = PBXBuildFile; fileRef = 186FB82E23CFB6CB00079E32 /* adverbialclauses.plist */; };
+		186FB83123CFB6CB00079E32 /* adverbialclauses.plist in Resources */ = {isa = PBXBuildFile; fileRef = 186FB82E23CFB6CB00079E32 /* adverbialclauses.plist */; };
+		186FB83323CFB6D600079E32 /* modals.plist in Resources */ = {isa = PBXBuildFile; fileRef = 186FB83223CFB6D600079E32 /* modals.plist */; };
+		186FB83423CFB6D600079E32 /* modals.plist in Resources */ = {isa = PBXBuildFile; fileRef = 186FB83223CFB6D600079E32 /* modals.plist */; };
+		186FB83523CFB6D600079E32 /* modals.plist in Resources */ = {isa = PBXBuildFile; fileRef = 186FB83223CFB6D600079E32 /* modals.plist */; };
+		186FB83723CFB6E200079E32 /* linkers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 186FB83623CFB6E200079E32 /* linkers.plist */; };
+		186FB83823CFB6E200079E32 /* linkers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 186FB83623CFB6E200079E32 /* linkers.plist */; };
+		186FB83923CFB6E200079E32 /* linkers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 186FB83623CFB6E200079E32 /* linkers.plist */; };
+		186FB83B23CFB6F300079E32 /* conjunctions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 186FB83A23CFB6F300079E32 /* conjunctions.plist */; };
+		186FB83C23CFB6F300079E32 /* conjunctions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 186FB83A23CFB6F300079E32 /* conjunctions.plist */; };
+		186FB83D23CFB6F300079E32 /* conjunctions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 186FB83A23CFB6F300079E32 /* conjunctions.plist */; };
 		189A8B5A23CE5EA60044DCDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189A8B5923CE5EA60044DCDF /* AppDelegate.swift */; };
 		189A8B5C23CE5EA60044DCDF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189A8B5B23CE5EA60044DCDF /* SceneDelegate.swift */; };
 		189A8B5E23CE5EA60044DCDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189A8B5D23CE5EA60044DCDF /* ViewController.swift */; };
@@ -42,6 +78,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		186FB80E23CFA61A00079E32 /* prepositions.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = prepositions.plist; sourceTree = "<group>"; };
+		186FB81223CFB55800079E32 /* irregularverbs.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = irregularverbs.plist; sourceTree = "<group>"; };
+		186FB81623CFB65C00079E32 /* adjectivesandadverbs.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = adjectivesandadverbs.plist; sourceTree = "<group>"; };
+		186FB81A23CFB67600079E32 /* countableanduncountables.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = countableanduncountables.plist; sourceTree = "<group>"; };
+		186FB81E23CFB68800079E32 /* infinitivesorgerunds.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = infinitivesorgerunds.plist; sourceTree = "<group>"; };
+		186FB82223CFB69C00079E32 /* moreorless.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = moreorless.plist; sourceTree = "<group>"; };
+		186FB82623CFB6AA00079E32 /* expressionsofcolor.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = expressionsofcolor.plist; sourceTree = "<group>"; };
+		186FB82A23CFB6BC00079E32 /* fewandlittle.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = fewandlittle.plist; sourceTree = "<group>"; };
+		186FB82E23CFB6CB00079E32 /* adverbialclauses.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = adverbialclauses.plist; sourceTree = "<group>"; };
+		186FB83223CFB6D600079E32 /* modals.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = modals.plist; sourceTree = "<group>"; };
+		186FB83623CFB6E200079E32 /* linkers.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = linkers.plist; sourceTree = "<group>"; };
+		186FB83A23CFB6F300079E32 /* conjunctions.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = conjunctions.plist; sourceTree = "<group>"; };
 		189A8B5623CE5EA60044DCDF /* QuiziS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuiziS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		189A8B5923CE5EA60044DCDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		189A8B5B23CE5EA60044DCDF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +138,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		186FB83E23CFB76800079E32 /* grammar */ = {
+			isa = PBXGroup;
+			children = (
+				186FB83623CFB6E200079E32 /* linkers.plist */,
+				186FB80E23CFA61A00079E32 /* prepositions.plist */,
+				186FB81223CFB55800079E32 /* irregularverbs.plist */,
+				186FB81A23CFB67600079E32 /* countableanduncountables.plist */,
+				186FB82E23CFB6CB00079E32 /* adverbialclauses.plist */,
+				186FB82223CFB69C00079E32 /* moreorless.plist */,
+				186FB83223CFB6D600079E32 /* modals.plist */,
+				186FB81E23CFB68800079E32 /* infinitivesorgerunds.plist */,
+				186FB83A23CFB6F300079E32 /* conjunctions.plist */,
+				186FB82623CFB6AA00079E32 /* expressionsofcolor.plist */,
+				186FB81623CFB65C00079E32 /* adjectivesandadverbs.plist */,
+				186FB82A23CFB6BC00079E32 /* fewandlittle.plist */,
+			);
+			path = grammar;
+			sourceTree = "<group>";
+		};
 		189A8B4D23CE5EA60044DCDF = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +192,7 @@
 				189A8B6523CE5EA80044DCDF /* Assets.xcassets */,
 				189A8B6723CE5EA80044DCDF /* LaunchScreen.storyboard */,
 				189A8B6A23CE5EA80044DCDF /* Info.plist */,
+				186FB83E23CFB76800079E32 /* grammar */,
 				189A8B6223CE5EA60044DCDF /* QuiziS.xcdatamodeld */,
 			);
 			path = QuiziS;
@@ -261,9 +329,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				186FB81723CFB65C00079E32 /* adjectivesandadverbs.plist in Resources */,
+				186FB82323CFB69C00079E32 /* moreorless.plist in Resources */,
+				186FB82F23CFB6CB00079E32 /* adverbialclauses.plist in Resources */,
+				186FB83B23CFB6F300079E32 /* conjunctions.plist in Resources */,
 				189A8B6923CE5EA80044DCDF /* LaunchScreen.storyboard in Resources */,
+				186FB83323CFB6D600079E32 /* modals.plist in Resources */,
+				186FB82723CFB6AA00079E32 /* expressionsofcolor.plist in Resources */,
+				186FB81323CFB55800079E32 /* irregularverbs.plist in Resources */,
+				186FB81B23CFB67600079E32 /* countableanduncountables.plist in Resources */,
 				189A8B6623CE5EA80044DCDF /* Assets.xcassets in Resources */,
+				186FB81F23CFB68800079E32 /* infinitivesorgerunds.plist in Resources */,
 				189A8B6123CE5EA60044DCDF /* Main.storyboard in Resources */,
+				186FB83723CFB6E200079E32 /* linkers.plist in Resources */,
+				186FB80F23CFA61A00079E32 /* prepositions.plist in Resources */,
+				186FB82B23CFB6BC00079E32 /* fewandlittle.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +351,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				186FB83423CFB6D600079E32 /* modals.plist in Resources */,
+				186FB82823CFB6AA00079E32 /* expressionsofcolor.plist in Resources */,
+				186FB81823CFB65C00079E32 /* adjectivesandadverbs.plist in Resources */,
+				186FB82423CFB69C00079E32 /* moreorless.plist in Resources */,
+				186FB81023CFA61A00079E32 /* prepositions.plist in Resources */,
+				186FB82023CFB68800079E32 /* infinitivesorgerunds.plist in Resources */,
+				186FB81423CFB55800079E32 /* irregularverbs.plist in Resources */,
+				186FB81C23CFB67600079E32 /* countableanduncountables.plist in Resources */,
+				186FB82C23CFB6BC00079E32 /* fewandlittle.plist in Resources */,
+				186FB83C23CFB6F300079E32 /* conjunctions.plist in Resources */,
+				186FB83823CFB6E200079E32 /* linkers.plist in Resources */,
+				186FB83023CFB6CB00079E32 /* adverbialclauses.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +370,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				186FB83523CFB6D600079E32 /* modals.plist in Resources */,
+				186FB82923CFB6AA00079E32 /* expressionsofcolor.plist in Resources */,
+				186FB81923CFB65C00079E32 /* adjectivesandadverbs.plist in Resources */,
+				186FB82523CFB69C00079E32 /* moreorless.plist in Resources */,
+				186FB81123CFA61A00079E32 /* prepositions.plist in Resources */,
+				186FB82123CFB68800079E32 /* infinitivesorgerunds.plist in Resources */,
+				186FB81523CFB55800079E32 /* irregularverbs.plist in Resources */,
+				186FB81D23CFB67600079E32 /* countableanduncountables.plist in Resources */,
+				186FB82D23CFB6BC00079E32 /* fewandlittle.plist in Resources */,
+				186FB83D23CFB6F300079E32 /* conjunctions.plist in Resources */,
+				186FB83923CFB6E200079E32 /* linkers.plist in Resources */,
+				186FB83123CFB6CB00079E32 /* adverbialclauses.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

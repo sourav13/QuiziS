@@ -25,9 +25,11 @@ class QuestionViewController: UIViewController {
   
     var currentQuestion: Question?
     var currentQuestionNumber: Int = 0
-    var count = 60
+    var count = 59
     var score = 0
     var selectedGrammarType: Int = 0
+    let grammer  = Grammar()
+    var questions = [Question]()
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -36,21 +38,25 @@ class QuestionViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     func loadRespectiveQuestions(){
+
         switch(selectedGrammarType){
-            case 0: Grammar.prepositions()
-            case 1: Grammar.irregularVerbs()
-            case 2: Grammar.adjectivesAndAdVerbs()
-            case 3: Grammar.countableAndUncountables()
-            case 4: Grammar.infinitivesOrGerunds()
-            case 5: Grammar.MoreOrLess()
-            case 6: Grammar.expressionsOfColor()
-            case 7: Grammar.fewAndLittle()
-            case 8: Grammar.AdverbialClauses()
-            case 9: Grammar.Modals()
-            case 10: Grammar.linkers()
-            case 11: Grammar.Conjuctions()
-            default: Grammar.prepositions()
+        case 0: questions = grammer.grammar(grammarType: "prepositions")
+            case 1: questions = grammer.grammar(grammarType: "irregularverbs")
+            case 2: questions = grammer.grammar(grammarType: "adjectivesandadverbs")
+            case 3: questions = grammer.grammar(grammarType: "countableanduncountables")
+            case 4: questions = grammer.grammar(grammarType: "infinitivesorgerunds")
+            case 5: questions = grammer.grammar(grammarType: "moreorless")
+            case 6: questions = grammer.grammar(grammarType: "expressionsofcolor")
+            case 7: questions = grammer.grammar(grammarType: "fewandlittle")
+            case 8: questions = grammer.grammar(grammarType: "adverbialclauses")
+            case 9: questions = grammer.grammar(grammarType: "modals")
+            case 10: questions = grammer.grammar(grammarType: "linkers")
+            case 11: questions = grammer.grammar(grammarType: "conjunctions")
+        default: questions = grammer.grammar(grammarType: "prepositions")
         }
+    }
+    func getCurrentQuestion(currentQuestion:Int)->Question{
+            return questions[currentQuestion]
     }
     func initialSetup(){
         
@@ -60,8 +66,8 @@ class QuestionViewController: UIViewController {
         _ = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
         
         //setup Initial question text and button titles.
-        setButtonTitles(question: Grammar.getCurrentQuestion(currentQuestion: currentQuestionNumber))
-        setQuestionText(question:Grammar.getCurrentQuestion(currentQuestion: currentQuestionNumber))
+        setButtonTitles(question: getCurrentQuestion(currentQuestion: currentQuestionNumber))
+        setQuestionText(question:getCurrentQuestion(currentQuestion: currentQuestionNumber))
         //setup Question Number
         questionNumberLabel.text = "1"
     }
@@ -85,18 +91,26 @@ class QuestionViewController: UIViewController {
     }
     
     @IBAction func answerButtonAction(_ sender: UIButton) {
-        checkAnswer(question: Grammar.getCurrentQuestion(currentQuestion: currentQuestionNumber),sender: sender)
+        checkAnswer(question: getCurrentQuestion(currentQuestion: currentQuestionNumber),sender: sender)
         setupNextQuestion(questionNumber: setRandomQuestion())
         
     }
     func setRandomQuestion()->Int{
+        
+        if currentQuestionNumber < questions.count-1{
+            currentQuestionNumber = currentQuestionNumber+1
+        }else{
+            //load alert or another viewcontroller to exit and reset.
+            return 0
+        }
+        
           //create a random int for question whose isAnswered is false and set to currentQuestionNumber
-        return 1
+        return currentQuestionNumber
     }
     
     func setupNextQuestion(questionNumber:Int){
         currentQuestionNumber = questionNumber
-        currentQuestion = Grammar.getCurrentQuestion(currentQuestion: questionNumber)
+        currentQuestion = getCurrentQuestion(currentQuestion: questionNumber)
         setButtonTitles(question: currentQuestion!)
         setQuestionText(question: currentQuestion!)
         questionNumberLabel.text = "\(currentQuestionNumber+1)"
