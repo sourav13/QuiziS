@@ -22,6 +22,7 @@ class PauseScreenViewController: UIViewController {
         self.view.isHidden = true
         (self.parent as? QuestionViewController)?.pauseScreen.isHidden = true
         (self.parent as? QuestionViewController)?.timer =  Timer.scheduledTimer(timeInterval: 1.0, target: (self.parent as? QuestionViewController)!, selector: #selector((self.parent as? QuestionViewController)?.updateTime), userInfo: nil, repeats: true)
+        (self.parent as? QuestionViewController)?.questionTimer =  Timer.scheduledTimer(timeInterval: 1.0, target: (self.parent as? QuestionViewController)!, selector: #selector((self.parent as? QuestionViewController)?.updateQuestionTimer), userInfo: nil, repeats: true)
     }
     
     
