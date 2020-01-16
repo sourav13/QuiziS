@@ -393,7 +393,6 @@
                             <constraint firstItem="YxM-tw-tUN" firstAttribute="bottom" secondItem="PlK-gl-MIf" secondAttribute="bottom" constant="20" id="RBv-iD-ydM"/>
                             <constraint firstAttribute="bottom" secondItem="pAe-dP-ZhJ" secondAttribute="bottom" id="RVK-MY-aqY"/>
                             <constraint firstItem="6Cv-Ug-SD3" firstAttribute="trailing" secondItem="1Sm-ph-DLU" secondAttribute="trailing" id="T0p-c0-fkF"/>
-                            <constraint firstItem="zbO-vY-0a1" firstAttribute="baseline" secondItem="ieA-de-hOc" secondAttribute="firstBaseline" id="UBH-nr-dEA"/>
                             <constraint firstItem="N09-4I-QmJ" firstAttribute="top" secondItem="WZ6-r6-wO8" secondAttribute="bottom" constant="20" id="VXs-sj-an7"/>
                             <constraint firstItem="YxM-tw-tUN" firstAttribute="trailing" secondItem="pAe-dP-ZhJ" secondAttribute="trailing" id="XKj-7Q-5Nc"/>
                             <constraint firstItem="zbO-vY-0a1" firstAttribute="height" secondItem="ieA-de-hOc" secondAttribute="height" id="YcK-zi-rL4"/>
@@ -404,7 +403,6 @@
                             <constraint firstItem="pAe-dP-ZhJ" firstAttribute="leading" secondItem="YxM-tw-tUN" secondAttribute="leading" id="kYc-zD-Wjb"/>
                             <constraint firstItem="6Cv-Ug-SD3" firstAttribute="top" secondItem="1Sm-ph-DLU" secondAttribute="top" id="mJW-yo-g4o"/>
                             <constraint firstItem="ieA-de-hOc" firstAttribute="top" secondItem="N09-4I-QmJ" secondAttribute="bottom" id="rnc-jl-aWl"/>
-                            <constraint firstItem="zbO-vY-0a1" firstAttribute="top" secondItem="N09-4I-QmJ" secondAttribute="bottom" id="vue-ew-Gcz"/>
                             <constraint firstItem="pAe-dP-ZhJ" firstAttribute="top" secondItem="1Sm-ph-DLU" secondAttribute="top" id="wbm-hA-uhW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YxM-tw-tUN"/>
