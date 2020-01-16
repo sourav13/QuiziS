@@ -37,11 +37,14 @@ class QuestionViewController: UIViewController {
     @IBOutlet weak var perQuestionTimerLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUp()
+        // Do any additional setup after loading the view.
+    }
+    func setUp(){
         pauseScreen.isHidden = true
         endScreen.isHidden = true
         loadRespectiveQuestions()
         initialSetup()
-        // Do any additional setup after loading the view.
     }
     func loadRespectiveQuestions(){
         switch(selectedGrammarType){
@@ -60,41 +63,64 @@ class QuestionViewController: UIViewController {
             default: questions = grammer.grammar(grammarType:GrammarType.prepositions.rawValue)
         }
     }
+    
     func getCurrentQuestion(currentQuestion:Int)->Question{
             return questions[currentQuestion]
     }
+    
     func initialSetup(){
-        score = 0
+       
+        setintialScore()
+        setinitialQuestion()
         count = 30
         questioncount = 10
-        currentQuestionNumber = 0
-        if timer != nil {
-            timer?.invalidate()
-        }
-        if questionTimer != nil{
-            questionTimer?.invalidate()
-        }
-        //initial score setup
-        scoreLabel.text = "Score:0"
-        //create timer
-        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
-        questionTimer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateQuestionTimer), userInfo: nil, repeats: true)
+        startTimer()
+        startQuestionTimer()
+        
         //setup Initial question text and button titles.
         setButtonTitles(question: getCurrentQuestion(currentQuestion: currentQuestionNumber))
         setQuestionText(question:getCurrentQuestion(currentQuestion: currentQuestionNumber))
-        //setup Question Number
-        questionNumberLabel.text = "1"
+
+       
     }
+    
+    func setintialScore(){
+         score = 0
+         scoreLabel.text = "Score:0"
+    }
+    
+    func setinitialQuestion(){
+         currentQuestionNumber = 0
+         questionNumberLabel.text = "1"
+    }
+    
+    func startTimer(){
+        if timer != nil{
+            timer?.invalidate()
+            
+        }
+         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
+    }
+    
+    func startQuestionTimer(){
+        if questionTimer != nil{
+            questionTimer?.invalidate()
+            
+        }
+         questionTimer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateQuestionTimer), userInfo: nil, repeats: true)
+    }
+    
     @objc func updateTime(){
         if count >= 0 {
             let seconds = String(count%60)
             timeLabel.text = "Time: \(seconds)"
             count -= 1
         }else{
-            endScreen.isHidden = false
-            self.navigationController?.setNavigationBarHidden(true, animated: true)
+           invalidateTimers()
+           showEndScreen()
         }
     }
+    
     @objc func updateQuestionTimer(){
         if questioncount >= 0 {
             let seconds = String(questioncount%10)
@@ -105,13 +131,19 @@ class QuestionViewController: UIViewController {
             setupNextQuestion(questionNumber: setRandomQuestion())
         }
     }
-   
+    
+    func showEndScreen(){
+        endScreen.isHidden = false
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+    }
+    
     func setButtonTitles(question:Question){
         firstButton.setTitle(question.options[0], for: .normal)
         secondButton.setTitle(question.options[1], for: .normal)
         thirdButton.setTitle(question.options[2], for: .normal)
         fourthButton.setTitle(question.options[3], for: .normal)
     }
+    
     func setQuestionText(question:Question){
         questionLabel.text = question.questionText
     }
@@ -121,17 +153,18 @@ class QuestionViewController: UIViewController {
         setupNextQuestion(questionNumber: setRandomQuestion())
         
     }
-    func setRandomQuestion()->Int{
-        
+    
+    func setRandomQuestion()->Int{        
+        //create a random int for question whose isAnswered is false and set to currentQuestionNumber
         if currentQuestionNumber < questions.count-1{
             currentQuestionNumber = currentQuestionNumber+1
+            return currentQuestionNumber
         }else{
-            //load alert or another viewcontroller to exit and reset.
+            invalidateTimers()
+            showEndScreen()//load alert or another viewcontroller to exit and reset.
             return 0
         }
-        
-          //create a random int for question whose isAnswered is false and set to currentQuestionNumber
-        return currentQuestionNumber
+       
     }
     
     func setupNextQuestion(questionNumber:Int){
@@ -151,15 +184,22 @@ class QuestionViewController: UIViewController {
     }
     
     @IBAction func pauseButtonAction(_ sender: UIBarButtonItem) {
-        timer?.invalidate()
-        questionTimer?.invalidate()
+        invalidateTimers()
         pauseScreen.isHidden = false
         self.navigationController?.setNavigationBarHidden(true, animated: true)
         (self.children.first as? PauseScreenViewController)?.view.isHidden = false
     }
+    
     @IBAction func skipButtonAction(_ sender: Any) {
         setupNextQuestion(questionNumber: setRandomQuestion())
+        questioncount = 10
+        startQuestionTimer()
         
+    }
+    
+    func invalidateTimers(){
+        timer?.invalidate()
+        questionTimer?.invalidate()
     }
 
 }

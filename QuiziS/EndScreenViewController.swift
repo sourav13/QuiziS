@@ -17,16 +17,16 @@ class EndScreenViewController: UIViewController {
     }
     
     @IBAction func homeButtonAction(_ sender: UIButton) {
-         self.navigationController?.setNavigationBarHidden(false, animated: true)
+        hideNavigationBar()
     }
     
     @IBAction func anotherRoundButtonAction(_ sender: UIButton) {
+        hideNavigationBar()
+        (self.parent as? QuestionViewController)?.setUp()
+    }
+    
+    func hideNavigationBar(){
         self.navigationController?.setNavigationBarHidden(false, animated: true)
-        (self.parent as? QuestionViewController)?.pauseScreen.isHidden = true
-        (self.parent as? QuestionViewController)?.endScreen.isHidden = true
-        (self.parent as? QuestionViewController)?.loadRespectiveQuestions()
-        (self.parent as? QuestionViewController)?.initialSetup()
-   //      (self.parent as? QuestionViewController)?.pauseScreen.isHidden = true
     }
     /*
     // MARK: - Navigation

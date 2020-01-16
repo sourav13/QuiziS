@@ -21,11 +21,9 @@ class PauseScreenViewController: UIViewController {
         self.navigationController?.setNavigationBarHidden(false, animated: false)
         self.view.isHidden = true
         (self.parent as? QuestionViewController)?.pauseScreen.isHidden = true
-        (self.parent as? QuestionViewController)?.timer =  Timer.scheduledTimer(timeInterval: 1.0, target: (self.parent as? QuestionViewController)!, selector: #selector((self.parent as? QuestionViewController)?.updateTime), userInfo: nil, repeats: true)
-        (self.parent as? QuestionViewController)?.questionTimer =  Timer.scheduledTimer(timeInterval: 1.0, target: (self.parent as? QuestionViewController)!, selector: #selector((self.parent as? QuestionViewController)?.updateQuestionTimer), userInfo: nil, repeats: true)
+        (self.parent as? QuestionViewController)?.startTimer()
+        (self.parent as? QuestionViewController)?.startQuestionTimer()
     }
-    
-    
     
     @IBAction func exitButtonAction(_ sender: UIButton) {
         self.navigationController?.setNavigationBarHidden(false, animated: true)
