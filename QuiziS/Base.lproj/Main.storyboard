@@ -51,7 +51,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="894" y="-234"/>
+            <point key="canvasLocation" x="403" y="-287"/>
         </scene>
         <!--Quiz Type-->
         <scene sceneID="OBi-0w-ngN">
@@ -127,7 +127,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wbm-B6-Pus" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1632" y="-461"/>
+            <point key="canvasLocation" x="1086" y="-287"/>
         </scene>
         <!--Grammar Table View Controller-->
         <scene sceneID="rpy-5d-PUi">
@@ -186,7 +186,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WQU-gZ-YVh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2612" y="-479"/>
+            <point key="canvasLocation" x="1771" y="-287"/>
         </scene>
         <!--Question View Controller-->
         <scene sceneID="qj3-jT-ksf">
@@ -360,6 +360,12 @@
                                     <constraint firstItem="esF-Fc-nJI" firstAttribute="width" secondItem="PlK-gl-MIf" secondAttribute="width" id="sUd-v2-ap3"/>
                                 </constraints>
                             </stackView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pAe-dP-ZhJ" userLabel="PauseScreen">
+                                <rect key="frame" x="0.0" y="54" width="414" height="896"/>
+                                <connections>
+                                    <segue destination="xDi-H2-Tdw" kind="embed" id="WTI-iB-Qro"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -371,16 +377,27 @@
                             <constraint firstItem="PlK-gl-MIf" firstAttribute="centerX" secondItem="YxM-tw-tUN" secondAttribute="centerX" id="M4X-Rs-kiu"/>
                             <constraint firstItem="WZ6-r6-wO8" firstAttribute="top" secondItem="YxM-tw-tUN" secondAttribute="top" id="NXJ-Fo-EVu"/>
                             <constraint firstItem="YxM-tw-tUN" firstAttribute="bottom" secondItem="PlK-gl-MIf" secondAttribute="bottom" constant="20" id="RBv-iD-ydM"/>
+                            <constraint firstAttribute="bottom" secondItem="pAe-dP-ZhJ" secondAttribute="bottom" id="RVK-MY-aqY"/>
                             <constraint firstItem="N09-4I-QmJ" firstAttribute="top" secondItem="WZ6-r6-wO8" secondAttribute="bottom" constant="20" id="VXs-sj-an7"/>
+                            <constraint firstItem="YxM-tw-tUN" firstAttribute="trailing" secondItem="pAe-dP-ZhJ" secondAttribute="trailing" id="XKj-7Q-5Nc"/>
                             <constraint firstItem="WZ6-r6-wO8" firstAttribute="leading" secondItem="YxM-tw-tUN" secondAttribute="leading" constant="10" id="aTY-Fs-57D"/>
                             <constraint firstItem="YxM-tw-tUN" firstAttribute="trailing" secondItem="N09-4I-QmJ" secondAttribute="trailing" constant="10" id="bBL-AC-Rew"/>
+                            <constraint firstItem="pAe-dP-ZhJ" firstAttribute="leading" secondItem="YxM-tw-tUN" secondAttribute="leading" id="kYc-zD-Wjb"/>
+                            <constraint firstItem="pAe-dP-ZhJ" firstAttribute="top" secondItem="1Sm-ph-DLU" secondAttribute="top" id="wbm-hA-uhW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YxM-tw-tUN"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Or0-xL-bXi"/>
+                    <navigationItem key="navigationItem" id="Or0-xL-bXi">
+                        <barButtonItem key="rightBarButtonItem" systemItem="pause" id="kpZ-4o-Ka3">
+                            <connections>
+                                <action selector="pauseButtonAction:" destination="YVb-OI-5Bd" id="re0-2f-hbr"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="firstButton" destination="9R2-Ji-6hb" id="b4y-sL-BOH"/>
                         <outlet property="fourthButton" destination="lsB-bE-0ir" id="g4C-Il-UTA"/>
+                        <outlet property="pauseScreen" destination="pAe-dP-ZhJ" id="jrb-0Y-n5e"/>
                         <outlet property="questionLabel" destination="9y2-N2-OHv" id="Lab-VO-yB4"/>
                         <outlet property="questionNumberLabel" destination="BRK-oE-Kbb" id="Dbu-dO-A9N"/>
                         <outlet property="scoreLabel" destination="Nrq-Da-nVs" id="Z8H-o9-tXb"/>
@@ -391,7 +408,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Icf-Hw-P93" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3719" y="-423"/>
+            <point key="canvasLocation" x="2584" y="-315"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6dk-Ck-tLq">
@@ -409,7 +426,69 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gr6-zT-h3d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+            <point key="canvasLocation" x="-258" y="-287"/>
+        </scene>
+        <!--Pause Screen View Controller-->
+        <scene sceneID="h8C-Ab-R9O">
+            <objects>
+                <viewController id="xDi-H2-Tdw" customClass="PauseScreenViewController" customModule="QuiziS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4T2-SV-BQx">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="41" translatesAutoresizingMaskIntoConstraints="NO" id="USI-dF-8lx">
+                                <rect key="frame" x="103.66666666666669" y="395.66666666666669" width="207" height="105"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6SU-aH-SuD">
+                                        <rect key="frame" x="0.0" y="0.0" width="207" height="34"/>
+                                        <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Resume">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="resumeButtonAction:" destination="xDi-H2-Tdw" eventType="touchUpInside" id="A5O-Ov-CWt"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1DY-km-IyH">
+                                        <rect key="frame" x="0.0" y="75" width="207" height="30"/>
+                                        <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Exit">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="exitButtonAction:" destination="xDi-H2-Tdw" eventType="touchUpInside" id="AtD-Ac-ElQ"/>
+                                            <segue destination="XeM-ZB-j1E" kind="unwind" unwindAction="unwindToThisViewControllerWithSegue:" id="gDb-WQ-xFs"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="USI-dF-8lx" firstAttribute="width" secondItem="4T2-SV-BQx" secondAttribute="width" multiplier="0.5" id="GTe-uc-PKc"/>
+                            <constraint firstItem="USI-dF-8lx" firstAttribute="centerY" secondItem="4T2-SV-BQx" secondAttribute="centerY" id="LTq-mf-NJA"/>
+                            <constraint firstItem="USI-dF-8lx" firstAttribute="centerX" secondItem="4T2-SV-BQx" secondAttribute="centerX" id="vfL-1U-xIP"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kZi-AF-ugz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="XeM-ZB-j1E" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="3391" y="-287"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

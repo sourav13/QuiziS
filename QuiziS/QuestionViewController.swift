@@ -16,13 +16,13 @@ class QuestionViewController: UIViewController {
     @IBOutlet weak var thirdButton: UIButton!
     @IBOutlet weak var fourthButton: UIButton!
   
-    
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var questionNumberLabel: UILabel!
+    @IBOutlet weak var pauseScreen: UIView!
     
-  
+    var timer: Timer?
     var currentQuestion: Question?
     var currentQuestionNumber: Int = 0
     var count = 59
@@ -32,27 +32,26 @@ class QuestionViewController: UIViewController {
     var questions = [Question]()
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        pauseScreen.isHidden = true
         loadRespectiveQuestions()
         initialSetup()
         // Do any additional setup after loading the view.
     }
     func loadRespectiveQuestions(){
-
         switch(selectedGrammarType){
-        case 0: questions = grammer.grammar(grammarType: GrammarType.prepositions.rawValue)
-        case 1: questions = grammer.grammar(grammarType: GrammarType.irregularverbs.rawValue)
-        case 2: questions = grammer.grammar(grammarType: GrammarType.adjectivesandadverbs.rawValue)
-        case 3: questions = grammer.grammar(grammarType: GrammarType.countableanduncountables.rawValue)
-        case 4: questions = grammer.grammar(grammarType: GrammarType.infinitivesorgerunds.rawValue)
-        case 5: questions = grammer.grammar(grammarType: GrammarType.moreorless.rawValue)
-        case 6: questions = grammer.grammar(grammarType: GrammarType.expressionsofcolor.rawValue)
-        case 7: questions = grammer.grammar(grammarType: GrammarType.fewandlittle.rawValue)
-        case 8: questions = grammer.grammar(grammarType: GrammarType.adverbialclauses.rawValue)
-        case 9: questions = grammer.grammar(grammarType: GrammarType.modals.rawValue)
-        case 10: questions = grammer.grammar(grammarType:GrammarType.linkers.rawValue)
-        case 11: questions = grammer.grammar(grammarType:GrammarType.conjunctions.rawValue)
-        default: questions = grammer.grammar(grammarType:GrammarType.prepositions.rawValue)
+            case 0: questions = grammer.grammar(grammarType: GrammarType.prepositions.rawValue)
+            case 1: questions = grammer.grammar(grammarType: GrammarType.irregularverbs.rawValue)
+            case 2: questions = grammer.grammar(grammarType: GrammarType.adjectivesandadverbs.rawValue)
+            case 3: questions = grammer.grammar(grammarType: GrammarType.countableanduncountables.rawValue)
+            case 4: questions = grammer.grammar(grammarType: GrammarType.infinitivesorgerunds.rawValue)
+            case 5: questions = grammer.grammar(grammarType: GrammarType.moreorless.rawValue)
+            case 6: questions = grammer.grammar(grammarType: GrammarType.expressionsofcolor.rawValue)
+            case 7: questions = grammer.grammar(grammarType: GrammarType.fewandlittle.rawValue)
+            case 8: questions = grammer.grammar(grammarType: GrammarType.adverbialclauses.rawValue)
+            case 9: questions = grammer.grammar(grammarType: GrammarType.modals.rawValue)
+            case 10: questions = grammer.grammar(grammarType:GrammarType.linkers.rawValue)
+            case 11: questions = grammer.grammar(grammarType:GrammarType.conjunctions.rawValue)
+            default: questions = grammer.grammar(grammarType:GrammarType.prepositions.rawValue)
         }
     }
     func getCurrentQuestion(currentQuestion:Int)->Question{
@@ -63,7 +62,7 @@ class QuestionViewController: UIViewController {
         //initial score setup
         scoreLabel.text = "Score:0"
         //create timer
-        _ = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
         
         //setup Initial question text and button titles.
         setButtonTitles(question: getCurrentQuestion(currentQuestion: currentQuestionNumber))
@@ -121,11 +120,15 @@ class QuestionViewController: UIViewController {
             score = score+1
             scoreLabel.text = "Score:\(score)"
         }
-
         
     }
     
-    
+    @IBAction func pauseButtonAction(_ sender: UIBarButtonItem) {
+        timer?.invalidate()
+        pauseScreen.isHidden = false
+        self.navigationController?.setNavigationBarHidden(true, animated: true)
+        (self.children.first as? PauseScreenViewController)?.view.isHidden = false
+    }
     @IBAction func skipButtonAction(_ sender: Any) {
         
         
