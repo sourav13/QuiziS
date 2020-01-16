@@ -1,5 +1,5 @@
 //
-//  PauseScreenViewController.swift
+//  EndScreenViewController.swift
 //  QuiziS
 //
 //  Created by sourav sachdeva on 15/01/20.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class PauseScreenViewController: UIViewController {
+class EndScreenViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,21 +16,18 @@ class PauseScreenViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
-    @IBAction func resumeButtonAction(_ sender: UIButton) {
-        self.navigationController?.setNavigationBarHidden(false, animated: false)
-        self.view.isHidden = true
-        (self.parent as? QuestionViewController)?.pauseScreen.isHidden = true
-        (self.parent as? QuestionViewController)?.timer =  Timer.scheduledTimer(timeInterval: 1.0, target: (self.parent as? QuestionViewController)!, selector: #selector((self.parent as? QuestionViewController)?.updateTime), userInfo: nil, repeats: true)
+    @IBAction func homeButtonAction(_ sender: UIButton) {
+         self.navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
-    
-    
-    @IBAction func exitButtonAction(_ sender: UIButton) {
+    @IBAction func anotherRoundButtonAction(_ sender: UIButton) {
         self.navigationController?.setNavigationBarHidden(false, animated: true)
+        (self.parent as? QuestionViewController)?.pauseScreen.isHidden = true
+        (self.parent as? QuestionViewController)?.endScreen.isHidden = true
+        (self.parent as? QuestionViewController)?.loadRespectiveQuestions()
+        (self.parent as? QuestionViewController)?.initialSetup()
+   //      (self.parent as? QuestionViewController)?.pauseScreen.isHidden = true
     }
-    
- 
     /*
     // MARK: - Navigation
 

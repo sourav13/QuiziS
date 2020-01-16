@@ -44,6 +44,7 @@
 		186FB83C23CFB6F300079E32 /* conjunctions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 186FB83A23CFB6F300079E32 /* conjunctions.plist */; };
 		186FB83D23CFB6F300079E32 /* conjunctions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 186FB83A23CFB6F300079E32 /* conjunctions.plist */; };
 		186FB84023CFED1500079E32 /* PauseScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186FB83F23CFED1500079E32 /* PauseScreenViewController.swift */; };
+		186FB84223D0357A00079E32 /* EndScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186FB84123D0357A00079E32 /* EndScreenViewController.swift */; };
 		189A8B5A23CE5EA60044DCDF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189A8B5923CE5EA60044DCDF /* AppDelegate.swift */; };
 		189A8B5C23CE5EA60044DCDF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189A8B5B23CE5EA60044DCDF /* SceneDelegate.swift */; };
 		189A8B5E23CE5EA60044DCDF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189A8B5D23CE5EA60044DCDF /* ViewController.swift */; };
@@ -92,6 +93,7 @@
 		186FB83623CFB6E200079E32 /* linkers.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = linkers.plist; sourceTree = "<group>"; };
 		186FB83A23CFB6F300079E32 /* conjunctions.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = conjunctions.plist; sourceTree = "<group>"; };
 		186FB83F23CFED1500079E32 /* PauseScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PauseScreenViewController.swift; sourceTree = "<group>"; };
+		186FB84123D0357A00079E32 /* EndScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndScreenViewController.swift; sourceTree = "<group>"; };
 		189A8B5623CE5EA60044DCDF /* QuiziS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuiziS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		189A8B5923CE5EA60044DCDF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		189A8B5B23CE5EA60044DCDF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 				189A8B9823CEBCDA0044DCDF /* New Group */,
 				189A8B5D23CE5EA60044DCDF /* ViewController.swift */,
 				189A8B5F23CE5EA60044DCDF /* Main.storyboard */,
+				186FB84123D0357A00079E32 /* EndScreenViewController.swift */,
 				189A8B9623CEBCCD0044DCDF /* GrammarTypeViewController.swift */,
 				189A8B9223CE871A0044DCDF /* QuestionViewController.swift */,
 				186FB83F23CFED1500079E32 /* PauseScreenViewController.swift */,
@@ -397,6 +400,7 @@
 			files = (
 				186FB84023CFED1500079E32 /* PauseScreenViewController.swift in Sources */,
 				189A8B6423CE5EA60044DCDF /* QuiziS.xcdatamodeld in Sources */,
+				186FB84223D0357A00079E32 /* EndScreenViewController.swift in Sources */,
 				189A8B5E23CE5EA60044DCDF /* ViewController.swift in Sources */,
 				189A8B5A23CE5EA60044DCDF /* AppDelegate.swift in Sources */,
 				189A8B8F23CE6DB90044DCDF /* GrammarTableViewCell.swift in Sources */,

@@ -361,16 +361,24 @@
                                 </constraints>
                             </stackView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pAe-dP-ZhJ" userLabel="PauseScreen">
-                                <rect key="frame" x="0.0" y="54" width="414" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <connections>
                                     <segue destination="xDi-H2-Tdw" kind="embed" id="WTI-iB-Qro"/>
+                                </connections>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Cv-Ug-SD3" userLabel="EndScreen">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <connections>
+                                    <segue destination="MtM-rI-r6C" kind="embed" id="0yh-So-7Ao"/>
                                 </connections>
                             </containerView>
                         </subviews>
                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Cv-Ug-SD3" firstAttribute="leading" secondItem="1Sm-ph-DLU" secondAttribute="leading" id="6qa-tL-1iM"/>
                             <constraint firstItem="N09-4I-QmJ" firstAttribute="leading" secondItem="YxM-tw-tUN" secondAttribute="leading" constant="10" id="9k5-tx-IQU"/>
                             <constraint firstItem="YxM-tw-tUN" firstAttribute="trailing" secondItem="PlK-gl-MIf" secondAttribute="trailing" constant="20" id="9uL-dq-chQ"/>
+                            <constraint firstItem="6Cv-Ug-SD3" firstAttribute="bottom" secondItem="1Sm-ph-DLU" secondAttribute="bottom" id="CIF-Pv-cj5"/>
                             <constraint firstItem="PlK-gl-MIf" firstAttribute="leading" secondItem="YxM-tw-tUN" secondAttribute="leading" constant="20" id="J2p-fg-Vhv"/>
                             <constraint firstItem="YxM-tw-tUN" firstAttribute="trailing" secondItem="WZ6-r6-wO8" secondAttribute="trailing" constant="10" id="K2p-5v-KqY"/>
                             <constraint firstItem="PlK-gl-MIf" firstAttribute="top" secondItem="N09-4I-QmJ" secondAttribute="bottom" constant="20" id="Lmn-RX-GGC"/>
@@ -378,11 +386,13 @@
                             <constraint firstItem="WZ6-r6-wO8" firstAttribute="top" secondItem="YxM-tw-tUN" secondAttribute="top" id="NXJ-Fo-EVu"/>
                             <constraint firstItem="YxM-tw-tUN" firstAttribute="bottom" secondItem="PlK-gl-MIf" secondAttribute="bottom" constant="20" id="RBv-iD-ydM"/>
                             <constraint firstAttribute="bottom" secondItem="pAe-dP-ZhJ" secondAttribute="bottom" id="RVK-MY-aqY"/>
+                            <constraint firstItem="6Cv-Ug-SD3" firstAttribute="trailing" secondItem="1Sm-ph-DLU" secondAttribute="trailing" id="T0p-c0-fkF"/>
                             <constraint firstItem="N09-4I-QmJ" firstAttribute="top" secondItem="WZ6-r6-wO8" secondAttribute="bottom" constant="20" id="VXs-sj-an7"/>
                             <constraint firstItem="YxM-tw-tUN" firstAttribute="trailing" secondItem="pAe-dP-ZhJ" secondAttribute="trailing" id="XKj-7Q-5Nc"/>
                             <constraint firstItem="WZ6-r6-wO8" firstAttribute="leading" secondItem="YxM-tw-tUN" secondAttribute="leading" constant="10" id="aTY-Fs-57D"/>
                             <constraint firstItem="YxM-tw-tUN" firstAttribute="trailing" secondItem="N09-4I-QmJ" secondAttribute="trailing" constant="10" id="bBL-AC-Rew"/>
                             <constraint firstItem="pAe-dP-ZhJ" firstAttribute="leading" secondItem="YxM-tw-tUN" secondAttribute="leading" id="kYc-zD-Wjb"/>
+                            <constraint firstItem="6Cv-Ug-SD3" firstAttribute="top" secondItem="1Sm-ph-DLU" secondAttribute="top" id="mJW-yo-g4o"/>
                             <constraint firstItem="pAe-dP-ZhJ" firstAttribute="top" secondItem="1Sm-ph-DLU" secondAttribute="top" id="wbm-hA-uhW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YxM-tw-tUN"/>
@@ -395,6 +405,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="endScreen" destination="6Cv-Ug-SD3" id="oIG-z0-7NV"/>
                         <outlet property="firstButton" destination="9R2-Ji-6hb" id="b4y-sL-BOH"/>
                         <outlet property="fourthButton" destination="lsB-bE-0ir" id="g4C-Il-UTA"/>
                         <outlet property="pauseScreen" destination="pAe-dP-ZhJ" id="jrb-0Y-n5e"/>
@@ -408,7 +419,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Icf-Hw-P93" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2584" y="-315"/>
+            <point key="canvasLocation" x="2582.608695652174" y="-315.40178571428572"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6dk-Ck-tLq">
@@ -481,6 +492,7 @@
                             <constraint firstItem="USI-dF-8lx" firstAttribute="centerY" secondItem="4T2-SV-BQx" secondAttribute="centerY" id="LTq-mf-NJA"/>
                             <constraint firstItem="USI-dF-8lx" firstAttribute="centerX" secondItem="4T2-SV-BQx" secondAttribute="centerX" id="vfL-1U-xIP"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="cGc-AV-bUA"/>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <nil key="simulatedTopBarMetrics"/>
@@ -488,7 +500,64 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kZi-AF-ugz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="XeM-ZB-j1E" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3391" y="-287"/>
+            <point key="canvasLocation" x="3439" y="-316"/>
+        </scene>
+        <!--End Screen View Controller-->
+        <scene sceneID="3Vf-Rt-G8k">
+            <objects>
+                <viewController id="MtM-rI-r6C" customClass="EndScreenViewController" customModule="QuiziS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ddd-6r-IFZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="NbO-1b-uzw">
+                                <rect key="frame" x="103.66666666666669" y="404" width="207" height="88"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eqc-Tg-l9P">
+                                        <rect key="frame" x="0.0" y="0.0" width="207" height="34"/>
+                                        <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Home"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="homeButtonAction:" destination="g44-oW-hBV" eventType="touchUpInside" id="qUD-o7-F4T"/>
+                                            <action selector="homeButtonAction:" destination="MtM-rI-r6C" eventType="touchUpInside" id="uvO-ig-Bn5"/>
+                                            <segue destination="g44-oW-hBV" kind="unwind" unwindAction="unwindToThisViewControllerWithSegue:" id="WkG-DT-17D"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v1o-v9-aiB">
+                                        <rect key="frame" x="0.0" y="54" width="207" height="34"/>
+                                        <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Another Round"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="anotherRoundButtonAction:" destination="MtM-rI-r6C" eventType="touchUpInside" id="Do7-rT-f1c"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="NbO-1b-uzw" firstAttribute="centerX" secondItem="ddd-6r-IFZ" secondAttribute="centerX" id="MQo-69-LOu"/>
+                            <constraint firstItem="NbO-1b-uzw" firstAttribute="centerY" secondItem="ddd-6r-IFZ" secondAttribute="centerY" id="jOy-hC-TyU"/>
+                            <constraint firstItem="NbO-1b-uzw" firstAttribute="width" secondItem="ddd-6r-IFZ" secondAttribute="width" multiplier="0.5" id="yc0-4O-MlT"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e7R-Of-6CF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="g44-oW-hBV" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2584" y="391"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

@@ -22,10 +22,12 @@ class QuestionViewController: UIViewController {
     @IBOutlet weak var questionNumberLabel: UILabel!
     @IBOutlet weak var pauseScreen: UIView!
     
+    @IBOutlet weak var endScreen: UIView!
+    
     var timer: Timer?
     var currentQuestion: Question?
     var currentQuestionNumber: Int = 0
-    var count = 59
+    var count = 10
     var score = 0
     var selectedGrammarType: Int = 0
     let grammer  = Grammar()
@@ -33,6 +35,7 @@ class QuestionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         pauseScreen.isHidden = true
+        endScreen.isHidden = true
         loadRespectiveQuestions()
         initialSetup()
         // Do any additional setup after loading the view.
@@ -58,7 +61,12 @@ class QuestionViewController: UIViewController {
             return questions[currentQuestion]
     }
     func initialSetup(){
-        
+        score = 0
+        count = 10
+        currentQuestionNumber = 0
+        if timer != nil {
+            timer?.invalidate()
+        }
         //initial score setup
         scoreLabel.text = "Score:0"
         //create timer
@@ -75,6 +83,9 @@ class QuestionViewController: UIViewController {
             let seconds = String(count%60)
             timeLabel.text = "Time: \(seconds)"
             count -= 1
+        }else{
+            endScreen.isHidden = false
+            self.navigationController?.setNavigationBarHidden(true, animated: true)
         }
     }
  
@@ -133,6 +144,5 @@ class QuestionViewController: UIViewController {
         
         
     }
- 
 
 }
