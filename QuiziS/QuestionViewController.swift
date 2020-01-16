@@ -35,6 +35,11 @@ class QuestionViewController: UIViewController {
     var questionTimer:Timer?
     var questioncount = 10
     @IBOutlet weak var perQuestionTimerLabel: UILabel!
+    
+    
+    var yourAnswers :  [Int:Int] = [:]
+//    var questionOrder : [Int:Int] = [:]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUp()
@@ -116,8 +121,7 @@ class QuestionViewController: UIViewController {
             timeLabel.text = "Time: \(seconds)"
             count -= 1
         }else{
-           invalidateTimers()
-           showEndScreen()
+           endGame()
         }
     }
     
@@ -151,6 +155,8 @@ class QuestionViewController: UIViewController {
     @IBAction func answerButtonAction(_ sender: UIButton) {
         checkAnswer(question: getCurrentQuestion(currentQuestion: currentQuestionNumber),sender: sender)
         setupNextQuestion(questionNumber: setRandomQuestion())
+        questioncount = 10
+        startQuestionTimer()
         
     }
     
@@ -160,8 +166,7 @@ class QuestionViewController: UIViewController {
             currentQuestionNumber = currentQuestionNumber+1
             return currentQuestionNumber
         }else{
-            invalidateTimers()
-            showEndScreen()//load alert or another viewcontroller to exit and reset.
+            endGame()//load alert or another viewcontroller to exit and reset.
             return 0
         }
        
@@ -180,9 +185,15 @@ class QuestionViewController: UIViewController {
             score = score+1
             scoreLabel.text = "Score:\(score)"
         }
+        yourAnswers[currentQuestionNumber] = sender.tag
+        setvaluesForAnsweredQuestion(sender:sender)
+        
         
     }
-    
+    func setvaluesForAnsweredQuestion(sender:UIButton){
+        questions[currentQuestionNumber].isAnswered = true
+        questions[currentQuestionNumber].wrongAns = sender.tag
+    }
     @IBAction func pauseButtonAction(_ sender: UIBarButtonItem) {
         invalidateTimers()
         pauseScreen.isHidden = false
@@ -201,5 +212,32 @@ class QuestionViewController: UIViewController {
         timer?.invalidate()
         questionTimer?.invalidate()
     }
-
+    func gameReview(){
+        //get child
+        let endScreen = children.last as? EndScreenViewController
+        endScreen?.questionLabel.text = questions[0].questionText
+        endScreen?.correctAnsLabel.text = questions[0].options[questions[0].correctAns]
+        if questions[0].isAnswered{
+            endScreen?.yourAnsLabel.text = questions[0].options[questions[0].wrongAns]
+        }else{
+            endScreen?.yourAnsLabel.text = ""
+        }
+       
+//       // print(yourAnswers)
+//        for (index, q) in questions.enumerated() {
+//            if q.isAnswered{
+//                print("\(yourAnswers[index] ?? -1)")
+//                print("correct answer: \(q.correctAns)")
+//            }else{
+//                print("correct answer: \(q.correctAns)")
+//                print("\(yourAnswers[index] ?? -1)")
+//            }
+//        }
+        
+    }
+    func endGame(){
+        invalidateTimers()
+        gameReview()
+        showEndScreen()
+    }
 }
