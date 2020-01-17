@@ -24,6 +24,7 @@ class QuestionViewController: UIViewController {
     
     @IBOutlet weak var endScreen: UIView!
     
+    @IBOutlet weak var progressView: UIProgressView!
     var timer: Timer?
     var currentQuestion: Question?
     var currentQuestionNumber: Int = 0
@@ -33,8 +34,7 @@ class QuestionViewController: UIViewController {
     let grammer  = Grammar()
     var questions = [Question]()
     var questionTimer:Timer?
-    var questioncount = 10
-    @IBOutlet weak var perQuestionTimerLabel: UILabel!
+    var questioncount :Double = 10
     
     
     var yourAnswers :  [Int:Int] = [:]
@@ -133,18 +133,22 @@ class QuestionViewController: UIViewController {
     
     @objc func updateQuestionTimer(){
         if questioncount >= 0 {
-            if questioncount == 10{
-                let seconds = String(10)
-                perQuestionTimerLabel.text = "\(seconds)"
+            if questioncount.truncatingRemainder(dividingBy: 10) == 0{
+                    questioncount = 10
+                    progressView.setProgress(Float(1), animated: true)
+                    if count+1 == 60{
+                        
+                    }else{
+                    setupNextQuestion(questionNumber: setRandomQuestion())
+                    }
             }else{
-                let seconds = String(questioncount%10)
-                perQuestionTimerLabel.text = "\(seconds)"
+                    let number :Double = questioncount.truncatingRemainder(dividingBy: 10)
+                    let y = Double(round(10*number)/100)
+                    progressView.setProgress(Float(y), animated: true)
             }
             questioncount -= 1
-        }else{
-            questioncount = 10
-            setupNextQuestion(questionNumber: setRandomQuestion())
         }
+        
     }
     
     func showEndScreen(){

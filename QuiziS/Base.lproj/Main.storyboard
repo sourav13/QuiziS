@@ -359,12 +359,9 @@
                                     <action selector="skipButtonAction:" destination="YVb-OI-5Bd" eventType="touchUpInside" id="Ozx-6x-Ejk"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zbO-vY-0a1">
-                                <rect key="frame" x="196" y="698" width="22" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="d1m-wr-AgK">
+                                <rect key="frame" x="20" y="715.33333333333337" width="306" height="2.6666666666666288"/>
+                            </progressView>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pAe-dP-ZhJ" userLabel="PauseScreen">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <connections>
@@ -380,12 +377,11 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="zbO-vY-0a1" firstAttribute="centerX" secondItem="N09-4I-QmJ" secondAttribute="centerX" id="3SE-O8-LIU"/>
-                            <constraint firstItem="PlK-gl-MIf" firstAttribute="top" secondItem="zbO-vY-0a1" secondAttribute="bottom" constant="8" id="5LY-XA-SRh"/>
                             <constraint firstItem="6Cv-Ug-SD3" firstAttribute="leading" secondItem="1Sm-ph-DLU" secondAttribute="leading" id="6qa-tL-1iM"/>
                             <constraint firstItem="N09-4I-QmJ" firstAttribute="leading" secondItem="YxM-tw-tUN" secondAttribute="leading" constant="10" id="9k5-tx-IQU"/>
                             <constraint firstItem="YxM-tw-tUN" firstAttribute="trailing" secondItem="PlK-gl-MIf" secondAttribute="trailing" constant="20" id="9uL-dq-chQ"/>
                             <constraint firstItem="6Cv-Ug-SD3" firstAttribute="bottom" secondItem="1Sm-ph-DLU" secondAttribute="bottom" id="CIF-Pv-cj5"/>
+                            <constraint firstItem="d1m-wr-AgK" firstAttribute="centerY" secondItem="ieA-de-hOc" secondAttribute="centerY" id="I2S-zy-pjr"/>
                             <constraint firstItem="PlK-gl-MIf" firstAttribute="leading" secondItem="YxM-tw-tUN" secondAttribute="leading" constant="20" id="J2p-fg-Vhv"/>
                             <constraint firstItem="YxM-tw-tUN" firstAttribute="trailing" secondItem="WZ6-r6-wO8" secondAttribute="trailing" constant="10" id="K2p-5v-KqY"/>
                             <constraint firstItem="PlK-gl-MIf" firstAttribute="centerX" secondItem="YxM-tw-tUN" secondAttribute="centerX" id="M4X-Rs-kiu"/>
@@ -395,7 +391,6 @@
                             <constraint firstItem="6Cv-Ug-SD3" firstAttribute="trailing" secondItem="1Sm-ph-DLU" secondAttribute="trailing" id="T0p-c0-fkF"/>
                             <constraint firstItem="N09-4I-QmJ" firstAttribute="top" secondItem="WZ6-r6-wO8" secondAttribute="bottom" constant="20" id="VXs-sj-an7"/>
                             <constraint firstItem="YxM-tw-tUN" firstAttribute="trailing" secondItem="pAe-dP-ZhJ" secondAttribute="trailing" id="XKj-7Q-5Nc"/>
-                            <constraint firstItem="zbO-vY-0a1" firstAttribute="height" secondItem="ieA-de-hOc" secondAttribute="height" id="YcK-zi-rL4"/>
                             <constraint firstItem="WZ6-r6-wO8" firstAttribute="leading" secondItem="YxM-tw-tUN" secondAttribute="leading" constant="10" id="aTY-Fs-57D"/>
                             <constraint firstItem="PlK-gl-MIf" firstAttribute="top" secondItem="ieA-de-hOc" secondAttribute="bottom" constant="8" id="afC-H4-6Ka"/>
                             <constraint firstItem="YxM-tw-tUN" firstAttribute="trailing" secondItem="N09-4I-QmJ" secondAttribute="trailing" constant="10" id="bBL-AC-Rew"/>
@@ -403,7 +398,9 @@
                             <constraint firstItem="pAe-dP-ZhJ" firstAttribute="leading" secondItem="YxM-tw-tUN" secondAttribute="leading" id="kYc-zD-Wjb"/>
                             <constraint firstItem="6Cv-Ug-SD3" firstAttribute="top" secondItem="1Sm-ph-DLU" secondAttribute="top" id="mJW-yo-g4o"/>
                             <constraint firstItem="ieA-de-hOc" firstAttribute="top" secondItem="N09-4I-QmJ" secondAttribute="bottom" id="rnc-jl-aWl"/>
+                            <constraint firstItem="d1m-wr-AgK" firstAttribute="leading" secondItem="YxM-tw-tUN" secondAttribute="leading" constant="20" id="ux5-Sc-Pcy"/>
                             <constraint firstItem="pAe-dP-ZhJ" firstAttribute="top" secondItem="1Sm-ph-DLU" secondAttribute="top" id="wbm-hA-uhW"/>
+                            <constraint firstItem="d1m-wr-AgK" firstAttribute="trailing" secondItem="ieA-de-hOc" secondAttribute="leading" constant="-8" id="yk1-R0-73N"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YxM-tw-tUN"/>
                     </view>
@@ -419,7 +416,7 @@
                         <outlet property="firstButton" destination="9R2-Ji-6hb" id="b4y-sL-BOH"/>
                         <outlet property="fourthButton" destination="lsB-bE-0ir" id="g4C-Il-UTA"/>
                         <outlet property="pauseScreen" destination="pAe-dP-ZhJ" id="jrb-0Y-n5e"/>
-                        <outlet property="perQuestionTimerLabel" destination="zbO-vY-0a1" id="gDl-ge-qF5"/>
+                        <outlet property="progressView" destination="d1m-wr-AgK" id="n3C-6H-kbR"/>
                         <outlet property="questionLabel" destination="9y2-N2-OHv" id="Lab-VO-yB4"/>
                         <outlet property="questionNumberLabel" destination="BRK-oE-Kbb" id="Dbu-dO-A9N"/>
                         <outlet property="scoreLabel" destination="Nrq-Da-nVs" id="Z8H-o9-tXb"/>
