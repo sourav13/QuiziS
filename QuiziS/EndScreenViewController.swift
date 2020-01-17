@@ -17,6 +17,7 @@ class EndScreenViewController: UIViewController {
     
     @IBOutlet weak var previousButton: UIButton!
     var currentQuesNo = 0
+    var numberofQuestions =  0
     override func viewDidLoad() {
         super.viewDidLoad()
          previousButton.isHidden = true
@@ -43,7 +44,7 @@ class EndScreenViewController: UIViewController {
     }
     
     @IBAction func nextButtonAction(_ sender: UIButton) {
-        if currentQuesNo < ((self.parent as? QuestionViewController)?.questions.count)! - 1{
+        if currentQuesNo < numberofQuestions{
             currentQuesNo = currentQuesNo + 1
             questionLabel.text = (self.parent as? QuestionViewController)?.questions[currentQuesNo].questionText
             if  ((self.parent as? QuestionViewController)?.questions[currentQuesNo].isAnswered)!{
@@ -53,24 +54,10 @@ class EndScreenViewController: UIViewController {
             }
             previousButton.isHidden = false
       
-            if currentQuesNo == ((self.parent as? QuestionViewController)?.questions.count)!-1{
+            if currentQuesNo == numberofQuestions{
                 nextButton.isHidden = true
             }
-        }else{
-   //         previousButton.isHidden = false
         }
-             
-       
-//        for (index, q) in questions.enumerated() {
-//                if q.isAnswered{
-//                    print("\(yourAnswers[index] ?? -1)")
-//                    print("correct answer: \(q.correctAns)")
-//                }else{
-//                    print("correct answer: \(q.correctAns)")
-//                    print("\(yourAnswers[index] ?? -1)")
-//                }
-//            }
-      //  (self.parent as? QuestionViewController)?.yourAnswers
     }
     @IBAction func previousButtonAction(_ sender: UIButton) {
         if currentQuesNo > 0{
@@ -85,21 +72,10 @@ class EndScreenViewController: UIViewController {
             if currentQuesNo == 0 {
                 previousButton.isHidden = true
             }
-        }else{
-    
         }
     }
     func hideNavigationBar(){
         self.navigationController?.setNavigationBarHidden(false, animated: true)
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

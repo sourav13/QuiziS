@@ -27,7 +27,7 @@ class QuestionViewController: UIViewController {
     var timer: Timer?
     var currentQuestion: Question?
     var currentQuestionNumber: Int = 0
-    var count = 30
+    var count = 60
     var score = 0
     var selectedGrammarType: Int = 0
     let grammer  = Grammar()
@@ -38,7 +38,7 @@ class QuestionViewController: UIViewController {
     
     
     var yourAnswers :  [Int:Int] = [:]
-//    var questionOrder : [Int:Int] = [:]
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -77,7 +77,7 @@ class QuestionViewController: UIViewController {
        
         setintialScore()
         setinitialQuestion()
-        count = 30
+        count = 60
         questioncount = 10
         startTimer()
         startQuestionTimer()
@@ -117,8 +117,14 @@ class QuestionViewController: UIViewController {
     
     @objc func updateTime(){
         if count >= 0 {
-            let seconds = String(count%60)
-            timeLabel.text = "Time: \(seconds)"
+            if count == 60{
+                let seconds = String(60)
+                timeLabel.text = "Time: \(seconds)"
+            }else{
+                let seconds = String(count%60)
+                timeLabel.text = "Time: \(seconds)"
+            }
+           
             count -= 1
         }else{
            endGame()
@@ -127,8 +133,13 @@ class QuestionViewController: UIViewController {
     
     @objc func updateQuestionTimer(){
         if questioncount >= 0 {
-            let seconds = String(questioncount%10)
-            perQuestionTimerLabel.text = "\(seconds)"
+            if questioncount == 10{
+                let seconds = String(10)
+                perQuestionTimerLabel.text = "\(seconds)"
+            }else{
+                let seconds = String(questioncount%10)
+                perQuestionTimerLabel.text = "\(seconds)"
+            }
             questioncount -= 1
         }else{
             questioncount = 10
@@ -211,6 +222,8 @@ class QuestionViewController: UIViewController {
     func invalidateTimers(){
         timer?.invalidate()
         questionTimer?.invalidate()
+        timer = nil
+        questionTimer = nil
     }
     func gameReview(){
         //get child
@@ -222,17 +235,7 @@ class QuestionViewController: UIViewController {
         }else{
             endScreen?.yourAnsLabel.text = ""
         }
-       
-//       // print(yourAnswers)
-//        for (index, q) in questions.enumerated() {
-//            if q.isAnswered{
-//                print("\(yourAnswers[index] ?? -1)")
-//                print("correct answer: \(q.correctAns)")
-//            }else{
-//                print("correct answer: \(q.correctAns)")
-//                print("\(yourAnswers[index] ?? -1)")
-//            }
-//        }
+        endScreen?.numberofQuestions = currentQuestionNumber
         
     }
     func endGame(){
