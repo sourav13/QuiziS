@@ -236,11 +236,20 @@ class QuestionViewController: UIViewController {
         endScreen?.correctAnsLabel.text = questions[0].options[questions[0].correctAns]
         if questions[0].isAnswered{
             endScreen?.yourAnsLabel.text = questions[0].options[questions[0].wrongAns]
+            displayAnswerButtonImage(question: questions[0], endScreen: endScreen!)
         }else{
             endScreen?.yourAnsLabel.text = ""
+            endScreen?.currentAnswerButton.setImage(UIImage(systemName: "xmark"), for: .normal)
         }
         endScreen?.numberofQuestions = currentQuestionNumber
         
+    }
+    func displayAnswerButtonImage(question:Question,endScreen:EndScreenViewController){
+        if question.options[question.correctAns] == question.options[question.wrongAns]{
+            endScreen.currentAnswerButton.setImage(UIImage.checkmark, for: .normal)
+        }else{
+            endScreen.currentAnswerButton.setImage(UIImage(systemName: "xmark"), for: .normal)
+        }
     }
     func endGame(){
         invalidateTimers()

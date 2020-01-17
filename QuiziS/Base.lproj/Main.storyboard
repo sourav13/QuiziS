@@ -635,6 +635,11 @@
                                     <action selector="nextButtonAction:" destination="MtM-rI-r6C" eventType="touchUpInside" id="SbT-Fc-d8A"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nRe-we-RaU">
+                                <rect key="frame" x="375" y="656.66666666666663" width="19" height="22.333333333333371"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="square.and.arrow.up.fill" catalog="system"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -643,12 +648,14 @@
                             <constraint firstItem="Nd0-lE-gKS" firstAttribute="leading" secondItem="EXC-Eb-3dP" secondAttribute="leading" constant="20" id="92m-9P-tUa"/>
                             <constraint firstItem="a4q-RT-cDW" firstAttribute="baseline" secondItem="Nd0-lE-gKS" secondAttribute="firstBaseline" id="F3C-9u-LCq"/>
                             <constraint firstItem="i4A-E9-Q22" firstAttribute="baseline" secondItem="FEJ-gK-fh5" secondAttribute="firstBaseline" id="FjQ-tZ-wq0"/>
+                            <constraint firstItem="nRe-we-RaU" firstAttribute="firstBaseline" secondItem="DqA-N9-YPf" secondAttribute="firstBaseline" id="Fyl-iH-VTC"/>
                             <constraint firstItem="Eqc-Tg-l9P" firstAttribute="top" secondItem="hIc-Xz-wws" secondAttribute="bottom" constant="20" id="KrJ-Li-c6M"/>
                             <constraint firstItem="FEJ-gK-fh5" firstAttribute="top" secondItem="Nd0-lE-gKS" secondAttribute="bottom" constant="20" id="Kxs-5a-0Hj"/>
                             <constraint firstItem="NbO-1b-uzw" firstAttribute="centerX" secondItem="ddd-6r-IFZ" secondAttribute="centerX" id="MQo-69-LOu"/>
                             <constraint firstItem="EXC-Eb-3dP" firstAttribute="bottom" secondItem="NbO-1b-uzw" secondAttribute="bottom" constant="20" id="cZg-n1-LcO"/>
                             <constraint firstItem="Eqc-Tg-l9P" firstAttribute="top" secondItem="RcW-Vq-Kb3" secondAttribute="bottom" constant="20" id="g0N-WX-jPD"/>
                             <constraint firstItem="a4q-RT-cDW" firstAttribute="leading" secondItem="Nd0-lE-gKS" secondAttribute="trailing" constant="20" id="gpB-IM-2Wg"/>
+                            <constraint firstItem="EXC-Eb-3dP" firstAttribute="trailing" secondItem="nRe-we-RaU" secondAttribute="trailing" constant="20" id="hGQ-fV-zuJ"/>
                             <constraint firstItem="RcW-Vq-Kb3" firstAttribute="top" secondItem="FEJ-gK-fh5" secondAttribute="bottom" constant="20" id="iHD-cO-Pgp"/>
                             <constraint firstItem="sXw-yJ-l2v" firstAttribute="leading" secondItem="EXC-Eb-3dP" secondAttribute="leading" constant="20" id="jDA-Co-bJh"/>
                             <constraint firstItem="EXC-Eb-3dP" firstAttribute="trailing" secondItem="hIc-Xz-wws" secondAttribute="trailing" constant="20" id="jkJ-Cf-Yhj"/>
@@ -661,6 +668,7 @@
                     </view>
                     <connections>
                         <outlet property="correctAnsLabel" destination="a4q-RT-cDW" id="hU4-wn-rfo"/>
+                        <outlet property="currentAnswerButton" destination="nRe-we-RaU" id="QPA-Ut-D72"/>
                         <outlet property="nextButton" destination="hIc-Xz-wws" id="H97-8f-JuR"/>
                         <outlet property="previousButton" destination="RcW-Vq-Kb3" id="Bsg-6Q-5v4"/>
                         <outlet property="questionLabel" destination="sXw-yJ-l2v" id="6R2-aS-9Vc"/>
@@ -670,9 +678,12 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e7R-Of-6CF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="g44-oW-hBV" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2584" y="394"/>
+            <point key="canvasLocation" x="2582.608695652174" y="393.75"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="square.and.arrow.up.fill" catalog="system" width="56" height="64"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="Tn6-Y1-SzM"/>
     </inferredMetricsTieBreakers>
