@@ -7,10 +7,13 @@
 //
 
 import Foundation
-struct Question{
+struct Question:Equatable{
     let questionText:String
     let options:[String]
     let correctAns:Int
     var wrongAns:Int
     var isAnswered:Bool
+    static func == (lhs: Question, rhs: Question) -> Bool {
+        return lhs.questionText == rhs.questionText
+    }
 }

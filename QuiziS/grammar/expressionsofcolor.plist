@@ -189,13 +189,156 @@
                  <integer>0</integer>
                  <key>options</key>
                  <array>
-                     <string></string>
-                     <string></string>
-                     <string></string>
-                     <string></string>
+                     <string>pink</string>
+                     <string>green</string>
+                     <string>blue</string>
+                     <string>yellow</string>
                  </array>
                  <key>QuestionText</key>
-                 <string></string>
+                 <string>She was tickled ____ that you remembered her birthday and bought her some flowers.</string>
         </dict>
+    <dict>
+                  <key>correctAns</key>
+                  <integer>0</integer>
+                  <key>options</key>
+                  <array>
+                      <string>red</string>
+                      <string>grey</string>
+                      <string>blue</string>
+                      <string>yellow</string>
+                  </array>
+                  <key>QuestionText</key>
+                  <string>That's a ____ area, and so there is no clear rule or answer.</string>
+         </dict>
+    <dict>
+                    <key>correctAns</key>
+                    <integer>0</integer>
+                    <key>options</key>
+                    <array>
+                        <string>white</string>
+                        <string>black</string>
+                        <string>green</string>
+                        <string>blue</string>
+                    </array>
+                    <key>QuestionText</key>
+                    <string>Peter is very ____ and has no real experience of life.</string>
+           </dict>
+    <dict>
+                    <key>correctAns</key>
+                    <integer>0</integer>
+                    <key>options</key>
+                    <array>
+                        <string>blue</string>
+                        <string>yellow</string>
+                        <string>rose</string>
+                        <string>black</string>
+                    </array>
+                    <key>QuestionText</key>
+                    <string>Paul sees Hollywood through ____-coloured glasses.He would feel differently if he lived there.</string>
+           </dict>
+    <dict>
+                    <key>correctAns</key>
+                    <integer>0</integer>
+                    <key>options</key>
+                    <array>
+                        <string>blue</string>
+                        <string>yellow</string>
+                        <string>browned</string>
+                        <string>red</string>
+                    </array>
+                    <key>QuestionText</key>
+                    <string>I am ____ off with this film.It is so boring.</string>
+           </dict>
+    <dict>
+                    <key>correctAns</key>
+                    <integer>0</integer>
+                    <key>options</key>
+                    <array>
+                        <string>blue</string>
+                        <string>yellow</string>
+                        <string>red</string>
+                        <string>green</string>
+                    </array>
+                    <key>QuestionText</key>
+                    <string>The police caught the theif ____-handed coming out of the house with the stolen goods.</string>
+           </dict>
+    <dict>
+                    <key>correctAns</key>
+                    <integer>0</integer>
+                    <key>options</key>
+                    <array>
+                        <string>blue</string>
+                        <string>yellow</string>
+                        <string>green</string>
+                        <string>purple</string>
+                    </array>
+                    <key>QuestionText</key>
+                    <string>The boss went ____ with rage when I asked for a pay rise.</string>
+           </dict>
+    <dict>
+                    <key>correctAns</key>
+                    <integer>0</integer>
+                    <key>options</key>
+                    <array>
+                        <string>silver</string>
+                        <string>yellow</string>
+                        <string>golden</string>
+                        <string>black</string>
+                    </array>
+                    <key>QuestionText</key>
+                    <string>Charlie Chaplin was one of the first stars of the ____ screen.</string>
+           </dict>
+    <dict>
+                    <key>correctAns</key>
+                    <integer>0</integer>
+                    <key>options</key>
+                    <array>
+                        <string>white</string>
+                        <string>black</string>
+                        <string>yellow</string>
+                        <string>blue</string>
+                    </array>
+                    <key>QuestionText</key>
+                    <string>Don't be sad and ____, things might improve tomorrow.</string>
+           </dict>
+    <dict>
+                    <key>correctAns</key>
+                    <integer>0</integer>
+                    <key>options</key>
+                    <array>
+                        <string>blue</string>
+                        <string>yellow</string>
+                        <string>golden</string>
+                        <string>silver</string>
+                    </array>
+                    <key>QuestionText</key>
+                    <string>The company chairman received a huge ____ handshake when he retired.</string>
+           </dict>
+    <dict>
+                       <key>correctAns</key>
+                       <integer>0</integer>
+                       <key>options</key>
+                       <array>
+                           <string>blue</string>
+                           <string>yellow</string>
+                           <string>black</string>
+                           <string>red</string>
+                       </array>
+                       <key>QuestionText</key>
+                       <string>It's a ____ day for me, because I have just lost my job.</string>
+              </dict>
+    <dict>
+                       <key>correctAns</key>
+                       <integer>0</integer>
+                       <key>options</key>
+                       <array>
+                           <string>blue</string>
+                           <string>yellow</string>
+                           <string>golden</string>
+                           <string>silver</string>
+                       </array>
+                       <key>QuestionText</key>
+                       <string>The company chairman received a huge ____ handshake when he retired.</string>
+              </dict>
 </array>
 </plist>

@@ -27,7 +27,7 @@ class QuestionViewController: UIViewController {
     @IBOutlet weak var progressView: UIProgressView!
     var timer: Timer?
     var currentQuestion: Question?
-    var currentQuestionNumber: Int = 0
+    var currentQuestionNumber:Int?
     var count = 60
     var score = 0
     var selectedGrammarType: Int = 0
@@ -36,7 +36,7 @@ class QuestionViewController: UIViewController {
     var questionTimer:Timer?
     var questioncount :Double = 10
     var categoryType:Int = 0
-    
+    var reviewQuestions = [Question]()
     var yourAnswers :  [Int:Int] = [:]
 
     
@@ -92,23 +92,19 @@ class QuestionViewController: UIViewController {
     
     
     func getCurrentQuestion(currentQuestion:Int)->Question{
+        if !questions.isEmpty{
+            return questions[currentQuestion]
+        }
             return questions[currentQuestion]
     }
     
     func initialSetup(){
-       
         setintialScore()
         setinitialQuestion()
         count = 60
         questioncount = 10
         startTimer()
         startQuestionTimer()
-        
-        //setup Initial question text and button titles.
-        setButtonTitles(question: getCurrentQuestion(currentQuestion: currentQuestionNumber))
-        setQuestionText(question:getCurrentQuestion(currentQuestion: currentQuestionNumber))
-
-       
     }
     
     func setintialScore(){
@@ -117,8 +113,13 @@ class QuestionViewController: UIViewController {
     }
     
     func setinitialQuestion(){
-         currentQuestionNumber = 0
+         //currentQuestionNumber = 0
          questionNumberLabel.text = "1"
+        currentQuestionNumber = getRandomQuestion()
+        //setup Initial question text and button titles.
+        setButtonTitles(question: getCurrentQuestion(currentQuestion: currentQuestionNumber!))
+        setQuestionText(question:getCurrentQuestion(currentQuestion: currentQuestionNumber!))
+
     }
     
     func startTimer(){
@@ -165,7 +166,8 @@ class QuestionViewController: UIViewController {
             questioncount -= 1
         }else{
             questioncount = 10
-            setupNextQuestion(questionNumber: setRandomQuestion())
+            reviewQuestions.append(getCurrentQuestion(currentQuestion: currentQuestionNumber!))
+            currentQuestionNumber = getRandomQuestion()
         }
         
     }
@@ -187,47 +189,41 @@ class QuestionViewController: UIViewController {
     }
     
     @IBAction func answerButtonAction(_ sender: UIButton) {
-        checkAnswer(question: getCurrentQuestion(currentQuestion: currentQuestionNumber),sender: sender)
-        setupNextQuestion(questionNumber: setRandomQuestion())
+        checkAnswer(question: getCurrentQuestion(currentQuestion: currentQuestionNumber!),sender: sender)
+    
+        if reviewQuestions.contains(getCurrentQuestion(currentQuestion: currentQuestionNumber!)){
+         let index =  reviewQuestions.firstIndex(of: getCurrentQuestion(currentQuestion: currentQuestionNumber!))
+            //set isanswered to true and the answer to the button tag.
+            reviewQuestions[index!].isAnswered = true
+            reviewQuestions[index!].wrongAns = sender.tag
+        }else{
+            reviewQuestions.append(getCurrentQuestion(currentQuestion: currentQuestionNumber!))
+        }
+        
+        questions.remove(at:currentQuestionNumber!)
+        currentQuestionNumber = getRandomQuestion()
+
         questioncount = 10
         startQuestionTimer()
         
     }
-    
-    func setRandomQuestion()->Int{        
-        //create a random int for question whose isAnswered is false and set to currentQuestionNumber
-        if currentQuestionNumber < questions.count-1{
-            currentQuestionNumber = currentQuestionNumber+1
-            return currentQuestionNumber
+    func getRandomQuestion()->Int{
+       var randomIndex = 0
+
+        if questions.count > 0{
+            randomIndex = Int(arc4random_uniform(UInt32(questions.count-1)))
+            currentQuestionNumber = randomIndex
+            currentQuestion = getCurrentQuestion(currentQuestion: currentQuestionNumber!)
+            setButtonTitles(question: currentQuestion!)
+            setQuestionText(question: currentQuestion!)
+            questionNumberLabel.text = "\(currentQuestionNumber)"
         }else{
-            endGame()//load alert or another viewcontroller to exit and reset.
-            return 0
+            endGame()
         }
-       
+        return randomIndex
+
     }
-    
-    func setupNextQuestion(questionNumber:Int){
-        currentQuestionNumber = questionNumber
-        currentQuestion = getCurrentQuestion(currentQuestion: questionNumber)
-        setButtonTitles(question: currentQuestion!)
-        setQuestionText(question: currentQuestion!)
-        questionNumberLabel.text = "\(currentQuestionNumber+1)"
-    }
-    
-    func checkAnswer(question:Question,sender:UIButton){
-        if sender.title(for: .normal) == question.options[question.correctAns]{
-            score = score+1
-            scoreLabel.text = "Score:\(score)"
-        }
-        yourAnswers[currentQuestionNumber] = sender.tag
-        setvaluesForAnsweredQuestion(sender:sender)
-        
-        
-    }
-    func setvaluesForAnsweredQuestion(sender:UIButton){
-        questions[currentQuestionNumber].isAnswered = true
-        questions[currentQuestionNumber].wrongAns = sender.tag
-    }
+
     @IBAction func pauseButtonAction(_ sender: UIBarButtonItem) {
         invalidateTimers()
         pauseScreen.isHidden = false
@@ -236,10 +232,23 @@ class QuestionViewController: UIViewController {
     }
     
     @IBAction func skipButtonAction(_ sender: Any) {
-        setupNextQuestion(questionNumber: setRandomQuestion())
+        reviewQuestions.append(getCurrentQuestion(currentQuestion: currentQuestionNumber!))
+        currentQuestionNumber = getRandomQuestion()
         questioncount = 10
         startQuestionTimer()
-        
+    }
+    
+    func checkAnswer(question:Question,sender:UIButton){
+        if sender.title(for: .normal) == question.options[question.correctAns]{
+            score = score+1
+            scoreLabel.text = "Score:\(score)"
+        }
+        yourAnswers[currentQuestionNumber!] = sender.tag
+        setvaluesForAnsweredQuestion(sender:sender)
+    }
+    func setvaluesForAnsweredQuestion(sender:UIButton){
+        questions[currentQuestionNumber!].isAnswered = true
+        questions[currentQuestionNumber!].wrongAns = sender.tag
     }
     
     func invalidateTimers(){
@@ -251,16 +260,16 @@ class QuestionViewController: UIViewController {
     func gameReview(){
         //get child
         let endScreen = children.last as? EndScreenViewController
-        endScreen?.questionLabel.text = questions[0].questionText
-        endScreen?.correctAnsLabel.text = questions[0].options[questions[0].correctAns]
-        if questions[0].isAnswered{
-            endScreen?.yourAnsLabel.text = questions[0].options[questions[0].wrongAns]
-            displayAnswerButtonImage(question: questions[0], endScreen: endScreen!)
+        endScreen?.questionLabel.text = reviewQuestions[0].questionText
+        endScreen?.correctAnsLabel.text = reviewQuestions[0].options[reviewQuestions[0].correctAns]
+        if reviewQuestions[0].isAnswered{
+            endScreen?.yourAnsLabel.text = reviewQuestions[0].options[reviewQuestions[0].wrongAns]
+            displayAnswerButtonImage(question: reviewQuestions[0], endScreen: endScreen!)
         }else{
             endScreen?.yourAnsLabel.text = ""
             endScreen?.currentAnswerButton.setImage(UIImage(systemName: "xmark"), for: .normal)
         }
-        endScreen?.numberofQuestions = currentQuestionNumber
+        endScreen?.numberofQuestions = reviewQuestions.count - 1
         
     }
     func displayAnswerButtonImage(question:Question,endScreen:EndScreenViewController){
@@ -271,6 +280,7 @@ class QuestionViewController: UIViewController {
         }
     }
     func endGame(){
+        print(reviewQuestions)
         invalidateTimers()
         gameReview()
         showEndScreen()
