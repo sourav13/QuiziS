@@ -17,7 +17,7 @@
 	</dict>
 	<dict>
 		<key>correctAns</key>
-		<integer>1</integer>
+		<integer>0</integer>
 		<key>options</key>
 		<array>
 			<string>before</string>
@@ -30,7 +30,7 @@
 	</dict>
 	<dict>
 		<key>correctAns</key>
-		<integer>0</integer>
+		<integer>3</integer>
 		<key>options</key>
 		<array>
 			<string>in</string>
@@ -43,7 +43,7 @@
 	</dict>
 	<dict>
 		<key>correctAns</key>
-		<integer>0</integer>
+		<integer>2</integer>
 		<key>options</key>
 		<array>
 			<string>over</string>
@@ -56,7 +56,7 @@
 	</dict>
 	<dict>
 		<key>correctAns</key>
-		<integer>0</integer>
+		<integer>1</integer>
 		<key>options</key>
 		<array>
 			<string>at</string>
@@ -69,20 +69,7 @@
 	</dict>
 	<dict>
 		<key>correctAns</key>
-		<integer>0</integer>
-		<key>options</key>
-		<array>
-			<string>at</string>
-			<string>on</string>
-			<string>in </string>
-			<string>for</string>
-		</array>
-		<key>QuestionText</key>
-		<string>I am sitting ____ my brother and sister.</string>
-	</dict>
-	<dict>
-		<key>correctAns</key>
-		<integer>0</integer>
+		<integer>3</integer>
 		<key>options</key>
 		<array>
 			<string>at</string>
@@ -95,7 +82,7 @@
 	</dict>
 	<dict>
 		<key>correctAns</key>
-		<integer>0</integer>
+		<integer>1</integer>
 		<key>options</key>
 		<array>
 			<string>at</string>
@@ -121,7 +108,7 @@
 	</dict>
 	<dict>
 		<key>correctAns</key>
-		<integer>0</integer>
+		<integer>2</integer>
 		<key>options</key>
 		<array>
 			<string>at</string>

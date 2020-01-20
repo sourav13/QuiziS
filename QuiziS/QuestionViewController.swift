@@ -92,10 +92,7 @@ class QuestionViewController: UIViewController {
     
     
     func getCurrentQuestion(currentQuestion:Int)->Question{
-        if !questions.isEmpty{
-            return questions[currentQuestion]
-        }
-            return questions[currentQuestion]
+            return questions[currentQuestion]        
     }
     
     func initialSetup(){
@@ -125,7 +122,6 @@ class QuestionViewController: UIViewController {
     func startTimer(){
         if timer != nil{
             timer?.invalidate()
-            
         }
          timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
     }
@@ -139,43 +135,46 @@ class QuestionViewController: UIViewController {
     }
     
     @objc func updateTime(){
-        if count >= 0 {
-            if count == 60{
-                let seconds = String(60)
-                timeLabel.text = "Time: \(seconds)"
+        if timer != nil{
+            if count >= 0 {
+                if count == 60{
+                    let seconds = String(60)
+                    timeLabel.text = "Time: \(seconds)"
+                }else{
+                    let seconds = String(count%60)
+                    timeLabel.text = "Time: \(seconds)"
+                }
+               
+                count -= 1
             }else{
-                let seconds = String(count%60)
-                timeLabel.text = "Time: \(seconds)"
+               endGame()
             }
-           
-            count -= 1
-        }else{
-           endGame()
         }
     }
     
     @objc func updateQuestionTimer(){
-        if questioncount >= 2 {            
-            if questioncount.truncatingRemainder(dividingBy: 10) == 0{
-                    progressView.setProgress(Float(1), animated: true)
+        if questionTimer != nil{
+            if questioncount >= 2 {
+                if questioncount.truncatingRemainder(dividingBy: 10) == 0{
+                        progressView.setProgress(Float(1), animated: true)
+                }else{
+                        let number :Double = questioncount.truncatingRemainder(dividingBy: 10)
+                        let y = Double(round(10*number)/100)
+                        progressView.setProgress(Float(y), animated: true)
+                }
+                questioncount -= 1
             }else{
-                    let number :Double = questioncount.truncatingRemainder(dividingBy: 10)
-                    let y = Double(round(10*number)/100)
-                    progressView.setProgress(Float(y), animated: true)
+                progressView.setProgress(Float(0.1), animated: true)
+                questioncount = 10
+                 if reviewQuestions.contains(getCurrentQuestion(currentQuestion: currentQuestionNumber!)){
+                 //   let index =  reviewQuestions.firstIndex(of: getCurrentQuestion(currentQuestion: currentQuestionNumber!))
+                      
+                }else{
+                    reviewQuestions.append(getCurrentQuestion(currentQuestion: currentQuestionNumber!))
+                }
+                currentQuestionNumber = getRandomQuestion()
             }
-            questioncount -= 1
-        }else{
-            progressView.setProgress(Float(0.1), animated: true)
-            questioncount = 10
-             if reviewQuestions.contains(getCurrentQuestion(currentQuestion: currentQuestionNumber!)){
-             //   let index =  reviewQuestions.firstIndex(of: getCurrentQuestion(currentQuestion: currentQuestionNumber!))
-                  
-            }else{
-                reviewQuestions.append(getCurrentQuestion(currentQuestion: currentQuestionNumber!))
-            }
-            currentQuestionNumber = getRandomQuestion()
         }
-        
     }
     
     func showEndScreen(){
@@ -204,9 +203,16 @@ class QuestionViewController: UIViewController {
             reviewQuestions[index!].wrongAns = sender.tag
         }else{
             reviewQuestions.append(getCurrentQuestion(currentQuestion: currentQuestionNumber!))
+            reviewQuestions[reviewQuestions.count-1].isAnswered = true
+            reviewQuestions[reviewQuestions.count-1].wrongAns = sender.tag
+          
         }
+       if sender.title(for: .normal) ==  getCurrentQuestion(currentQuestion: currentQuestionNumber!).options[ getCurrentQuestion(currentQuestion: currentQuestionNumber!).correctAns]{
+                questions.remove(at:currentQuestionNumber!)
+       }else{
         
-        questions.remove(at:currentQuestionNumber!)
+        }
+ //       questions.remove(at:currentQuestionNumber!)
         currentQuestionNumber = getRandomQuestion()
 
         questioncount = 10
@@ -266,8 +272,8 @@ class QuestionViewController: UIViewController {
     func invalidateTimers(){
         timer?.invalidate()
         questionTimer?.invalidate()
-        timer = nil
-        questionTimer = nil
+        timer = Timer()
+        questionTimer = Timer()
     }
     func gameReview(){
         //get child
@@ -292,6 +298,7 @@ class QuestionViewController: UIViewController {
         }
     }
     func endGame(){
+        print(reviewQuestions)
         invalidateTimers()
         gameReview()
         showEndScreen()
