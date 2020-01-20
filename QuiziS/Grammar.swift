@@ -28,6 +28,7 @@ class Grammar{
             let question = Question(questionText: questionText, options: options , correctAns: element?["correctAns"] as! Int, wrongAns: -1, isAnswered: false)
             questions.append(question)
         }
+        questions.shuffle()
         return questions
     }
 }
