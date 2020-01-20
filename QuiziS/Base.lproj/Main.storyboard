@@ -102,8 +102,9 @@
                                             <segue destination="UTs-gJ-hOS" kind="show" id="uF0-aX-Q9l"/>
                                         </connections>
                                     </button>
-                                    <button hidden="YES" opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZw-BU-ZSw">
-                                        <rect key="frame" x="0.0" y="114.99999999999994" width="165.33333333333334" height="0.0"/>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yZw-BU-ZSw">
+                                        <rect key="frame" x="0.0" y="150" width="165.33333333333334" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Spelling">
@@ -120,6 +121,11 @@
                                 <constraints>
                                     <constraint firstItem="V60-jA-CQk" firstAttribute="height" secondItem="Png-hU-BWS" secondAttribute="height" id="hAR-Km-XFQ"/>
                                 </constraints>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="yZw-BU-ZSw"/>
+                                    </mask>
+                                </variation>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -719,6 +725,6 @@
         <image name="xmark.shield" catalog="system" width="64" height="60"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Tn6-Y1-SzM"/>
+        <segue reference="uF0-aX-Q9l"/>
     </inferredMetricsTieBreakers>
 </document>

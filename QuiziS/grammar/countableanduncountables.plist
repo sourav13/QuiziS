@@ -7,13 +7,13 @@
         <integer>0</integer>
         <key>options</key>
         <array>
-            <string>at</string>
-            <string>on</string>
+            <string>soap</string>
+            <string>the soap</string>
             <string>in </string>
             <string>for</string>
         </array>
         <key>QuestionText</key>
-        <string>I&apos;ll be at  home ____ Friday morning.</string>
+        <string>Can you pass ____ please?.</string>
     </dict>
     <dict>
         <key>correctAns</key>
@@ -23,10 +23,23 @@
             <string>at</string>
             <string>on</string>
             <string>in </string>
+            <string>information</string>
+        </array>
+        <key>QuestionText</key>
+        <string>I would like you to send the ____ as soon as you can.</string>
+    </dict>
+    <dict>
+        <key>correctAns</key>
+        <integer>0</integer>
+        <key>options</key>
+        <array>
+            <string>cheese</string>
+            <string>on</string>
+            <string>in </string>
             <string>for</string>
         </array>
         <key>QuestionText</key>
-        <string>I&apos;ll not be at  home ____ monday morning.</string>
+        <string>Can I have a slice of ____ please?</string>
     </dict>
     <dict>
         <key>correctAns</key>
@@ -35,11 +48,11 @@
         <array>
             <string>at</string>
             <string>on</string>
-            <string>in </string>
+            <string>a car</string>
             <string>for</string>
         </array>
         <key>QuestionText</key>
-        <string>I&apos;ll be at  home ____ Friday morning.</string>
+        <string>Jim goes everywhere by bike.He hasn't got ____</string>
     </dict>
     <dict>
         <key>correctAns</key>
@@ -47,25 +60,51 @@
         <key>options</key>
         <array>
             <string>at</string>
-            <string>on</string>
+            <string>a banana</string>
             <string>in </string>
             <string>for</string>
         </array>
         <key>QuestionText</key>
-        <string>I&apos;ll be at  home ____ Friday morning.</string>
+        <string>Would you like to eat _____?.</string>
     </dict>
     <dict>
-        <key>correctAns</key>
-        <integer>0</integer>
-        <key>options</key>
-        <array>
-            <string>at</string>
-            <string>on</string>
-            <string>in </string>
-            <string>for</string>
-        </array>
-        <key>QuestionText</key>
-        <string>I&apos;ll be at  home ____ Friday morning.</string>
-    </dict>
+         <key>correctAns</key>
+         <integer>0</integer>
+         <key>options</key>
+         <array>
+             <string>music</string>
+             <string>on</string>
+             <string>in </string>
+             <string>for</string>
+         </array>
+         <key>QuestionText</key>
+         <string>Ann was listening to ____ when I arrived.</string>
+     </dict>
+    <dict>
+         <key>correctAns</key>
+         <integer>0</integer>
+         <key>options</key>
+         <array>
+             <string>at</string>
+             <string>on</string>
+             <string>in </string>
+             <string>for</string>
+         </array>
+         <key>QuestionText</key>
+         <string>We visited a farn that had a lot of ____.</string>
+     </dict>
+    <dict>
+         <key>correctAns</key>
+         <integer>0</integer>
+         <key>options</key>
+         <array>
+             <string>at</string>
+             <string>on</string>
+             <string>rules</string>
+             <string>for</string>
+         </array>
+         <key>QuestionText</key>
+         <string>What are the ___ for this game?.</string>
+     </dict>
 </array>
 </plist>

@@ -4,68 +4,172 @@
 <array>
     <dict>
         <key>correctAns</key>
-        <integer>0</integer>
+        <integer>2</integer>
         <key>options</key>
         <array>
-            <string>at</string>
-            <string>on</string>
-            <string>in </string>
-            <string>for</string>
+            <string>over</string>
+            <string>many</string>
+            <string>more</string>
+            <string>higher</string>
         </array>
         <key>QuestionText</key>
-        <string>I&apos;ll be at  home ____ Friday morning.</string>
+        <string>He has ____ money than you.</string>
     </dict>
+    <dict>
+        <key>correctAns</key>
+        <integer>3</integer>
+        <key>options</key>
+        <array>
+            <string>below</string>
+            <string>lesser than</string>
+            <string>under</string>
+            <string>less than</string>
+        </array>
+        <key>QuestionText</key>
+        <string>There is ____ 2 centimetres of snow on the ground.</string>
+    </dict>
+    <dict>
+        <key>correctAns</key>
+        <integer>1</integer>
+        <key>options</key>
+        <array>
+            <string>above</string>
+            <string>more</string>
+            <string>over</string>
+            <string>higher</string>
+        </array>
+        <key>QuestionText</key>
+        <string>Anna has ____ children than Mary.</string>
+    </dict>
+    <dict>
+          <key>correctAns</key>
+          <integer>3</integer>
+          <key>options</key>
+          <array>
+              <string>less</string>
+              <string>few</string>
+              <string>fewer</string>
+              <string>more</string>
+          </array>
+          <key>QuestionText</key>
+          <string>This dictionary gives ____ information than my old one.</string>
+      </dict>
     <dict>
         <key>correctAns</key>
         <integer>2</integer>
         <key>options</key>
         <array>
-            <string>at</string>
-            <string>on</string>
-            <string>in </string>
-            <string>for</string>
+            <string>most</string>
+            <string>much</string>
+            <string>more</string>
+            <string>more than</string>
         </array>
         <key>QuestionText</key>
-        <string>I&apos;ll not be at  home ____ monday morning.</string>
+        <string>My doctor told me to drink ____ water.</string>
     </dict>
     <dict>
         <key>correctAns</key>
         <integer>0</integer>
         <key>options</key>
         <array>
-            <string>at</string>
-            <string>on</string>
-            <string>in </string>
-            <string>for</string>
+            <string>less</string>
+            <string>few</string>
+            <string>fewer</string>
+            <string>less than</string>
         </array>
         <key>QuestionText</key>
-        <string>I&apos;ll be at  home ____ Friday morning.</string>
+        <string>We have ____ time than we planned to finish.</string>
     </dict>
     <dict>
-        <key>correctAns</key>
-        <integer>0</integer>
-        <key>options</key>
-        <array>
-            <string>at</string>
-            <string>on</string>
-            <string>in </string>
-            <string>for</string>
-        </array>
-        <key>QuestionText</key>
-        <string>I&apos;ll be at  home ____ Friday morning.</string>
-    </dict>
+          <key>correctAns</key>
+          <integer>3</integer>
+          <key>options</key>
+          <array>
+              <string>above</string>
+              <string>high</string>
+              <string>more than</string>
+              <string>over</string>
+          </array>
+          <key>QuestionText</key>
+          <string>Paul drove his motorbike ____ the high mountain pass.</string>
+      </dict>
     <dict>
-        <key>correctAns</key>
-        <integer>0</integer>
-        <key>options</key>
-        <array>
-            <string>at</string>
-            <string>on</string>
-            <string>in </string>
-            <string>for</string>
-        </array>
-        <key>QuestionText</key>
-        <string>I&apos;ll be at  home ____ Friday morning.</string>
-    </dict>
+          <key>correctAns</key>
+          <integer>2</integer>
+          <key>options</key>
+          <array>
+              <string>less</string>
+              <string>few</string>
+              <string>fewer</string>
+              <string>less than</string>
+          </array>
+          <key>QuestionText</key>
+          <string>There are ____ people at the party than I expected.</string>
+      </dict>
+    <dict>
+          <key>correctAns</key>
+          <integer>0</integer>
+          <key>options</key>
+          <array>
+              <string>less</string>
+              <string>few</string>
+              <string>fewer</string>
+              <string>less than</string>
+          </array>
+          <key>QuestionText</key>
+          <string>My broken arm is ____ painful now.</string>
+      </dict>
+    <dict>
+          <key>correctAns</key>
+          <integer>0</integer>
+          <key>options</key>
+          <array>
+              <string>less</string>
+              <string>few</string>
+              <string>fewer</string>
+              <string>lesser</string>
+          </array>
+          <key>QuestionText</key>
+          <string>My book is ____ expensive than yours.</string>
+      </dict>
+    <dict>
+          <key>correctAns</key>
+          <integer>0</integer>
+          <key>options</key>
+          <array>
+              <string>lesser</string>
+              <string>few</string>
+              <string>fewer</string>
+              <string>less</string>
+          </array>
+          <key>QuestionText</key>
+          <string>People need to eat ____ junk food.</string>
+      </dict>
+    <dict>
+          <key>correctAns</key>
+          <integer>0</integer>
+          <key>options</key>
+          <array>
+              <string>less</string>
+              <string>few</string>
+              <string>fewer</string>
+              <string>less than</string>
+          </array>
+          <key>QuestionText</key>
+          <string>I spend ____ time in the gym than you do.</string>
+      </dict>
+    <dict>
+          <key>correctAns</key>
+          <integer>1</integer>
+          <key>options</key>
+          <array>
+              <string>over</string>
+              <string>more</string>
+              <string>much</string>
+              <string>many</string>
+          </array>
+          <key>QuestionText</key>
+          <string>Jack has got ____ than 10,000 dollars saved up.</string>
+      </dict>
 </array>
 </plist>

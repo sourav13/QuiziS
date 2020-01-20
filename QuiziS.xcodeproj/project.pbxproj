@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1824FDAD23D4FD7200EFB8EC /* foodAndRestaurants.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1824FDAC23D4FD7200EFB8EC /* foodAndRestaurants.plist */; };
+		1824FDB023D5024800EFB8EC /* travelAndGettingAround.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1824FDAF23D5024800EFB8EC /* travelAndGettingAround.plist */; };
+		1824FDB223D5025600EFB8EC /* smallTalk.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1824FDB123D5025600EFB8EC /* smallTalk.plist */; };
+		1824FDB423D5027200EFB8EC /* hobbies.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1824FDB323D5027200EFB8EC /* hobbies.plist */; };
+		1824FDB623D5028900EFB8EC /* idioms.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1824FDB523D5028900EFB8EC /* idioms.plist */; };
+		1824FDB823D5029E00EFB8EC /* expressYourself.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1824FDB723D5029E00EFB8EC /* expressYourself.plist */; };
+		1824FDBA23D502B300EFB8EC /* filmsTvInternet.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1824FDB923D502B300EFB8EC /* filmsTvInternet.plist */; };
+		1824FDBC23D502D000EFB8EC /* atWork.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1824FDBB23D502D000EFB8EC /* atWork.plist */; };
+		1824FDBE23D502E900EFB8EC /* takingItEasy.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1824FDBD23D502E900EFB8EC /* takingItEasy.plist */; };
+		1824FDC023D502F400EFB8EC /* shopping.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1824FDBF23D502F400EFB8EC /* shopping.plist */; };
 		186FB80F23CFA61A00079E32 /* prepositions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 186FB80E23CFA61A00079E32 /* prepositions.plist */; };
 		186FB81023CFA61A00079E32 /* prepositions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 186FB80E23CFA61A00079E32 /* prepositions.plist */; };
 		186FB81123CFA61A00079E32 /* prepositions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 186FB80E23CFA61A00079E32 /* prepositions.plist */; };
@@ -80,6 +90,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1824FDAC23D4FD7200EFB8EC /* foodAndRestaurants.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = foodAndRestaurants.plist; sourceTree = "<group>"; };
+		1824FDAF23D5024800EFB8EC /* travelAndGettingAround.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = travelAndGettingAround.plist; sourceTree = "<group>"; };
+		1824FDB123D5025600EFB8EC /* smallTalk.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = smallTalk.plist; sourceTree = "<group>"; };
+		1824FDB323D5027200EFB8EC /* hobbies.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = hobbies.plist; sourceTree = "<group>"; };
+		1824FDB523D5028900EFB8EC /* idioms.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = idioms.plist; sourceTree = "<group>"; };
+		1824FDB723D5029E00EFB8EC /* expressYourself.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = expressYourself.plist; sourceTree = "<group>"; };
+		1824FDB923D502B300EFB8EC /* filmsTvInternet.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = filmsTvInternet.plist; sourceTree = "<group>"; };
+		1824FDBB23D502D000EFB8EC /* atWork.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = atWork.plist; sourceTree = "<group>"; };
+		1824FDBD23D502E900EFB8EC /* takingItEasy.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = takingItEasy.plist; sourceTree = "<group>"; };
+		1824FDBF23D502F400EFB8EC /* shopping.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = shopping.plist; sourceTree = "<group>"; };
 		186FB80E23CFA61A00079E32 /* prepositions.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = prepositions.plist; sourceTree = "<group>"; };
 		186FB81223CFB55800079E32 /* irregularverbs.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = irregularverbs.plist; sourceTree = "<group>"; };
 		186FB81623CFB65C00079E32 /* adjectivesandadverbs.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = adjectivesandadverbs.plist; sourceTree = "<group>"; };
@@ -142,6 +162,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1824FDAE23D4FD7600EFB8EC /* word */ = {
+			isa = PBXGroup;
+			children = (
+				1824FDAC23D4FD7200EFB8EC /* foodAndRestaurants.plist */,
+				1824FDB123D5025600EFB8EC /* smallTalk.plist */,
+				1824FDAF23D5024800EFB8EC /* travelAndGettingAround.plist */,
+				1824FDB323D5027200EFB8EC /* hobbies.plist */,
+				1824FDB523D5028900EFB8EC /* idioms.plist */,
+				1824FDB723D5029E00EFB8EC /* expressYourself.plist */,
+				1824FDB923D502B300EFB8EC /* filmsTvInternet.plist */,
+				1824FDBB23D502D000EFB8EC /* atWork.plist */,
+				1824FDBD23D502E900EFB8EC /* takingItEasy.plist */,
+				1824FDBF23D502F400EFB8EC /* shopping.plist */,
+			);
+			path = word;
+			sourceTree = "<group>";
+		};
 		186FB83E23CFB76800079E32 /* grammar */ = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +235,7 @@
 				189A8B6523CE5EA80044DCDF /* Assets.xcassets */,
 				189A8B6723CE5EA80044DCDF /* LaunchScreen.storyboard */,
 				189A8B6A23CE5EA80044DCDF /* Info.plist */,
+				1824FDAE23D4FD7600EFB8EC /* word */,
 				186FB83E23CFB76800079E32 /* grammar */,
 				189A8B6223CE5EA60044DCDF /* QuiziS.xcdatamodeld */,
 			);
@@ -335,17 +373,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1824FDBC23D502D000EFB8EC /* atWork.plist in Resources */,
 				186FB81723CFB65C00079E32 /* adjectivesandadverbs.plist in Resources */,
 				186FB82323CFB69C00079E32 /* moreorless.plist in Resources */,
+				1824FDB423D5027200EFB8EC /* hobbies.plist in Resources */,
 				186FB82F23CFB6CB00079E32 /* adverbialclauses.plist in Resources */,
 				186FB83B23CFB6F300079E32 /* conjunctions.plist in Resources */,
 				189A8B6923CE5EA80044DCDF /* LaunchScreen.storyboard in Resources */,
 				186FB83323CFB6D600079E32 /* modals.plist in Resources */,
 				186FB82723CFB6AA00079E32 /* expressionsofcolor.plist in Resources */,
 				186FB81323CFB55800079E32 /* irregularverbs.plist in Resources */,
+				1824FDBA23D502B300EFB8EC /* filmsTvInternet.plist in Resources */,
+				1824FDB823D5029E00EFB8EC /* expressYourself.plist in Resources */,
 				186FB81B23CFB67600079E32 /* countableanduncountables.plist in Resources */,
+				1824FDAD23D4FD7200EFB8EC /* foodAndRestaurants.plist in Resources */,
+				1824FDB623D5028900EFB8EC /* idioms.plist in Resources */,
+				1824FDB223D5025600EFB8EC /* smallTalk.plist in Resources */,
 				189A8B6623CE5EA80044DCDF /* Assets.xcassets in Resources */,
+				1824FDBE23D502E900EFB8EC /* takingItEasy.plist in Resources */,
 				186FB81F23CFB68800079E32 /* infinitivesorgerunds.plist in Resources */,
+				1824FDC023D502F400EFB8EC /* shopping.plist in Resources */,
+				1824FDB023D5024800EFB8EC /* travelAndGettingAround.plist in Resources */,
 				189A8B6123CE5EA60044DCDF /* Main.storyboard in Resources */,
 				186FB83723CFB6E200079E32 /* linkers.plist in Resources */,
 				186FB80F23CFA61A00079E32 /* prepositions.plist in Resources */,

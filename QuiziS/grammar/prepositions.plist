@@ -4,19 +4,6 @@
 <array>
 	<dict>
 		<key>correctAns</key>
-		<integer>0</integer>
-		<key>options</key>
-		<array>
-			<string>at</string>
-			<string>on</string>
-			<string>in </string>
-			<string>for</string>
-		</array>
-		<key>QuestionText</key>
-		<string>I&apos;ll be at  home ____ monday morning.</string>
-	</dict>
-	<dict>
-		<key>correctAns</key>
 		<integer>1</integer>
 		<key>options</key>
 		<array>
@@ -26,7 +13,46 @@
 			<string>for</string>
 		</array>
 		<key>QuestionText</key>
-		<string>I&apos;ll not be at  home ____ tuesday morning.</string>
+		<string>I'll be at  home ____ monday morning.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>1</integer>
+		<key>options</key>
+		<array>
+			<string>before</string>
+			<string>behind</string>
+			<string>next</string>
+			<string>by</string>
+		</array>
+		<key>QuestionText</key>
+		<string>I ate lunch ____ I went out.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>0</integer>
+		<key>options</key>
+		<array>
+			<string>in</string>
+			<string>after</string>
+			<string>over</string>
+			<string>behind</string>
+		</array>
+		<key>QuestionText</key>
+		<string>My father is sitting ____ my brother.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>0</integer>
+		<key>options</key>
+		<array>
+			<string>over</string>
+			<string>in</string>
+			<string>at</string>
+			<string>by</string>
+		</array>
+		<key>QuestionText</key>
+		<string>I don't like going out ____ night.</string>
 	</dict>
 	<dict>
 		<key>correctAns</key>
@@ -39,7 +65,7 @@
 			<string>for</string>
 		</array>
 		<key>QuestionText</key>
-		<string>I&apos;ll be at  home ____ wednesday morning.</string>
+		<string>He's always ____ time.</string>
 	</dict>
 	<dict>
 		<key>correctAns</key>
@@ -52,7 +78,7 @@
 			<string>for</string>
 		</array>
 		<key>QuestionText</key>
-		<string>I&apos;ll be at  home ____ thursday morning.</string>
+		<string>I am sitting ____ my brother and sister.</string>
 	</dict>
 	<dict>
 		<key>correctAns</key>
@@ -65,122 +91,47 @@
 			<string>for</string>
 		</array>
 		<key>QuestionText</key>
-		<string>I&apos;ll be at  home ____ Friday morning.</string>
+		<string>Mohan is looking ____ you.</string>
 	</dict>
-    <dict>
-          <key>correctAns</key>
-          <integer>0</integer>
-          <key>options</key>
-          <array>
-              <string>at</string>
-              <string>on</string>
-              <string>in </string>
-              <string>for</string>
-          </array>
-          <key>QuestionText</key>
-          <string>I&apos;ll be at  home ____ Friday morning.</string>
-      </dict>
-      <dict>
-          <key>correctAns</key>
-          <integer>0</integer>
-          <key>options</key>
-          <array>
-              <string>at</string>
-              <string>on</string>
-              <string>in </string>
-              <string>for</string>
-          </array>
-          <key>QuestionText</key>
-          <string>I&apos;ll be at  home ____ Friday morning.</string>
-      </dict>
-      <dict>
-          <key>correctAns</key>
-          <integer>0</integer>
-          <key>options</key>
-          <array>
-              <string>at</string>
-              <string>on</string>
-              <string>in </string>
-              <string>for</string>
-          </array>
-          <key>QuestionText</key>
-          <string>I&apos;ll be at  home ____ Friday morning.</string>
-      </dict>
-      <dict>
-          <key>correctAns</key>
-          <integer>0</integer>
-          <key>options</key>
-          <array>
-              <string>at</string>
-              <string>on</string>
-              <string>in </string>
-              <string>for</string>
-          </array>
-          <key>QuestionText</key>
-          <string>I&apos;ll be at  home ____ Friday morning.</string>
-      </dict>    <dict>
-          <key>correctAns</key>
-          <integer>0</integer>
-          <key>options</key>
-          <array>
-              <string>at</string>
-              <string>on</string>
-              <string>in </string>
-              <string>for</string>
-          </array>
-          <key>QuestionText</key>
-          <string>I&apos;ll be at  home ____ Friday morning.</string>
-      </dict>
-      <dict>
-          <key>correctAns</key>
-          <integer>0</integer>
-          <key>options</key>
-          <array>
-              <string>at</string>
-              <string>on</string>
-              <string>in </string>
-              <string>for</string>
-          </array>
-          <key>QuestionText</key>
-          <string>I&apos;ll be at  home ____ Friday morning.</string>
-      </dict>
-      <dict>
-          <key>correctAns</key>
-          <integer>0</integer>
-          <key>options</key>
-          <array>
-              <string>at</string>
-              <string>on</string>
-              <string>in </string>
-              <string>for</string>
-          </array>
-          <key>QuestionText</key>
-          <string>I&apos;ll be at  home ____ Friday morning.</string>
-      </dict>    <dict>
-          <key>correctAns</key>
-          <integer>0</integer>
-          <key>options</key>
-          <array>
-              <string>at</string>
-              <string>on</string>
-              <string>in </string>
-              <string>for</string>
-          </array>
-          <key>QuestionText</key>
-          <string>I&apos;ll be at  home ____ Friday morning.</string>
-      </dict>
-      <dict>
-          <key>correctAns</key>
-          <integer>0</integer>
-          <key>options</key>
-          <array>
-              <string>at</string>
-              <string>on</string>
-              <string>in </string>
-              <string>for</string>
-          </array>
-          <key>QuestionText</key>
-          <string>I&apos;ll be at  home ____ Friday morning.</string>
-      </dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>0</integer>
+		<key>options</key>
+		<array>
+			<string>at</string>
+			<string>by</string>
+			<string>in </string>
+			<string>under</string>
+		</array>
+		<key>QuestionText</key>
+		<string>I arrived ____ plane.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>0</integer>
+		<key>options</key>
+		<array>
+			<string>at</string>
+			<string>on</string>
+			<string>in </string>
+			<string>for</string>
+		</array>
+		<key>QuestionText</key>
+		<string>It is difficult to listen if everyone is speaking ____ the same time.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>0</integer>
+		<key>options</key>
+		<array>
+			<string>at</string>
+			<string>on</string>
+			<string>in </string>
+			<string>for</string>
+		</array>
+		<key>QuestionText</key>
+		<string>He got ____ the car and drove off immediately .</string>
+	</dict>
+	
 </array>
 </plist>

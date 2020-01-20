@@ -13,7 +13,7 @@
             <string>for</string>
         </array>
         <key>QuestionText</key>
-        <string>I&apos;ll be at  home ____ Friday morning.</string>
+        <string></string>
     </dict>
     <dict>
         <key>correctAns</key>
@@ -26,46 +26,267 @@
             <string>for</string>
         </array>
         <key>QuestionText</key>
-        <string>I&apos;ll not be at  home ____ monday morning.</string>
+        <string></string>
     </dict>
     <dict>
         <key>correctAns</key>
         <integer>0</integer>
         <key>options</key>
         <array>
-            <string>at</string>
-            <string>on</string>
-            <string>in </string>
-            <string>for</string>
+            <string>as though</string>
+            <string>so</string>
+            <string>as</string>
+            <string>if</string>
         </array>
         <key>QuestionText</key>
-        <string>I&apos;ll be at  home ____ Friday morning.</string>
+        <string>Susan talks to her cats ____ they were human.</string>
     </dict>
     <dict>
         <key>correctAns</key>
         <integer>0</integer>
         <key>options</key>
         <array>
-            <string>at</string>
-            <string>on</string>
-            <string>in </string>
-            <string>for</string>
+            <string>whereas</string>
+            <string>since</string>
+            <string>unless</string>
+            <string>as though</string>
         </array>
         <key>QuestionText</key>
-        <string>I&apos;ll be at  home ____ Friday morning.</string>
+        <string>You won't pass the exam ____ you study hard.</string>
     </dict>
     <dict>
         <key>correctAns</key>
         <integer>0</integer>
         <key>options</key>
         <array>
-            <string>at</string>
-            <string>on</string>
-            <string>in </string>
-            <string>for</string>
+            <string>Even though</string>
+            <string>Because</string>
+            <string>So</string>
+            <string>While</string>
         </array>
         <key>QuestionText</key>
-        <string>I&apos;ll be at  home ____ Friday morning.</string>
+        <string>____ I was fishing last year, I caught a huge fish.</string>
     </dict>
+    <dict>
+                 <key>correctAns</key>
+                 <integer>0</integer>
+                 <key>options</key>
+                 <array>
+                     <string>so</string>
+                     <string>if</string>
+                     <string>because</string>
+                     <string>since</string>
+                 </array>
+                 <key>QuestionText</key>
+                 <string>The hostess wouldn't seat us, ____ the restaurant was closed.</string>
+        </dict>
+    <dict>
+                 <key>correctAns</key>
+                 <integer>0</integer>
+                 <key>options</key>
+                 <array>
+                     <string>as though</string>
+                     <string>as</string>
+                     <string>even though</string>
+                     <string>even if</string>
+                 </array>
+                 <key>QuestionText</key>
+                 <string>Peter failed his driving test ____ he practised every day.</string>
+        </dict>
+    <dict>
+                 <key>correctAns</key>
+                 <integer>0</integer>
+                 <key>options</key>
+                 <array>
+                     <string>Even though</string>
+                     <string>As though</string>
+                     <string>So that</string>
+                     <string>Though</string>
+                 </array>
+                 <key>QuestionText</key>
+                 <string>____ Simon was willing to help, his offer was turned down.</string>
+        </dict>
+    <dict>
+                 <key>correctAns</key>
+                 <integer>0</integer>
+                 <key>options</key>
+                 <array>
+                     <string>so that</string>
+                     <string>since</string>
+                     <string>after</string>
+                     <string>as if</string>
+                 </array>
+                 <key>QuestionText</key>
+                 <string>We'll finish this discussion ____ he arrives.</string>
+        </dict>
+    <dict>
+                 <key>correctAns</key>
+                 <integer>0</integer>
+                 <key>options</key>
+                 <array>
+                     <string>as</string>
+                     <string>as though</string>
+                     <string>while</string>
+                     <string>so that</string>
+                 </array>
+                 <key>QuestionText</key>
+                 <string>Write down my email address, ____ we can keep in touch.</string>
+        </dict>
+    <dict>
+                 <key>correctAns</key>
+                 <integer>0</integer>
+                 <key>options</key>
+                 <array>
+                     <string>So that</string>
+                     <string>As though</string>
+                     <string>In order that</string>
+                     <string>By the time</string>
+                 </array>
+                 <key>QuestionText</key>
+                 <string>____ he had finished, I had cooked dinner.</string>
+        </dict>
+    <dict>
+                 <key>correctAns</key>
+                 <integer>0</integer>
+                 <key>options</key>
+                 <array>
+                     <string>wherever</string>
+                     <string>while</string>
+                     <string>where</string>
+                     <string>when</string>
+                 </array>
+                 <key>QuestionText</key>
+                 <string>Susan claimed to have no money, ____ still living in an expensive flat.</string>
+        </dict>
+    <dict>
+                 <key>correctAns</key>
+                 <integer>0</integer>
+                 <key>options</key>
+                 <array>
+                     <string>as</string>
+                     <string>until</string>
+                     <string>before</string>
+                     <string>after</string>
+                 </array>
+                 <key>QuestionText</key>
+                 <string>I'll wait ____ you finish your email before telling you my news.</string>
+        </dict>
+    <dict>
+                 <key>correctAns</key>
+                 <integer>0</integer>
+                 <key>options</key>
+                 <array>
+                     <string>Where</string>
+                     <string>Because</string>
+                     <string>Since</string>
+                     <string>While</string>
+                 </array>
+                 <key>QuestionText</key>
+                 <string>____ I was biking last summer, I fell and hurt my knee.</string>
+        </dict>
+    <dict>
+                 <key>correctAns</key>
+                 <integer>0</integer>
+                 <key>options</key>
+                 <array>
+                     <string>as if</string>
+                     <string>even if</string>
+                     <string>as</string>
+                     <string>if</string>
+                 </array>
+                 <key>QuestionText</key>
+                 <string>I need to finish this job, ____ I have to work all night.</string>
+        </dict>
+    <dict>
+                 <key>correctAns</key>
+                 <integer>0</integer>
+                 <key>options</key>
+                 <array>
+                     <string>so that</string>
+                     <string>before</string>
+                     <string>because</string>
+                     <string>even before</string>
+                 </array>
+                 <key>QuestionText</key>
+                 <string>You need proper shoes to go hiking in the mountains, ____ the ground is uneven.</string>
+        </dict>
+    <dict>
+                 <key>correctAns</key>
+                 <integer>0</integer>
+                 <key>options</key>
+                 <array>
+                     <string>wherever</string>
+                     <string>so that</string>
+                     <string>as if</string>
+                     <string>whenever</string>
+                 </array>
+                 <key>QuestionText</key>
+                 <string>Peter never seems to be available ____ there is work to do.</string>
+        </dict>
+    <dict>
+                 <key>correctAns</key>
+                 <integer>0</integer>
+                 <key>options</key>
+                 <array>
+                     <string>whereas</string>
+                     <string>since</string>
+                     <string>if</string>
+                     <string>as if</string>
+                 </array>
+                 <key>QuestionText</key>
+                 <string>Shopkeepers can improve their sales ____ they learn to think like a customer.</string>
+        </dict>
+    <dict>
+                 <key>correctAns</key>
+                 <integer>0</integer>
+                 <key>options</key>
+                 <array>
+                     <string>so</string>
+                     <string>although</string>
+                     <string>because</string>
+                     <string>as if</string>
+                 </array>
+                 <key>QuestionText</key>
+                 <string>It was hot indoors ____ it was raining outside.</string>
+        </dict>
+    <dict>
+                 <key>correctAns</key>
+                 <integer>0</integer>
+                 <key>options</key>
+                 <array>
+                     <string>after</string>
+                     <string>even though</string>
+                     <string>in order that</string>
+                     <string>as</string>
+                 </array>
+                 <key>QuestionText</key>
+                 <string>You shouldn't drive ____ drinking alcohol.</string>
+        </dict>
+    <dict>
+                 <key>correctAns</key>
+                 <integer>0</integer>
+                 <key>options</key>
+                 <array>
+                     <string>so that</string>
+                     <string>since</string>
+                     <string>although</string>
+                     <string>after</string>
+                 </array>
+                 <key>QuestionText</key>
+                 <string>We keep our bread in the fridge, ____ it doesn't go stale.</string>
+        </dict>
+    <dict>
+                 <key>correctAns</key>
+                 <integer>0</integer>
+                 <key>options</key>
+                 <array>
+                     <string></string>
+                     <string></string>
+                     <string></string>
+                     <string></string>
+                 </array>
+                 <key>QuestionText</key>
+                 <string></string>
+        </dict>
 </array>
 </plist>

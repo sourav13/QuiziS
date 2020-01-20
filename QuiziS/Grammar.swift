@@ -45,3 +45,15 @@ enum GrammarType:String{
     case conjunctions
     case expressionsofcolor
 }
+enum WordType:String{
+    case foodAndRestaurants
+    case travelAndGettingAround
+    case smallTalk
+    case hobbies
+    case idioms
+    case expressYourself
+    case filmsTvInternet
+    case atWork
+    case takingItEasy
+    case shopping
+}

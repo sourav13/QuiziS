@@ -2,70 +2,252 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <array>
-    <dict>
-        <key>correctAns</key>
-        <integer>0</integer>
-        <key>options</key>
-        <array>
-            <string>at</string>
-            <string>on</string>
-            <string>in </string>
-            <string>for</string>
-        </array>
-        <key>QuestionText</key>
-        <string>I&apos;ll be at  home ____ Friday morning.</string>
-    </dict>
-    <dict>
-        <key>correctAns</key>
-        <integer>2</integer>
-        <key>options</key>
-        <array>
-            <string>at</string>
-            <string>on</string>
-            <string>in </string>
-            <string>for</string>
-        </array>
-        <key>QuestionText</key>
-        <string>I&apos;ll not be at  home ____ monday morning.</string>
-    </dict>
-    <dict>
-        <key>correctAns</key>
-        <integer>0</integer>
-        <key>options</key>
-        <array>
-            <string>at</string>
-            <string>on</string>
-            <string>in </string>
-            <string>for</string>
-        </array>
-        <key>QuestionText</key>
-        <string>I&apos;ll be at  home ____ Friday morning.</string>
-    </dict>
-    <dict>
-        <key>correctAns</key>
-        <integer>0</integer>
-        <key>options</key>
-        <array>
-            <string>at</string>
-            <string>on</string>
-            <string>in </string>
-            <string>for</string>
-        </array>
-        <key>QuestionText</key>
-        <string>I&apos;ll be at  home ____ Friday morning.</string>
-    </dict>
-    <dict>
-        <key>correctAns</key>
-        <integer>0</integer>
-        <key>options</key>
-        <array>
-            <string>at</string>
-            <string>on</string>
-            <string>in </string>
-            <string>for</string>
-        </array>
-        <key>QuestionText</key>
-        <string>I&apos;ll be at  home ____ Friday morning.</string>
-    </dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>3</integer>
+		<key>options</key>
+		<array>
+			<string>as</string>
+			<string>so</string>
+			<string>because </string>
+			<string>yet</string>
+		</array>
+		<key>QuestionText</key>
+		<string>I&apos;ve told the telesales people that I&apos;m not interested in a new kitchen, ____ they still call me.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>2</integer>
+		<key>options</key>
+		<array>
+			<string>Although</string>
+			<string>Such</string>
+			<string>Despite</string>
+			<string>In fact</string>
+		</array>
+		<key>QuestionText</key>
+		<string>____ our team played really well,the other team played better,so we lost.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>0</integer>
+		<key>options</key>
+		<array>
+			<string>and</string>
+			<string>or</string>
+			<string>such </string>
+			<string>so</string>
+		</array>
+		<key>QuestionText</key>
+		<string>He was ____ exhausted after the walk, he fell asleep immediately.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>0</integer>
+		<key>options</key>
+		<array>
+			<string>yet</string>
+			<string>because</string>
+			<string>because of</string>
+			<string>so</string>
+		</array>
+		<key>QuestionText</key>
+		<string>He crashed his car ____ he was driving much too fast.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>0</integer>
+		<key>options</key>
+		<array>
+			<string>yet</string>
+			<string>so</string>
+			<string>nor</string>
+			<string>and</string>
+		</array>
+		<key>QuestionText</key>
+		<string>Neither my mother ____ my father has a mobile phone.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>0</integer>
+		<key>options</key>
+		<array>
+			<string>Though</string>
+			<string>Whereas</string>
+			<string>In fact</string>
+			<string>Despite</string>
+		</array>
+		<key>QuestionText</key>
+		<string>____ I don&apos;t agree with my children staying up late, they were so excited to see their dad that I let them stay up just...</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>0</integer>
+		<key>options</key>
+		<array>
+			<string>However</string>
+			<string>Despite</string>
+			<string>In spite</string>
+			<string>Although</string>
+		</array>
+		<key>QuestionText</key>
+		<string>____ I&apos;m not very good at languages, I&apos;m going to do a course in German next year.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>0</integer>
+		<key>options</key>
+		<array>
+			<string>neverthless</string>
+			<string>despite</string>
+			<string>though</string>
+			<string>although</string>
+		</array>
+		<key>QuestionText</key>
+		<string>None of his friends believed his story, but it turned out to be true ____. </string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>0</integer>
+		<key>options</key>
+		<array>
+			<string>though</string>
+			<string>as</string>
+			<string>because</string>
+			<string>despite</string>
+		</array>
+		<key>QuestionText</key>
+		<string>I really enjoyed the new Sandra Bullock film, ____ all the bad reviews.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>0</integer>
+		<key>options</key>
+		<array>
+			<string>However</string>
+			<string>In spite</string>
+			<string>Despite</string>
+			<string>Though</string>
+		</array>
+		<key>QuestionText</key>
+		<string>____ the noise of the party next door, I still managed to fall asleep.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>0</integer>
+		<key>options</key>
+		<array>
+			<string>Although</string>
+			<string>And</string>
+			<string>However</string>
+			<string>Consequently</string>
+		</array>
+		<key>QuestionText</key>
+		<string>I wanted to buy the latest mobile phone. ____, it wasn&apos;t available.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>0</integer>
+		<key>options</key>
+		<array>
+			<string>despite</string>
+			<string>although</string>
+			<string>whereas</string>
+			<string>however</string>
+		</array>
+		<key>QuestionText</key>
+		<string>Sue went to work ____ feeling ill.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>0</integer>
+		<key>options</key>
+		<array>
+			<string>Although</string>
+			<string>Henceforth</string>
+			<string>However</string>
+			<string>Hence</string>
+		</array>
+		<key>QuestionText</key>
+		<string>____ I felt tired and didn&apos;t really feel like going out, I made a special effort because it was my friend&apos;s birthday.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>0</integer>
+		<key>options</key>
+		<array>
+			<string>yet</string>
+			<string>whereas</string>
+			<string>for</string>
+			<string>in fact</string>
+		</array>
+		<key>QuestionText</key>
+		<string>Simon stayed at home to watch TV, ____ I went to the party.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>0</integer>
+		<key>options</key>
+		<array>
+			<string>as</string>
+			<string>because</string>
+			<string>because of</string>
+			<string>so</string>
+		</array>
+		<key>QuestionText</key>
+		<string>We stopped playing tennis ____ the rain.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>0</integer>
+		<key>options</key>
+		<array>
+			<string>Although</string>
+			<string>So</string>
+			<string>Despite</string>
+			<string>Whereas</string>
+		</array>
+		<key>QuestionText</key>
+		<string>____ I knew my sister&apos;s dog wouldn&apos;t bite me, I was still a bit nervous when I went to her house.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>0</integer>
+		<key>options</key>
+		<array>
+			<string>as</string>
+			<string>because</string>
+			<string>because of</string>
+			<string>so</string>
+		</array>
+		<key>QuestionText</key>
+		<string>It was time for the lecture to begin, ____ we had to take our seats.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>0</integer>
+		<key>options</key>
+		<array>
+			<string>although</string>
+			<string>or</string>
+			<string>despite</string>
+			<string>because</string>
+		</array>
+		<key>QuestionText</key>
+		<string>She went out with her friends ____ the heavy rain.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>0</integer>
+		<key>options</key>
+		<array>
+			<string>However</string>
+			<string>Despite</string>
+			<string>In spite of</string>
+			<string>Although</string>
+		</array>
+		<key>QuestionText</key>
+		<string>He was a terrible driver. ____ he tried hard to pass his driving test, he always failed.</string>
+	</dict>
 </array>
 </plist>

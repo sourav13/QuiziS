@@ -7,65 +7,261 @@
         <integer>0</integer>
         <key>options</key>
         <array>
-            <string>at</string>
-            <string>on</string>
-            <string>in </string>
-            <string>for</string>
+            <string>must</string>
+            <string>should</string>
+            <string>may</string>
+            <string>might</string>
         </array>
         <key>QuestionText</key>
-        <string>I&apos;ll be at  home ____ Friday morning.</string>
+        <string>In my opinion I think you ____ go for the promotion.Your current job doesn't challenge you enough.</string>
     </dict>
-    <dict>
-        <key>correctAns</key>
-        <integer>2</integer>
-        <key>options</key>
-        <array>
-            <string>at</string>
-            <string>on</string>
-            <string>in </string>
-            <string>for</string>
-        </array>
-        <key>QuestionText</key>
-        <string>I&apos;ll not be at  home ____ monday morning.</string>
-    </dict>
-    <dict>
+        <dict>
         <key>correctAns</key>
         <integer>0</integer>
         <key>options</key>
         <array>
-            <string>at</string>
-            <string>on</string>
-            <string>in </string>
-            <string>for</string>
+            <string>has to </string>
+            <string>need</string>
+            <string>might</string>
+            <string>can</string>
         </array>
         <key>QuestionText</key>
-        <string>I&apos;ll be at  home ____ Friday morning.</string>
+        <string>You'd better take your mobile phone with you, your mum ____ try to call you from the hospital</string>
     </dict>
-    <dict>
-        <key>correctAns</key>
-        <integer>0</integer>
-        <key>options</key>
-        <array>
-            <string>at</string>
-            <string>on</string>
-            <string>in </string>
-            <string>for</string>
-        </array>
-        <key>QuestionText</key>
-        <string>I&apos;ll be at  home ____ Friday morning.</string>
-    </dict>
-    <dict>
-        <key>correctAns</key>
-        <integer>0</integer>
-        <key>options</key>
-        <array>
-            <string>at</string>
-            <string>on</string>
-            <string>in </string>
-            <string>for</string>
-        </array>
-        <key>QuestionText</key>
-        <string>I&apos;ll be at  home ____ Friday morning.</string>
-    </dict>
+        <dict>
+            <key>correctAns</key>
+            <integer>0</integer>
+            <key>options</key>
+            <array>
+                <string>May</string>
+                <string>Could</string>
+                <string>Should</string>
+                <string>Must</string>
+            </array>
+            <key>QuestionText</key>
+            <string>My computer seems to have a problem. ____ you help me?</string>
+        </dict>
+        <dict>
+            <key>correctAns</key>
+            <integer>0</integer>
+            <key>options</key>
+            <array>
+                <string>should</string>
+                <string>must</string>
+                <string>may</string>
+                <string>can</string>
+            </array>
+            <key>QuestionText</key>
+            <string>If you want to keep your job you ____ finish these letters by tomorrow morning!</string>
+        </dict>
+        <dict>
+            <key>correctAns</key>
+            <integer>0</integer>
+            <key>options</key>
+            <array>
+                <string>must</string>
+                <string>could</string>
+                <string>should</string>
+                <string>might</string>
+            </array>
+            <key>QuestionText</key>
+            <string>That ____ be Jack ringing the doorbell.It's three o' clock and he's always on time.</string>
+        </dict>
+        <dict>
+            <key>correctAns</key>
+            <integer>0</integer>
+            <key>options</key>
+            <array>
+                <string>should</string>
+                <string>can</string>
+                <string>may</string>
+                <string>ought</string>
+            </array>
+            <key>QuestionText</key>
+            <string>I'm sorry the doctor has no time to see you today.You ____ to call first for an appointment.</string>
+        </dict>
+        <dict>
+            <key>correctAns</key>
+            <integer>0</integer>
+            <key>options</key>
+            <array>
+                <string>had to</string>
+                <string>must</string>
+                <string>mustn't</string>
+                <string>need</string>
+            </array>
+            <key>QuestionText</key>
+            <string>Jack was the on-call doctor, so he ____ go to the hospital yesterday to do an operation.</string>
+        </dict>
+        <dict>
+            <key>correctAns</key>
+            <integer>0</integer>
+            <key>options</key>
+            <array>
+                <string>should</string>
+                <string>ought not</string>
+                <string>must not</string>
+                <string>need not</string>
+            </array>
+            <key>QuestionText</key>
+            <string>Shops ____ reduce their prices at the end of the season, but many of them do so that they can make room for new stock.</string>
+        </dict>
+        <dict>
+            <key>correctAns</key>
+            <integer>0</integer>
+            <key>options</key>
+            <array>
+                <string>will</string>
+                <string>might</string>
+                <string>should</string>
+                <string>may</string>
+            </array>
+            <key>QuestionText</key>
+            <string>This room is much too hot.If you put on the air conditioner it ____ cool down.</string>
+        </dict>
+        <dict>
+                 <key>correctAns</key>
+                 <integer>0</integer>
+                 <key>options</key>
+                 <array>
+                     <string>Shall</string>
+                     <string>Would</string>
+                     <string>Will</string>
+                     <string>Ought</string>
+                 </array>
+                 <key>QuestionText</key>
+                 <string>____ we invite her to join us for dinner? She lookslonely sitting on her own.</string>
+        </dict>
+        <dict>
+                 <key>correctAns</key>
+                 <integer>0</integer>
+                 <key>options</key>
+                 <array>
+                     <string>should to</string>
+                     <string>should</string>
+                     <string>should have</string>
+                     <string>could</string>
+                 </array>
+                 <key>QuestionText</key>
+                 <string>No wonder you're tired, you went to bed at midnight last night. You ____ go to bed earlier!</string>
+        </dict>
+        <dict>
+                     <key>correctAns</key>
+                     <integer>0</integer>
+                     <key>options</key>
+                     <array>
+                         <string>Must</string>
+                         <string>Will</string>
+                         <string>Can</string>
+                         <string>May</string>
+                     </array>
+                     <key>QuestionText</key>
+                     <string>____ you go to the shops for me, sweetheart, because I'm waiting for an important call?</string>
+        </dict>
+        <dict>
+                     <key>correctAns</key>
+                     <integer>0</integer>
+                     <key>options</key>
+                     <array>
+                         <string>mustn't</string>
+                         <string>must</string>
+                         <string>can</string>
+                         <string>could</string>
+                     </array>
+                     <key>QuestionText</key>
+                     <string>Hello, you look a bit lost. I know this part of town well, ____ I help you?</string>
+        </dict>
+        <dict>
+                     <key>correctAns</key>
+                     <integer>0</integer>
+                     <key>options</key>
+                     <array>
+                         <string>must</string>
+                         <string>should</string>
+                         <string>ought to</string>
+                         <string>might</string>
+                     </array>
+                     <key>QuestionText</key>
+                     <string>The weather forecast says it ____ rain today, so take an umbrella when you go out.</string>
+        </dict>
+        <dict>
+                     <key>correctAns</key>
+                     <integer>0</integer>
+                     <key>options</key>
+                     <array>
+                         <string>might</string>
+                         <string>mustn't</string>
+                         <string>is to</string>
+                         <string>can</string>
+                     </array>
+                     <key>QuestionText</key>
+                     <string>I'm not sure where the accounts manager is.Have you checked her office, she ____ be there.</string>
+        </dict>
+        <dict>
+                     <key>correctAns</key>
+                     <integer>0</integer>
+                     <key>options</key>
+                     <array>
+                         <string>need</string>
+                         <string>can</string>
+                         <string>has to</string>
+                         <string>must</string>
+                     </array>
+                     <key>QuestionText</key>
+                     <string>Football players ____ obey the rules, or they risk being sent off by the referee.</string>
+        </dict>
+        <dict>
+                     <key>correctAns</key>
+                     <integer>0</integer>
+                     <key>options</key>
+                     <array>
+                         <string>Should</string>
+                         <string>Could</string>
+                         <string>Must</string>
+                         <string>May</string>
+                     </array>
+                     <key>QuestionText</key>
+                     <string>____ you please open the door, my hands are full?</string>
+        </dict>
+        <dict>
+                     <key>correctAns</key>
+                     <integer>0</integer>
+                     <key>options</key>
+                     <array>
+                         <string>must</string>
+                         <string>could</string>
+                         <string>should</string>
+                         <string>may</string>
+                     </array>
+                     <key>QuestionText</key>
+                     <string>I don't mind you go home.You ____ leave when you wish.</string>
+        </dict>
+        <dict>
+                     <key>correctAns</key>
+                     <integer>0</integer>
+                     <key>options</key>
+                     <array>
+                         <string>must</string>
+                         <string>will</string>
+                         <string>can't</string>
+                         <string>can</string>
+                     </array>
+                     <key>QuestionText</key>
+                     <string>This exercise ____ be too difficult! My six-year-old daughter can do it!</string>
+        </dict>
+        <dict>
+                     <key>correctAns</key>
+                     <integer>0</integer>
+                     <key>options</key>
+                     <array>
+                         <string>Should</string>
+                         <string>Must</string>
+                         <string>Have to</string>
+                         <string>May</string>
+                     </array>
+                     <key>QuestionText</key>
+                     <string>Excuse me sir, I have a question about this report. ____ I come in and discuss it with you?</string>
+        </dict>
+        
 </array>
 </plist>

@@ -13,7 +13,7 @@
             <string>purple</string>
         </array>
         <key>QuestionText</key>
-        <string>The boss went ____ with rage when I asked for a pay rise.</string>
+        <string>Food.</string>
     </dict>
     <dict>
         <key>correctAns</key>

@@ -35,7 +35,7 @@ class QuestionViewController: UIViewController {
     var questions = [Question]()
     var questionTimer:Timer?
     var questioncount :Double = 10
-    
+    var categoryType:Int = 0
     
     var yourAnswers :  [Int:Int] = [:]
 
@@ -48,7 +48,11 @@ class QuestionViewController: UIViewController {
     func setUp(){
         pauseScreen.isHidden = true
         endScreen.isHidden = true
-        loadRespectiveQuestions()
+        switch categoryType{
+            case 0: loadRespectiveQuestions()
+            case 1: loadRespectiveWords()
+            default: loadRespectiveQuestions()
+        }
         initialSetup()
     }
     func loadRespectiveQuestions(){
@@ -68,6 +72,24 @@ class QuestionViewController: UIViewController {
             default: questions = grammer.grammar(grammarType:GrammarType.prepositions.rawValue)
         }
     }
+    
+    
+    func loadRespectiveWords(){
+        switch(selectedGrammarType){
+           case 0: questions = grammer.grammar(grammarType: WordType.foodAndRestaurants.rawValue)
+           case 1: questions = grammer.grammar(grammarType: WordType.smallTalk.rawValue)
+           case 2: questions = grammer.grammar(grammarType: WordType.travelAndGettingAround.rawValue)
+           case 3: questions = grammer.grammar(grammarType: WordType.hobbies.rawValue)
+           case 4: questions = grammer.grammar(grammarType: WordType.idioms.rawValue)
+           case 5: questions = grammer.grammar(grammarType: WordType.expressYourself.rawValue)
+           case 6: questions = grammer.grammar(grammarType: WordType.filmsTvInternet.rawValue)
+           case 7: questions = grammer.grammar(grammarType: WordType.atWork.rawValue)
+           case 8: questions = grammer.grammar(grammarType: WordType.takingItEasy.rawValue)
+           case 9: questions = grammer.grammar(grammarType: WordType.shopping.rawValue)
+           default: questions = grammer.grammar(grammarType:WordType.foodAndRestaurants.rawValue)
+        }
+    }
+    
     
     func getCurrentQuestion(currentQuestion:Int)->Question{
             return questions[currentQuestion]
@@ -134,19 +156,16 @@ class QuestionViewController: UIViewController {
     @objc func updateQuestionTimer(){
         if questioncount >= 0 {
             if questioncount.truncatingRemainder(dividingBy: 10) == 0{
-                    questioncount = 10
                     progressView.setProgress(Float(1), animated: true)
-                    if count+1 == 60{
-                        
-                    }else{
-                    setupNextQuestion(questionNumber: setRandomQuestion())
-                    }
             }else{
                     let number :Double = questioncount.truncatingRemainder(dividingBy: 10)
                     let y = Double(round(10*number)/100)
                     progressView.setProgress(Float(y), animated: true)
             }
             questioncount -= 1
+        }else{
+            questioncount = 10
+            setupNextQuestion(questionNumber: setRandomQuestion())
         }
         
     }

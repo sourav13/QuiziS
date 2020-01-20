@@ -28,7 +28,7 @@ class GrammarTableViewController: UITableViewController {
         switch selectedType{
         case 0: return grammarTypeLabels
         case 1: return wordsTypeLabels
-        case 2: return grammarTypeLabels
+//        case 2: return grammarTypeLabels
         default: return grammarTypeLabels
         }
     }
@@ -63,6 +63,7 @@ class GrammarTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let questionViewController = segue.destination as? QuestionViewController
         questionViewController?.selectedGrammarType = (sender as! UIButton).tag
+        questionViewController?.categoryType = selectedType
     }
 
 
