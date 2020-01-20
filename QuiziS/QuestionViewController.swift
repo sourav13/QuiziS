@@ -155,7 +155,7 @@ class QuestionViewController: UIViewController {
     }
     
     @objc func updateQuestionTimer(){
-        if questioncount >= 1 {
+        if questioncount >= 2 {            
             if questioncount.truncatingRemainder(dividingBy: 10) == 0{
                     progressView.setProgress(Float(1), animated: true)
             }else{
@@ -165,8 +165,14 @@ class QuestionViewController: UIViewController {
             }
             questioncount -= 1
         }else{
+            progressView.setProgress(Float(0.1), animated: true)
             questioncount = 10
-            reviewQuestions.append(getCurrentQuestion(currentQuestion: currentQuestionNumber!))
+             if reviewQuestions.contains(getCurrentQuestion(currentQuestion: currentQuestionNumber!)){
+             //   let index =  reviewQuestions.firstIndex(of: getCurrentQuestion(currentQuestion: currentQuestionNumber!))
+                  
+            }else{
+                reviewQuestions.append(getCurrentQuestion(currentQuestion: currentQuestionNumber!))
+            }
             currentQuestionNumber = getRandomQuestion()
         }
         
@@ -233,7 +239,7 @@ class QuestionViewController: UIViewController {
     
     @IBAction func skipButtonAction(_ sender: Any) {
         if reviewQuestions.contains(getCurrentQuestion(currentQuestion: currentQuestionNumber!)){
-         let index =  reviewQuestions.firstIndex(of: getCurrentQuestion(currentQuestion: currentQuestionNumber!))
+   //      let index =  reviewQuestions.firstIndex(of: getCurrentQuestion(currentQuestion: currentQuestionNumber!))
            
         }else{
             reviewQuestions.append(getCurrentQuestion(currentQuestion: currentQuestionNumber!))
