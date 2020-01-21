@@ -1,14 +1,255 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<!--
-   atWork.plist
-   QuiziS
-
-   Created by sourav sachdeva on 19/01/20.
-   Copyright (c) 2020 sourav sachdeva. All rights reserved.
--->
 <plist version="1.0">
-    <dict>
-    
-    </dict>
+      <array>
+        <dict>
+             <key>correctAns</key>
+             <integer>0</integer>
+             <key>options</key>
+             <array>
+                 <string>lunch pause</string>
+                 <string>lunch time</string>
+                 <string>lunch break</string>
+                 <string>lunch stop</string>
+             </array>
+             <key>QuestionText</key>
+             <string>When you stop work to have your lunch you take a ____.</string>
+         </dict>
+        <dict>
+                    <key>correctAns</key>
+                    <integer>0</integer>
+                    <key>options</key>
+                    <array>
+                        <string>in</string>
+                        <string>for</string>
+                        <string>of</string>
+                        <string>to</string>
+                    </array>
+                    <key>QuestionText</key>
+                    <string>I am responsible ____ taking phone calls and arranging meetings.</string>
+                </dict>
+        <dict>
+                    <key>correctAns</key>
+                    <integer>0</integer>
+                    <key>options</key>
+                    <array>
+                        <string>in</string>
+                        <string>for</string>
+                        <string>of</string>
+                        <string>to</string>
+                    </array>
+                    <key>QuestionText</key>
+                    <string>I am head ____ the accounts department</string>
+                </dict>
+        <dict>
+                    <key>correctAns</key>
+                    <integer>0</integer>
+                    <key>options</key>
+                    <array>
+                        <string>workers</string>
+                        <string>colleagues</string>
+                        <string>employees</string>
+                        <string>employers</string>
+                    </array>
+                    <key>QuestionText</key>
+                    <string>People in your office are called your ____.</string>
+                </dict>
+        <dict>
+                    <key>correctAns</key>
+                    <integer>0</integer>
+                    <key>options</key>
+                    <array>
+                        <string>start the day</string>
+                        <string>finish the day</string>
+                        <string>have lunch</string>
+                        <string>have a sleep</string>
+                    </array>
+                    <key>QuestionText</key>
+                    <string>'Knock off' is slang for ____.</string>
+                </dict>
+        <dict>
+                    <key>correctAns</key>
+                    <integer>0</integer>
+                    <key>options</key>
+                    <array>
+                        <string>departments</string>
+                        <string>apartments</string>
+                        <string>parchments</string>
+                        <string>departs</string>
+                    </array>
+                    <key>QuestionText</key>
+                    <string>The different sections of a company are called ____.</string>
+                </dict>
+        <dict>
+                    <key>correctAns</key>
+                    <integer>0</integer>
+                    <key>options</key>
+                    <array>
+                        <string>you make things</string>
+                        <string>you sell things</string>
+                        <string>you work at a desk</string>
+                        <string>you buy things</string>
+                    </array>
+                    <key>QuestionText</key>
+                    <string>An office is a place where ____.</string>
+                </dict>
+        <dict>
+                    <key>correctAns</key>
+                    <integer>0</integer>
+                    <key>options</key>
+                    <array>
+                        <string>the stuff</string>
+                        <string>the persons</string>
+                        <string>the members</string>
+                        <string>the staff</string>
+                    </array>
+                    <key>QuestionText</key>
+                    <string>All the people who work in a company are ____.</string>
+                </dict>
+        <dict>
+                    <key>correctAns</key>
+                    <integer>0</integer>
+                    <key>options</key>
+                    <array>
+                        <string>as soon as possible</string>
+                        <string>as soon and possible</string>
+                        <string>as slow as possible</string>
+                        <string>as speedy as possible</string>
+                    </array>
+                    <key>QuestionText</key>
+                    <string>ASAP means ____.</string>
+                </dict>
+        <dict>
+                    <key>correctAns</key>
+                    <integer>0</integer>
+                    <key>options</key>
+                    <array>
+                        <string>speak</string>
+                        <string>call</string>
+                        <string>see</string>
+                        <string>hear</string>
+                    </array>
+                    <key>QuestionText</key>
+                    <string>Could I ____ to Mr John please?</string>
+                </dict>
+        <dict>
+                    <key>correctAns</key>
+                    <integer>0</integer>
+                    <key>options</key>
+                    <array>
+                        <string>arrived</string>
+                        <string>get</string>
+                        <string>arrive</string>
+                        <string>got</string>
+                    </array>
+                    <key>QuestionText</key>
+                    <string>How do you ____ to work?</string>
+                </dict>
+        <dict>
+                    <key>correctAns</key>
+                    <integer>0</integer>
+                    <key>options</key>
+                    <array>
+                        <string>attend a meeting</string>
+                        <string>tend a meeting</string>
+                        <string>pretend a meeting</string>
+                        <string>intend a meeting</string>
+                    </array>
+                    <key>QuestionText</key>
+                    <string>If you go to a meeting, you ____.</string>
+                </dict>
+        <dict>
+                    <key>correctAns</key>
+                    <integer>0</integer>
+                    <key>options</key>
+                    <array>
+                        <string>long</string>
+                        <string>many</string>
+                        <string>far</string>
+                        <string>time</string>
+                    </array>
+                    <key>QuestionText</key>
+                    <string>How ____ have you worked here?</string>
+                </dict>
+        <dict>
+                    <key>correctAns</key>
+                    <integer>0</integer>
+                    <key>options</key>
+                    <array>
+                        <string>office gear</string>
+                        <string>office things</string>
+                        <string>office supplies</string>
+                        <string>office instruments</string>
+                    </array>
+                    <key>QuestionText</key>
+                    <string>Pens, paper and staples are called ____.</string>
+                </dict>
+        <dict>
+                    <key>correctAns</key>
+                    <integer>0</integer>
+                    <key>options</key>
+                    <array>
+                        <string>talking</string>
+                        <string>speaking</string>
+                        <string>saying</string>
+                        <string>calling</string>
+                    </array>
+                    <key>QuestionText</key>
+                    <string>Hello, who may I say is ____ please?</string>
+                </dict>
+        <dict>
+                    <key>correctAns</key>
+                    <integer>0</integer>
+                    <key>options</key>
+                    <array>
+                        <string>the leader</string>
+                        <string>the winner</string>
+                        <string>the champion</string>
+                        <string>the manager</string>
+                    </array>
+                    <key>QuestionText</key>
+                    <string>The person who makes the decision is ____.</string>
+                </dict>
+        <dict>
+                    <key>correctAns</key>
+                    <integer>0</integer>
+                    <key>options</key>
+                    <array>
+                        <string>keep</string>
+                        <string>say</string>
+                        <string>take</string>
+                        <string>record</string>
+                    </array>
+                    <key>QuestionText</key>
+                    <string>Could I ____ a message?</string>
+                </dict>
+        <dict>
+                    <key>correctAns</key>
+                    <integer>0</integer>
+                    <key>options</key>
+                    <array>
+                        <string>Selling</string>
+                        <string>Sales</string>
+                        <string>Buying</string>
+                        <string>Product</string>
+                    </array>
+                    <key>QuestionText</key>
+                    <string>Which department tries to get people to buy the product?</string>
+                </dict>
+        
+        <dict>
+                    <key>correctAns</key>
+                    <integer>0</integer>
+                    <key>options</key>
+                    <array>
+                        <string>for</string>
+                        <string>of</string>
+                        <string>at</string>
+                        <string>to</string>
+                    </array>
+                    <key>QuestionText</key>
+                    <string>I report ____ the project maanger.</string>
+                </dict>
+        
+    </array>
 </plist>

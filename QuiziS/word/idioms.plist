@@ -1,14 +1,266 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<!--
-   idioms.plist
-   QuiziS
-
-   Created by sourav sachdeva on 19/01/20.
-   Copyright (c) 2020 sourav sachdeva. All rights reserved.
--->
 <plist version="1.0">
+    <array>
+         <dict>
+           <key>correctAns</key>
+           <integer>0</integer>
+           <key>options</key>
+           <array>
+               <string>a sick person</string>
+               <string>a friendly person</string>
+               <string>a person who does wrong</string>
+               <string>a fun person</string>
+           </array>
+           <key>QuestionText</key>
+           <string>A bad egg is ____.</string>
+       </dict>
+         <dict>
+                <key>correctAns</key>
+                <integer>0</integer>
+                <key>options</key>
+                <array>
+                    <string>strike the roof</string>
+                    <string>hit the roof</string>
+                    <string>hit the floor</string>
+                    <string>beat the roof</string>
+                </array>
+                <key>QuestionText</key>
+                <string>If you get extremely angry, you ____.</string>
+            </dict>
     <dict>
-    
-    </dict>
+           <key>correctAns</key>
+           <integer>0</integer>
+           <key>options</key>
+           <array>
+               <string>a small amount</string>
+               <string>a medium amount</string>
+               <string>a big amount</string>
+               <string>a huge amount</string>
+           </array>
+           <key>QuestionText</key>
+           <string>If something is 'a drop in the ocean', it is ____.</string>
+       </dict>
+    <dict>
+           <key>correctAns</key>
+           <integer>0</integer>
+           <key>options</key>
+           <array>
+               <string>happy</string>
+               <string>sad</string>
+               <string>excited</string>
+               <string>bored</string>
+           </array>
+           <key>QuestionText</key>
+           <string>If you are 'down in the dumps', you're feeling ____.</string>
+       </dict>
+    <dict>
+           <key>correctAns</key>
+           <integer>0</integer>
+           <key>options</key>
+           <array>
+               <string>angry</string>
+               <string>upset</string>
+               <string>tired</string>
+               <string>ill</string>
+           </array>
+           <key>QuestionText</key>
+           <string>If you say you are off-colour, you feel ____.</string>
+       </dict>
+    <dict>
+           <key>correctAns</key>
+           <integer>0</integer>
+           <key>options</key>
+           <array>
+               <string>to go away</string>
+               <string>not to worry</string>
+               <string>to think</string>
+               <string>to come with you</string>
+           </array>
+           <key>QuestionText</key>
+           <string>You can say 'never mind' when you want someone ____.</string>
+       </dict>
+    <dict>
+           <key>correctAns</key>
+           <integer>0</integer>
+           <key>options</key>
+           <array>
+               <string>calls the shots</string>
+               <string>calls the game</string>
+               <string>shouts the answers</string>
+               <string>brings the shots</string>
+           </array>
+           <key>QuestionText</key>
+           <string>The person who is in charge is the person who ____.</string>
+       </dict>
+    <dict>
+           <key>correctAns</key>
+           <integer>0</integer>
+           <key>options</key>
+           <array>
+               <string>dirt cheap</string>
+               <string>empty money</string>
+               <string>loose change</string>
+               <string>short change</string>
+           </array>
+           <key>QuestionText</key>
+           <string>It doesn't cost much money.In factm it's ____.</string>
+       </dict>
+    <dict>
+           <key>correctAns</key>
+           <integer>0</integer>
+           <key>options</key>
+           <array>
+               <string>a boring time</string>
+               <string>a short time</string>
+               <string>a difficult time</string>
+               <string>a long time</string>
+           </array>
+           <key>QuestionText</key>
+           <string>A month of Sundays means ____.</string>
+       </dict>
+    <dict>
+           <key>correctAns</key>
+           <integer>0</integer>
+           <key>options</key>
+           <array>
+               <string>large pockets</string>
+               <string>deep pockets</string>
+               <string>big pockets</string>
+               <string>long pockets</string>
+           </array>
+           <key>QuestionText</key>
+           <string>She has a lot of money.She has very ____.</string>
+       </dict>
+    <dict>
+           <key>correctAns</key>
+           <integer>0</integer>
+           <key>options</key>
+           <array>
+               <string>blue with envy</string>
+               <string>yellow with envy</string>
+               <string>green with envy</string>
+               <string>black with envy</string>
+           </array>
+           <key>QuestionText</key>
+           <string>If you are envious of someone, you are ____.</string>
+       </dict>
+    <dict>
+           <key>correctAns</key>
+           <integer>0</integer>
+           <key>options</key>
+           <array>
+               <string>you are dead</string>
+               <string>no one likes you</string>
+               <string>you are asleep</string>
+               <string>no one talks to you</string>
+           </array>
+           <key>QuestionText</key>
+           <string>If you are 'dead to the world', it means ____.</string>
+       </dict>
+    <dict>
+           <key>correctAns</key>
+           <integer>0</integer>
+           <key>options</key>
+           <array>
+               <string>never</string>
+               <string>occasionally</string>
+               <string>often</string>
+               <string>always</string>
+           </array>
+           <key>QuestionText</key>
+           <string>If you do something 'now and then', you do it ____.</string>
+       </dict>
+    <dict>
+           <key>correctAns</key>
+           <integer>0</integer>
+           <key>options</key>
+           <array>
+               <string>strongly disagree with them</string>
+               <string>disagree with them</string>
+               <string>agree with them a little</string>
+               <string>strongly agree with them</string>
+           </array>
+           <key>QuestionText</key>
+           <string>If you see eye to eye with someone, you ____.</string>
+       </dict>
+    <dict>
+           <key>correctAns</key>
+           <integer>0</integer>
+           <key>options</key>
+           <array>
+               <string>under the weather</string>
+               <string>under the sun</string>
+               <string>under the sky</string>
+               <string>under the clouds</string>
+           </array>
+           <key>QuestionText</key>
+           <string>If you feel unwell, you can say 'I feel ____'</string>
+       </dict>
+    <dict>
+           <key>correctAns</key>
+           <integer>0</integer>
+           <key>options</key>
+           <array>
+               <string>happy</string>
+               <string>crazy</string>
+               <string>laugh</string>
+               <string>cry</string>
+           </array>
+           <key>QuestionText</key>
+           <string>If you drive someone up the wall, you make them ____.</string>
+       </dict>
+    <dict>
+           <key>correctAns</key>
+           <integer>0</integer>
+           <key>options</key>
+           <array>
+               <string>down to ground</string>
+               <string>down to soil</string>
+               <string>down</string>
+               <string>down to earth</string>
+           </array>
+           <key>QuestionText</key>
+           <string>If you are a practical kind of person, you are ____.</string>
+       </dict>
+    <dict>
+           <key>correctAns</key>
+           <integer>0</integer>
+           <key>options</key>
+           <array>
+               <string>eats strange food</string>
+               <string>likes to stay home</string>
+               <string>stays up late</string>
+               <string>reads a lot</string>
+           </array>
+           <key>QuestionText</key>
+           <string>A person who is a 'night owl' usually ____.</string>
+       </dict>
+    <dict>
+           <key>correctAns</key>
+           <integer>0</integer>
+           <key>options</key>
+           <array>
+               <string>glad to see them</string>
+               <string>sad to see them</string>
+               <string>annoyed at seeing them</string>
+               <string>angry at seeing them</string>
+           </array>
+           <key>QuestionText</key>
+           <string>If something or someone is 'a sight for sore eyes', you are ____.</string>
+       </dict>
+    <dict>
+           <key>correctAns</key>
+           <integer>0</integer>
+           <key>options</key>
+           <array>
+               <string>at sea</string>
+               <string>at water</string>
+               <string>at boat</string>
+               <string>at wave</string>
+           </array>
+           <key>QuestionText</key>
+           <string>If you feel confused, you feel ____.</string>
+       </dict>
+    </array>
 </plist>

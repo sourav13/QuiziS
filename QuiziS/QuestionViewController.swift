@@ -38,7 +38,7 @@ class QuestionViewController: UIViewController {
     var categoryType:Int = 0
     var reviewQuestions = [Question]()
     var yourAnswers :  [Int:Int] = [:]
-
+    var questionCountNum = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -91,8 +91,12 @@ class QuestionViewController: UIViewController {
     }
     
     
-    func getCurrentQuestion(currentQuestion:Int)->Question{
-            return questions[currentQuestion]        
+    func getCurrentQuestion(currentQuestion:Int)->Question?{
+        if questions.isEmpty{
+            return nil
+        }else{
+            return questions[currentQuestion]
+        }
     }
     
     func initialSetup(){
@@ -110,12 +114,11 @@ class QuestionViewController: UIViewController {
     }
     
     func setinitialQuestion(){
-         //currentQuestionNumber = 0
-         questionNumberLabel.text = "1"
+        questionCountNum = 0
         currentQuestionNumber = getRandomQuestion()
         //setup Initial question text and button titles.
-        setButtonTitles(question: getCurrentQuestion(currentQuestion: currentQuestionNumber!))
-        setQuestionText(question:getCurrentQuestion(currentQuestion: currentQuestionNumber!))
+        setButtonTitles(question: getCurrentQuestion(currentQuestion: currentQuestionNumber!)!)
+        setQuestionText(question:getCurrentQuestion(currentQuestion: currentQuestionNumber!)!)
 
     }
     
@@ -166,11 +169,11 @@ class QuestionViewController: UIViewController {
             }else{
                 progressView.setProgress(Float(0.1), animated: true)
                 questioncount = 10
-                 if reviewQuestions.contains(getCurrentQuestion(currentQuestion: currentQuestionNumber!)){
+                if reviewQuestions.contains(getCurrentQuestion(currentQuestion: currentQuestionNumber!)!){
                  //   let index =  reviewQuestions.firstIndex(of: getCurrentQuestion(currentQuestion: currentQuestionNumber!))
                       
                 }else{
-                    reviewQuestions.append(getCurrentQuestion(currentQuestion: currentQuestionNumber!))
+                    reviewQuestions.append(getCurrentQuestion(currentQuestion: currentQuestionNumber!)!)
                 }
                 currentQuestionNumber = getRandomQuestion()
             }
@@ -194,20 +197,20 @@ class QuestionViewController: UIViewController {
     }
     
     @IBAction func answerButtonAction(_ sender: UIButton) {
-        checkAnswer(question: getCurrentQuestion(currentQuestion: currentQuestionNumber!),sender: sender)
+        checkAnswer(question: getCurrentQuestion(currentQuestion: currentQuestionNumber!)!,sender: sender)
     
-        if reviewQuestions.contains(getCurrentQuestion(currentQuestion: currentQuestionNumber!)){
-         let index =  reviewQuestions.firstIndex(of: getCurrentQuestion(currentQuestion: currentQuestionNumber!))
+        if reviewQuestions.contains(getCurrentQuestion(currentQuestion: currentQuestionNumber!)!){
+         let index =  reviewQuestions.firstIndex(of: getCurrentQuestion(currentQuestion: currentQuestionNumber!)!)
             //set isanswered to true and the answer to the button tag.
             reviewQuestions[index!].isAnswered = true
             reviewQuestions[index!].wrongAns = sender.tag
         }else{
-            reviewQuestions.append(getCurrentQuestion(currentQuestion: currentQuestionNumber!))
+            reviewQuestions.append(getCurrentQuestion(currentQuestion: currentQuestionNumber!)!)
             reviewQuestions[reviewQuestions.count-1].isAnswered = true
             reviewQuestions[reviewQuestions.count-1].wrongAns = sender.tag
           
         }
-       if sender.title(for: .normal) ==  getCurrentQuestion(currentQuestion: currentQuestionNumber!).options[ getCurrentQuestion(currentQuestion: currentQuestionNumber!).correctAns]{
+       if sender.title(for: .normal) ==  getCurrentQuestion(currentQuestion: currentQuestionNumber!)!.options[ getCurrentQuestion(currentQuestion: currentQuestionNumber!)!.correctAns]{
                 questions.remove(at:currentQuestionNumber!)
        }else{
         
@@ -228,7 +231,8 @@ class QuestionViewController: UIViewController {
             currentQuestion = getCurrentQuestion(currentQuestion: currentQuestionNumber!)
             setButtonTitles(question: currentQuestion!)
             setQuestionText(question: currentQuestion!)
-            questionNumberLabel.text = "\(currentQuestionNumber)"
+            questionNumberLabel.text = "\(questionCountNum + 1)"
+            questionCountNum += 1
         }else{
             endGame()
         }
@@ -244,11 +248,11 @@ class QuestionViewController: UIViewController {
     }
     
     @IBAction func skipButtonAction(_ sender: Any) {
-        if reviewQuestions.contains(getCurrentQuestion(currentQuestion: currentQuestionNumber!)){
+        if reviewQuestions.contains(getCurrentQuestion(currentQuestion: currentQuestionNumber!)!){
    //      let index =  reviewQuestions.firstIndex(of: getCurrentQuestion(currentQuestion: currentQuestionNumber!))
            
         }else{
-            reviewQuestions.append(getCurrentQuestion(currentQuestion: currentQuestionNumber!))
+            reviewQuestions.append(getCurrentQuestion(currentQuestion: currentQuestionNumber!)!)
         }
         
         currentQuestionNumber = getRandomQuestion()

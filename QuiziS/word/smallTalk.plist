@@ -1,14 +1,279 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<!--
-   smallTalk.plist
-   QuiziS
-
-   Created by sourav sachdeva on 19/01/20.
-   Copyright (c) 2020 sourav sachdeva. All rights reserved.
--->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
+<array>
     <dict>
-    
+        <key>correctAns</key>
+        <integer>0</integer>
+        <key>options</key>
+        <array>
+            <string>How are you?</string>
+            <string>Where are you heading?</string>
+            <string>What's going on?</string>
+            <string>What's up?</string>
+        </array>
+        <key>QuestionText</key>
+        <string>Which one means "How's it going?"</string>
     </dict>
+    <dict>
+           <key>correctAns</key>
+           <integer>0</integer>
+           <key>options</key>
+           <array>
+               <string>lets have some dinner</string>
+               <string>lets go shopping</string>
+               <string>lets do nothing much</string>
+               <string>lets meet</string>
+           </array>
+           <key>QuestionText</key>
+           <string>If someone says 'let's get together', it means ____.</string>
+       </dict>
+       <dict>
+                <key>correctAns</key>
+                <integer>0</integer>
+                <key>options</key>
+                <array>
+                    <string>What typified weather.</string>
+                    <string>Normal weather today.</string>
+                    <string>The weather is erratic.</string>
+                    <string>Lovely weather these days.</string>
+                </array>
+                <key>QuestionText</key>
+                <string>How can we also say: 'Nice weather we are having'?</string>
+            </dict>
+       <dict>
+                <key>correctAns</key>
+                <integer>0</integer>
+                <key>options</key>
+                <array>
+                    <string>be</string>
+                    <string>came</string>
+                    <string>being</string>
+                    <string>been</string>
+                </array>
+                <key>QuestionText</key>
+                <string>Have you ____ here before?</string>
+            </dict>
+       <dict>
+                <key>correctAns</key>
+                <integer>0</integer>
+                <key>options</key>
+                <array>
+                    <string>orphan</string>
+                    <string>alone child</string>
+                    <string>only child</string>
+                    <string>adopted</string>
+                </array>
+                <key>QuestionText</key>
+                <string>If you have no brothers or sisters, you are an ____</string>
+            </dict>
+       <dict>
+                <key>correctAns</key>
+                <integer>0</integer>
+                <key>options</key>
+                <array>
+                    <string>How are you?</string>
+                    <string>What are you doing?</string>
+                    <string>Where are you heading?</string>
+                    <string>Are you feeling ok?</string>
+                </array>
+                <key>QuestionText</key>
+                <string>Which one means 'What's up?'</string>
+            </dict>
+       <dict>
+                <key>correctAns</key>
+                <integer>0</integer>
+                <key>options</key>
+                <array>
+                    <string>I'm on time</string>
+                    <string>I'm being late</string>
+                    <string>I'm running late</string>
+                    <string>I'm going late</string>
+                </array>
+                <key>QuestionText</key>
+                <string>If we are going to be late, we may say ____.</string>
+            </dict>
+       <dict>
+                <key>correctAns</key>
+                <integer>0</integer>
+                <key>options</key>
+                <array>
+                    <string>Busy weekend ahead?</string>
+                    <string>What are you doing?</string>
+                    <string>What do you do at the weekend?</string>
+                    <string>Do you like weekends?</string>
+                </array>
+                <key>QuestionText</key>
+                <string>How can we also say: 'Any plans this weekend?'</string>
+            </dict>
+       <dict>
+                <key>correctAns</key>
+                <integer>0</integer>
+                <key>options</key>
+                <array>
+                    <string>Hot and dry</string>
+                    <string>Hot and wet</string>
+                    <string>Cold and dry</string>
+                    <string>Cold and wet</string>
+                </array>
+                <key>QuestionText</key>
+                <string>Today is muggy. What's another expression for 'muggy'?</string>
+            </dict>
+       <dict>
+                <key>correctAns</key>
+                <integer>0</integer>
+                <key>options</key>
+                <array>
+                    <string>hot</string>
+                    <string>warm</string>
+                    <string>cold</string>
+                    <string>very cold</string>
+                </array>
+                <key>QuestionText</key>
+                <string>Today is chilly.What's another word for 'chilly'?</string>
+            </dict>
+       <dict>
+                <key>correctAns</key>
+                <integer>0</integer>
+                <key>options</key>
+                <array>
+                    <string>That doesn't match me</string>
+                    <string>That's not for me</string>
+                    <string>I'm not like that</string>
+                    <string>I'm not interested</string>
+                </array>
+                <key>QuestionText</key>
+                <string>If we don't like something, we can say ____.</string>
+            </dict>
+       <dict>
+                <key>correctAns</key>
+                <integer>0</integer>
+                <key>options</key>
+                <array>
+                    <string>eat</string>
+                    <string>eaten</string>
+                    <string>eating</string>
+                    <string>hungry</string>
+                </array>
+                <key>QuestionText</key>
+                <string>Have you ____?</string>
+            </dict>
+       <dict>
+                <key>correctAns</key>
+                <integer>0</integer>
+                <key>options</key>
+                <array>
+                    <string>you're hungry</string>
+                    <string>you're sad</string>
+                    <string>you're lazy</string>
+                    <string>you're tired</string>
+                </array>
+                <key>QuestionText</key>
+                <string>'I'm drained' can mean ____.</string>
+            </dict>
+       <dict>
+                <key>correctAns</key>
+                <integer>0</integer>
+                <key>options</key>
+                <array>
+                    <string>hug</string>
+                    <string>kiss</string>
+                    <string>handshake</string>
+                    <string>wave</string>
+                </array>
+                <key>QuestionText</key>
+                <string>When first meeting, people often greet each other with a ____.</string>
+            </dict>
+       <dict>
+                <key>correctAns</key>
+                <integer>0</integer>
+                <key>options</key>
+                <array>
+                    <string>Are you localised?</string>
+                    <string>Are you in the community?</string>
+                    <string>Are you a local?</string>
+                    <string>Where are you from?</string>
+                </array>
+                <key>QuestionText</key>
+                <string>What is similar to 'Are you from around here?'</string>
+            </dict>
+       <dict>
+                <key>correctAns</key>
+                <integer>0</integer>
+                <key>options</key>
+                <array>
+                    <string>job</string>
+                    <string>family</string>
+                    <string>free time</string>
+                    <string>life</string>
+                </array>
+                <key>QuestionText</key>
+                <string>'What do you do?' is asking about someone's ____.</string>
+            </dict>
+       <dict>
+                <key>correctAns</key>
+                <integer>0</integer>
+                <key>options</key>
+                <array>
+                    <string>get your skates on</string>
+                    <string>get moving on it</string>
+                    <string>take your time</string>
+                    <string>going slow wins the race</string>
+                </array>
+                <key>QuestionText</key>
+                <string>When someone needs to hurry up, we can say ____.</string>
+            </dict>
+       <dict>
+                <key>correctAns</key>
+                <integer>0</integer>
+                <key>options</key>
+                <array>
+                    <string>thought</string>
+                    <string>think</string>
+                    <string>see</string>
+                    <string>thinking</string>
+                </array>
+                <key>QuestionText</key>
+                <string>What do you ____ of this place?</string>
+            </dict>
+       <dict>
+                <key>correctAns</key>
+                <integer>0</integer>
+                <key>options</key>
+                <array>
+                    <string>What's going on with you?</string>
+                    <string>What are you up to?</string>
+                    <string>What is the matter?</string>
+                    <string>Where have you been?</string>
+                </array>
+                <key>QuestionText</key>
+                <string>If we are wondering what someone is doing, we say ____.</string>
+            </dict>
+       <dict>
+                <key>correctAns</key>
+                <integer>0</integer>
+                <key>options</key>
+                <array>
+                    <string>drunken</string>
+                    <string>drank</string>
+                    <string>drunk</string>
+                    <string>drink</string>
+                </array>
+                <key>QuestionText</key>
+                <string>Can I get you a ____?</string>
+            </dict>
+        <dict>
+                <key>correctAns</key>
+                <integer>0</integer>
+                <key>options</key>
+                <array>
+                    <string></string>
+                    <string></string>
+                    <string></string>
+                    <string></string>
+                </array>
+                <key>QuestionText</key>
+                <string></string>
+            </dict>
+</array>
 </plist>

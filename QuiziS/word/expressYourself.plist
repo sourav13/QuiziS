@@ -1,14 +1,227 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<!--
-   expressYourself.plist
-   QuiziS
-
-   Created by sourav sachdeva on 19/01/20.
-   Copyright (c) 2020 sourav sachdeva. All rights reserved.
--->
 <plist version="1.0">
-    <dict>
-    
-    </dict>
+    <array>
+        <dict>
+           <key>correctAns</key>
+           <integer>0</integer>
+           <key>options</key>
+           <array>
+               <string>for</string>
+               <string>to</string>
+               <string>with</string>
+               <string>of</string>
+           </array>
+           <key>QuestionText</key>
+           <string>I can't agree ____ you.</string>
+       </dict>
+        <dict>
+               <key>correctAns</key>
+               <integer>0</integer>
+               <key>options</key>
+               <array>
+                   <string>For</string>
+                   <string>In</string>
+                   <string>On</string>
+                   <string>Through</string>
+               </array>
+               <key>QuestionText</key>
+               <string>____ my view, we need more money.</string>
+           </dict>
+        <dict>
+               <key>correctAns</key>
+               <integer>0</integer>
+               <key>options</key>
+               <array>
+                   <string>never</string>
+                   <string>occasionally</string>
+                   <string>most of the time</string>
+                   <string>always</string>
+               </array>
+               <key>QuestionText</key>
+               <string>'Hardly ever' means ____.</string>
+           </dict>
+        <dict>
+               <key>correctAns</key>
+               <integer>0</integer>
+               <key>options</key>
+               <array>
+                   <string>I'm not know</string>
+                   <string>I'm unsure</string>
+                   <string>I'm no not</string>
+                   <string>I don't not</string>
+               </array>
+               <key>QuestionText</key>
+               <string>If you don't know something, what can you say?</string>
+           </dict>
+        <dict>
+               <key>correctAns</key>
+               <integer>0</integer>
+               <key>options</key>
+               <array>
+                   <string>personal opinion</string>
+                   <string>everybody's opinion</string>
+                   <string>popular opinion</string>
+                   <string>the group's opinion</string>
+               </array>
+               <key>QuestionText</key>
+               <string>'In my opinion' is a way of saying your ____.</string>
+           </dict>
+        <dict>
+               <key>correctAns</key>
+               <integer>0</integer>
+               <key>options</key>
+               <array>
+                   <string>up in the stars</string>
+                   <string>going to the moon</string>
+                   <string>taking off</string>
+                   <string>over the moon</string>
+               </array>
+               <key>QuestionText</key>
+               <string>When you are really happy with something you are ____.</string>
+           </dict>
+        <dict>
+               <key>correctAns</key>
+               <integer>0</integer>
+               <key>options</key>
+               <array>
+                   <string>stay</string>
+                   <string>wait</string>
+                   <string>take something</string>
+                   <string>grab something</string>
+               </array>
+               <key>QuestionText</key>
+               <string>If you tell someone to 'hold on', it means you want them to ____.</string>
+           </dict>
+        <dict>
+               <key>correctAns</key>
+               <integer>0</integer>
+               <key>options</key>
+               <array>
+                   <string>disagreeing strongly</string>
+                   <string>agreeing strongly</string>
+                   <string>agreeing politely</string>
+                   <string>disagreeing politely</string>
+               </array>
+               <key>QuestionText</key>
+               <string>'Yes, but...' is a way of ____.</string>
+           </dict>
+        <dict>
+               <key>correctAns</key>
+               <integer>0</integer>
+               <key>options</key>
+               <array>
+                   <string>silent</string>
+                   <string>wrong</string>
+                   <string>unsure</string>
+                   <string>right</string>
+               </array>
+               <key>QuestionText</key>
+               <string>If you are quietly confident about something, then you think you are ____.</string>
+           </dict>
+        <dict>
+               <key>correctAns</key>
+               <integer>0</integer>
+               <key>options</key>
+               <array>
+                   <string>It's difficult saying.</string>
+                   <string>It's a difficult opinion.</string>
+                   <string>It's difficult to say.</string>
+                   <string>To say is difficult.</string>
+               </array>
+               <key>QuestionText</key>
+               <string>When it's hard to give an opinion you say, what can you say?</string>
+           </dict>
+        <dict>
+               <key>correctAns</key>
+               <integer>0</integer>
+               <key>options</key>
+               <array>
+                   <string>I have one more thing</string>
+                   <string>I have to say</string>
+                   <string>I want to say</string>
+                   <string>I like to say</string>
+               </array>
+               <key>QuestionText</key>
+               <string>If you have an extra comment to add, what can you say?</string>
+           </dict>
+        <dict>
+               <key>correctAns</key>
+               <integer>0</integer>
+               <key>options</key>
+               <array>
+                   <string>Me also</string>
+                   <string>Me too</string>
+                   <string>Me neither</string>
+                   <string>Me as well</string>
+               </array>
+               <key>QuestionText</key>
+               <string>When you agree with a negative comment, what can you say?</string>
+           </dict>
+        <dict>
+               <key>correctAns</key>
+               <integer>0</integer>
+               <key>options</key>
+               <array>
+                   <string>I need seconds</string>
+                   <string>I need minutes</string>
+                   <string>I need hours</string>
+                   <string>I need a minute</string>
+               </array>
+               <key>QuestionText</key>
+               <string>If you need some time to think, what can you say?</string>
+           </dict>
+        <dict>
+               <key>correctAns</key>
+               <integer>0</integer>
+               <key>options</key>
+               <array>
+                   <string>What's your opinion?</string>
+                   <string>What's you thinking?</string>
+                   <string>How you think?</string>
+                   <string>What think?</string>
+               </array>
+               <key>QuestionText</key>
+               <string>When asking for someone else's ideas, what can you say?</string>
+           </dict>
+        <dict>
+               <key>correctAns</key>
+               <integer>0</integer>
+               <key>options</key>
+               <array>
+                   <string>most people's agreement</string>
+                   <string>one person's agreement</string>
+                   <string>no agreeement</string>
+                   <string>the group's opinion</string>
+               </array>
+               <key>QuestionText</key>
+               <string>General consensus is ____.</string>
+           </dict>
+        <dict>
+               <key>correctAns</key>
+               <integer>0</integer>
+               <key>options</key>
+               <array>
+                   <string>You're really right</string>
+                   <string>You're very right</string>
+                   <string>You're most right</string>
+                   <string>You're absolutely right</string>
+               </array>
+               <key>QuestionText</key>
+               <string>If you really like what someone says, you can say: ____.</string>
+           </dict>
+        <dict>
+               <key>correctAns</key>
+               <integer>0</integer>
+               <key>options</key>
+               <array>
+                   <string>I think neither</string>
+                   <string>I'm not sure</string>
+                   <string>I don't think</string>
+                   <string>I don't believe</string>
+               </array>
+               <key>QuestionText</key>
+               <string>If you don't agree or disagree, you can say ____.</string>
+           </dict>
+    </array>
 </plist>

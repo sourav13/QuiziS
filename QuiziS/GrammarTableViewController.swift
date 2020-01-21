@@ -11,7 +11,7 @@ import UIKit
 class GrammarTableViewController: UITableViewController {
 
     var grammarTypeLabels = ["Prepositions","Irregular verbs","Adjectives & adverbs","Countable & uncountable","Infinitives or gerunds","More or less","Expressions with colour","Few and little","Adverbial Clauses","Modals","Linkers","Conjunctions"]
-    var wordsTypeLabels = ["Food & Restaurants","Travel & Getting Around","Small Talk","Hobbies","Idioms","Films, TV, Internet","At Work","Taking It Easy","Shopping"]
+    var wordsTypeLabels = ["Food & Restaurants","Small Talk","Travel & Getting Around","Hobbies","Idioms","Films, TV, Internet","At Work","Taking It Easy","Shopping"]
     var selectedType:Int = 0 
     var selectedGrammarType : Int  = 0
     var selectedtypeArray  = [String]()

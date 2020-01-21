@@ -1,14 +1,266 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<!--
-   shopping.plist
-   QuiziS
-
-   Created by sourav sachdeva on 19/01/20.
-   Copyright (c) 2020 sourav sachdeva. All rights reserved.
--->
 <plist version="1.0">
-    <dict>
-    
-    </dict>
+      <array>
+        <dict>
+             <key>correctAns</key>
+             <integer>0</integer>
+             <key>options</key>
+             <array>
+                 <string>buy the clothes</string>
+                 <string>try on clothes</string>
+                 <string>give back clothes</string>
+                 <string>pay for clothes</string>
+             </array>
+             <key>QuestionText</key>
+             <string>The changing rooms are where you ____.</string>
+         </dict>
+        <dict>
+            <key>correctAns</key>
+            <integer>0</integer>
+            <key>options</key>
+            <array>
+                <string>how much you spent</string>
+                <string>where you are</string>
+                <string>what time it is</string>
+                <string>what to buy</string>
+            </array>
+            <key>QuestionText</key>
+            <string>Can I have a receipt, please? A receipt tells you ____.</string>
+        </dict>
+        <dict>
+            <key>correctAns</key>
+            <integer>0</integer>
+            <key>options</key>
+            <array>
+                <string>pay extra</string>
+                <string>pay too much</string>
+                <string>pay the right amount</string>
+                <string>pay less</string>
+            </array>
+            <key>QuestionText</key>
+            <string>If you get a discount, it means you ____.</string>
+        </dict>
+        <dict>
+            <key>correctAns</key>
+            <integer>0</integer>
+            <key>options</key>
+            <array>
+                <string>sales assistant</string>
+                <string>sales helper</string>
+                <string>maid</string>
+                <string>servant</string>
+            </array>
+            <key>QuestionText</key>
+            <string>The person who works in a shop is a ____.</string>
+        </dict>
+        <dict>
+            <key>correctAns</key>
+            <integer>0</integer>
+            <key>options</key>
+            <array>
+                <string>Extra Long</string>
+                <string>Extra Large</string>
+                <string>Extra Length</string>
+                <string>Extra Line</string>
+            </array>
+            <key>QuestionText</key>
+            <string>Clothes come in different sizes. What size is XL?</string>
+        </dict>
+        <dict>
+            <key>correctAns</key>
+            <integer>0</integer>
+            <key>options</key>
+            <array>
+                <string>cheaper</string>
+                <string>more expensive</string>
+                <string>very old</string>
+                <string>bad quality</string>
+            </array>
+            <key>QuestionText</key>
+            <string>A sale means that all the thins in a shop are ____.</string>
+        </dict>
+        <dict>
+            <key>correctAns</key>
+            <integer>0</integer>
+            <key>options</key>
+            <array>
+                <string>on</string>
+                <string>in</string>
+                <string>of</string>
+                <string>with</string>
+            </array>
+            <key>QuestionText</key>
+            <string>Do you have this shirt ____ blue?</string>
+        </dict>
+        <dict>
+            <key>correctAns</key>
+            <integer>0</integer>
+            <key>options</key>
+            <array>
+                <string>shop</string>
+                <string>store</string>
+                <string>supermarket</string>
+                <string>department store</string>
+            </array>
+            <key>QuestionText</key>
+            <string>Nowadays, people mostly buy food from a ____.</string>
+        </dict>
+        <dict>
+            <key>correctAns</key>
+            <integer>0</integer>
+            <key>options</key>
+            <array>
+                <string>remove</string>
+                <string>revive</string>
+                <string>deliver</string>
+                <string>return</string>
+            </array>
+            <key>QuestionText</key>
+            <string>If you don't like what you've bought, you can ____ it.</string>
+        </dict>
+        <dict>
+            <key>correctAns</key>
+            <integer>0</integer>
+            <key>options</key>
+            <array>
+                <string>money off</string>
+                <string>cheap off</string>
+                <string>discount</string>
+                <string>discharge</string>
+            </array>
+            <key>QuestionText</key>
+            <string>To get a cheaper price you can ask for a ____.</string>
+        </dict>
+        <dict>
+            <key>correctAns</key>
+            <integer>0</integer>
+            <key>options</key>
+            <array>
+                <string>Can I wear it?</string>
+                <string>Can I change my clothes?</string>
+                <string>Can I try it on?</string>
+                <string>Can I take off my clothes?</string>
+            </array>
+            <key>QuestionText</key>
+            <string>What do you say when you want to put on the clothes?</string>
+        </dict>
+        <dict>
+            <key>correctAns</key>
+            <integer>0</integer>
+            <key>options</key>
+            <array>
+                <string>scanner</string>
+                <string>reader</string>
+                <string>pricer</string>
+                <string>number reader</string>
+            </array>
+            <key>QuestionText</key>
+            <string>The machine that checks the price of your items is called a ____.</string>
+        </dict>
+        <dict>
+            <key>correctAns</key>
+            <integer>0</integer>
+            <key>options</key>
+            <array>
+                <string>Recipe</string>
+                <string>Invoice</string>
+                <string>Receipt</string>
+                <string>Paper</string>
+            </array>
+            <key>QuestionText</key>
+            <string>When you buy something, what does the sales assistant give you?</string>
+        </dict>
+        <dict>
+            <key>correctAns</key>
+            <integer>0</integer>
+            <key>options</key>
+            <array>
+                <string>I'm not buying</string>
+                <string>I'm just watching</string>
+                <string>I'm just seeing</string>
+                <string>I'm just looking.</string>
+            </array>
+            <key>QuestionText</key>
+            <string>What do you say if you don't plan to  buy something?</string>
+        </dict>
+        <dict>
+            <key>correctAns</key>
+            <integer>0</integer>
+            <key>options</key>
+            <array>
+                <string>elevator</string>
+                <string>rider</string>
+                <string>escalator</string>
+                <string>elevation</string>
+            </array>
+            <key>QuestionText</key>
+            <string>An ____ is moving stairs</string>
+        </dict>
+        <dict>
+            <key>correctAns</key>
+            <integer>0</integer>
+            <key>options</key>
+            <array>
+                <string>Discount</string>
+                <string>Percentage</string>
+                <string>Off</string>
+                <string>Less</string>
+            </array>
+            <key>QuestionText</key>
+            <string>What does '%' mean?</string>
+        </dict>
+        <dict>
+            <key>correctAns</key>
+            <integer>0</integer>
+            <key>options</key>
+            <array>
+                <string>on</string>
+                <string>in</string>
+                <string>with</string>
+                <string>off</string>
+            </array>
+            <key>QuestionText</key>
+            <string>Lets hop ____ the elevator.</string>
+        </dict>
+        <dict>
+            <key>correctAns</key>
+            <integer>0</integer>
+            <key>options</key>
+            <array>
+                <string>big store</string>
+                <string>department store</string>
+                <string>store of departments</string>
+                <string>department storage</string>
+            </array>
+            <key>QuestionText</key>
+            <string>A big building with lots of small shops is called a ____.</string>
+        </dict>
+        <dict>
+            <key>correctAns</key>
+            <integer>0</integer>
+            <key>options</key>
+            <array>
+                <string>managers</string>
+                <string>buyers</string>
+                <string>customers</string>
+                <string>assistants</string>
+            </array>
+            <key>QuestionText</key>
+            <string>People who shop are called ____.</string>
+        </dict>
+        <dict>
+            <key>correctAns</key>
+            <integer>0</integer>
+            <key>options</key>
+            <array>
+                <string>tinned goods</string>
+                <string>produce</string>
+                <string>dairy</string>
+                <string>poultry</string>
+            </array>
+            <key>QuestionText</key>
+            <string>Fresh vegetables are called ____.</string>
+        </dict>
+    </array>
 </plist>

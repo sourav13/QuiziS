@@ -7,156 +7,156 @@
         <integer>0</integer>
         <key>options</key>
         <array>
-            <string>blue</string>
-            <string>yellow</string>
-            <string>green</string>
-            <string>purple</string>
+            <string>desserts</string>
+            <string>sandwich</string>
+            <string>sweets</string>
+            <string>chocolates</string>
         </array>
         <key>QuestionText</key>
-        <string>Food.</string>
+        <string>Ice cream and chocolate mousse are types of ____.</string>
     </dict>
     <dict>
         <key>correctAns</key>
         <integer>2</integer>
         <key>options</key>
         <array>
-            <string>black</string>
-            <string>blue</string>
-            <string>yellow</string>
-            <string>red</string>
+            <string>milky</string>
+            <string>dairy</string>
+            <string>protein</string>
+            <string>carbohydrate</string>
         </array>
         <key>QuestionText</key>
-        <string>I tried telling her why she was wrong until I was ____ in the face but she wouldn't listen.</string>
+        <string>Milk, cheese and butter are ____ products.</string>
     </dict>
     <dict>
         <key>correctAns</key>
         <integer>0</integer>
         <key>options</key>
         <array>
-            <string>silver</string>
-            <string>yellow</string>
-            <string>golden</string>
-            <string>black</string>
+            <string>burn</string>
+            <string>charred</string>
+            <string>coaled</string>
+            <string>burnt</string>
         </array>
         <key>QuestionText</key>
-        <string>Charlie Chaplin was one of the first stars of the ____ screen.</string>
+        <string>If we overcook some food and it turns black, we have ____ it.</string>
     </dict>
     <dict>
         <key>correctAns</key>
         <integer>0</integer>
         <key>options</key>
         <array>
-            <string>white</string>
-            <string>black</string>
-            <string>yellow</string>
-            <string>blue</string>
+            <string>depart</string>
+            <string>desert</string>
+            <string>dessert</string>
+            <string>decant</string>
         </array>
         <key>QuestionText</key>
-        <string>Don't be sad and ____, things might improve tomorrow.</string>
+        <string>The last dish you eat is called ____.</string>
     </dict>
     <dict>
         <key>correctAns</key>
         <integer>0</integer>
         <key>options</key>
         <array>
-            <string>golden</string>
-            <string>white</string>
-            <string>silver</string>
-            <string>pink</string>
+            <string>Drive-in</string>
+            <string>Drive-through</string>
+            <string>Drive-out</string>
+            <string>Drive-by</string>
         </array>
         <key>QuestionText</key>
-        <string>The new stereo he bought is a ____ elephant.He doesn't need it at all.</string>
+        <string>What is the name of the place where you order food while waiting in your car?</string>
     </dict>
     <dict>
                  <key>correctAns</key>
                  <integer>0</integer>
                  <key>options</key>
                  <array>
-                     <string>blue</string>
-                     <string>yellow</string>
-                     <string>golden</string>
-                     <string>silver</string>
+                     <string>starter</string>
+                     <string>entry</string>
+                     <string>mains</string>
+                     <string>before</string>
                  </array>
                  <key>QuestionText</key>
-                 <string>The company chairman received a huge ____ handshake when he retired.</string>
+                 <string>The first course you eat is called the ____.</string>
         </dict>
     <dict>
                  <key>correctAns</key>
                  <integer>0</integer>
                  <key>options</key>
                  <array>
-                     <string>blue</string>
-                     <string>yellow</string>
-                     <string>black</string>
-                     <string>red</string>
+                     <string>without a view</string>
+                     <string>with a view</string>
+                     <string>along a view</string>
+                     <string>by a view</string>
                  </array>
                  <key>QuestionText</key>
-                 <string>It's a ____ day for me, because I have just lost my job.</string>
+                 <string>A table by the window is often called a table ____.</string>
         </dict>
     <dict>
                  <key>correctAns</key>
                  <integer>0</integer>
                  <key>options</key>
                  <array>
-                     <string>green</string>
-                     <string>red</string>
-                     <string>black</string>
-                     <string>white</string>
+                     <string>surfers</string>
+                     <string>servers</string>
+                     <string>sealers</string>
+                     <string>sailors</string>
                  </array>
                  <key>QuestionText</key>
-                 <string>Julie was ____ with envy when she saw her friend's new coat.</string>
+                 <string>Waiters and waitresses are also called ____.</string>
         </dict>
     <dict>
                  <key>correctAns</key>
                  <integer>0</integer>
                  <key>options</key>
                  <array>
-                     <string>green</string>
-                     <string>brown</string>
-                     <string>blue</string>
-                     <string>yellow</string>
+                     <string>Plain</string>
+                     <string>White</string>
+                     <string>Yellow</string>
+                     <string>Pink</string>
                  </array>
                  <key>QuestionText</key>
-                 <string>Jack has ____ fingers.He is a very successful gardener.</string>
+                 <string>Beef and lamb are red meat.What are chicken and fish called?</string>
         </dict>
     <dict>
                  <key>correctAns</key>
                  <integer>0</integer>
                  <key>options</key>
                  <array>
-                     <string>red</string>
-                     <string>black</string>
-                     <string>blue</string>
-                     <string>yellow</string>
+                     <string>takeafter</string>
+                     <string>takeback</string>
+                     <string>takeaway</string>
+                     <string>taketo</string>
                  </array>
                  <key>QuestionText</key>
-                 <string>The teacher gave me a  ____ look when he caught me talking in class.</string>
+                 <string>Food you order and bring home is called a ____.</string>
         </dict>
     <dict>
                  <key>correctAns</key>
                  <integer>0</integer>
                  <key>options</key>
                  <array>
-                     <string>green</string>
-                     <string>blue</string>
-                     <string>yellow</string>
-                     <string>black</string>
+                     <string>quick coffee</string>
+                     <string>fast coffee</string>
+                     <string>instant coffee</string>
+                     <string>minutes coffee</string>
                  </array>
                  <key>QuestionText</key>
-                 <string>Peter is the ____ sheep of the family.His family are all doctors, and he is an artist.</string>
+                 <string>Coffee that comes from a jar and just needs water added is called ____.</string>
         </dict>
     <dict>
                  <key>correctAns</key>
                  <integer>0</integer>
                  <key>options</key>
                  <array>
-                     <string>red</string>
-                     <string>black</string>
-                     <string>pink</string>
-                     <string>yellow</string>
+                     <string>spread</string>
+                     <string>toast</string>
+                     <string>like</string>
+                     <string>put</string>
                  </array>
                  <key>QuestionText</key>
-                 <string>He has  a ____ streak, and is not a good person to depend on in a fight.</string>
+                 <string>Some people like to ____ their bread with jam.</string>
         </dict>
     <dict>
                  <key>correctAns</key>

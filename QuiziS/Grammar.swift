@@ -48,8 +48,8 @@ enum GrammarType:String{
 }
 enum WordType:String{
     case foodAndRestaurants
-    case travelAndGettingAround
     case smallTalk
+    case travelAndGettingAround
     case hobbies
     case idioms
     case expressYourself
