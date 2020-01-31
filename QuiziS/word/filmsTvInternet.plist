@@ -1,280 +1,266 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-   <array>
-    <dict>
-        <key>correctAns</key>
-        <integer>0</integer>
-        <key>options</key>
-        <array>
-            <string>the channel</string>
-            <string>the tunnel</string>
-            <string>the chain</string>
-            <string>the broadcast</string>
-        </array>
-        <key>QuestionText</key>
-        <string>If you don't like the programme, you can change ____.</string>
-    </dict>
-    <dict>
-        <key>correctAns</key>
-        <integer>0</integer>
-        <key>options</key>
-        <array>
-            <string>films the action</string>
-            <string>makes the clothes</string>
-            <string>acts in a film</string>
-            <string>chooses the location</string>
-        </array>
-        <key>QuestionText</key>
-        <string>The cameraman ____.</string>
-    </dict>
-    <dict>
-         <key>correctAns</key>
-         <integer>0</integer>
-         <key>options</key>
-         <array>
-             <string>broadband</string>
-             <string>broadnet</string>
-             <string>bandspeed</string>
-             <string>broadspeed</string>
-         </array>
-         <key>QuestionText</key>
-         <string>High speed internet is called ____.</string>
-     </dict>
-    <dict>
-         <key>correctAns</key>
-         <integer>0</integer>
-         <key>options</key>
-         <array>
-             <string>free TV</string>
-             <string>pay TV</string>
-             <string>extra TV</string>
-             <string>more TV</string>
-         </array>
-         <key>QuestionText</key>
-         <string>TV channels you pay for are called ____.</string>
-     </dict>
-    <dict>
-         <key>correctAns</key>
-         <integer>0</integer>
-         <key>options</key>
-         <array>
-             <string>talk</string>
-             <string>read</string>
-             <string>dialogue</string>
-             <string>words</string>
-         </array>
-         <key>QuestionText</key>
-         <string>An actor's speech in a movie or on TV is called ____.</string>
-     </dict>
-    <dict>
-         <key>correctAns</key>
-         <integer>0</integer>
-         <key>options</key>
-         <array>
-             <string>the cast</string>
-             <string>the crew</string>
-             <string>the props</string>
-             <string>the scenese</string>
-         </array>
-         <key>QuestionText</key>
-         <string>All the people who are acting in a film are ____.</string>
-     </dict>
-    <dict>
-         <key>correctAns</key>
-         <integer>0</integer>
-         <key>options</key>
-         <array>
-             <string>the box</string>
-             <string>the light</string>
-             <string>the glass</string>
-             <string>the square</string>
-         </array>
-         <key>QuestionText</key>
-         <string>A slang word for the TV is ____.</string>
-     </dict>
-    <dict>
-         <key>correctAns</key>
-         <integer>0</integer>
-         <key>options</key>
-         <array>
-             <string>under titles</string>
-             <string>translations</string>
-             <string>subtitles</string>
-             <string>speech</string>
-         </array>
-         <key>QuestionText</key>
-         <string>Words at the bottom of a movie screen when an actor is talking are called ____.</string>
-     </dict>
-    <dict>
-         <key>correctAns</key>
-         <integer>0</integer>
-         <key>options</key>
-         <array>
-             <string>studios</string>
-             <string>programmes</string>
-             <string>films</string>
-             <string>plays</string>
-         </array>
-         <key>QuestionText</key>
-         <string>Comedies and dramas on TV are kinds of ____.</string>
-     </dict>
-    <dict>
-         <key>correctAns</key>
-         <integer>0</integer>
-         <key>options</key>
-         <array>
-             <string>down it</string>
-             <string>load it</string>
-             <string>download it</string>
-             <string>bring it down</string>
-         </array>
-         <key>QuestionText</key>
-         <string>If you want to keep something from the internet on your computer, you ____.</string>
-     </dict>
-    <dict>
-         <key>correctAns</key>
-         <integer>0</integer>
-         <key>options</key>
-         <array>
-             <string>actress</string>
-             <string>director</string>
-             <string>producer</string>
-             <string>writer</string>
-         </array>
-         <key>QuestionText</key>
-         <string>The person who makes the story for a film is the ____</string>
-     </dict>
-    <dict>
-         <key>correctAns</key>
-         <integer>0</integer>
-         <key>options</key>
-         <array>
-             <string>web places</string>
-             <string>webs</string>
-             <string>websites</string>
-             <string>internet places</string>
-         </array>
-         <key>QuestionText</key>
-         <string>Most companies have ____ on the internet.</string>
-     </dict>
-    <dict>
-         <key>correctAns</key>
-         <integer>0</integer>
-         <key>options</key>
-         <array>
-             <string>the inter</string>
-             <string>the net</string>
-             <string>the netty</string>
-             <string>the wire</string>
-         </array>
-         <key>QuestionText</key>
-         <string>'Internet' can be shortened to ____.</string>
-     </dict>
-    <dict>
-         <key>correctAns</key>
-         <integer>0</integer>
-         <key>options</key>
-         <array>
-             <string>swimming</string>
-             <string>surfing</string>
-             <string>sailing</string>
-             <string>floating</string>
-         </array>
-         <key>QuestionText</key>
-         <string>When you look at different sites on the internet you are ____.</string>
-     </dict>
-    <dict>
-         <key>correctAns</key>
-         <integer>0</integer>
-         <key>options</key>
-         <array>
-             <string>the star</string>
-             <string>the cast</string>
-             <string>the audience</string>
-             <string>the sum</string>
-         </array>
-         <key>QuestionText</key>
-         <string>The most important person in a film is ____.</string>
-     </dict>
-    <dict>
-         <key>correctAns</key>
-         <integer>0</integer>
-         <key>options</key>
-         <array>
-             <string>a chain</string>
-             <string>a connection</string>
-             <string>a relation</string>
-             <string>a link</string>
-         </array>
-         <key>QuestionText</key>
-         <string>If you want to show a friend something on the internet, you send them ____.</string>
-     </dict>
-    <dict>
-         <key>correctAns</key>
-         <integer>0</integer>
-         <key>options</key>
-         <array>
-             <string>desktop</string>
-             <string>carry computer</string>
-             <string>laptop</string>
-             <string>small computer</string>
-         </array>
-         <key>QuestionText</key>
-         <string>A computer you can carry is called a ____.</string>
-     </dict>
-    <dict>
-         <key>correctAns</key>
-         <integer>0</integer>
-         <key>options</key>
-         <array>
-             <string>the direct</string>
-             <string>the actor</string>
-             <string>the rector</string>
-             <string>the director</string>
-         </array>
-         <key>QuestionText</key>
-         <string>The person who makes all the decisions about a film is ____.</string>
-     </dict>
-    <dict>
-         <key>correctAns</key>
-         <integer>0</integer>
-         <key>options</key>
-         <array>
-             <string>the movies</string>
-             <string>the screen</string>
-             <string>the room</string>
-             <string>the show</string>
-         </array>
-         <key>QuestionText</key>
-         <string>Another word for cinema is ____.</string>
-     </dict>
-    <dict>
-         <key>correctAns</key>
-         <integer>0</integer>
-         <key>options</key>
-         <array>
-             <string>a channel chooser</string>
-             <string>a channel control</string>
-             <string>a remote control</string>
-             <string>a remote channel</string>
-         </array>
-         <key>QuestionText</key>
-         <string>To change TV channel while sitting down, you use ____.</string>
-     </dict>
-    <dict>
-         <key>correctAns</key>
-         <integer>0</integer>
-         <key>options</key>
-         <array>
-             <string>films the action</string>
-             <string>makes the clothes</string>
-             <string>acts in a film</string>
-             <string>chooses the location</string>
-         </array>
-         <key>QuestionText</key>
-         <string>The cameraman ____.</string>
-     </dict>
-    
-    </arrray>
+<array>
+	<dict>
+		<key>correctAns</key>
+		<integer>0</integer>
+		<key>options</key>
+		<array>
+			<string>the channel</string>
+			<string>the tunnel</string>
+			<string>the chain</string>
+			<string>the broadcast</string>
+		</array>
+		<key>QuestionText</key>
+		<string>If you don&apos;t like the programme, you can change ____.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>0</integer>
+		<key>options</key>
+		<array>
+			<string>films the action</string>
+			<string>makes the clothes</string>
+			<string>acts in a film</string>
+			<string>chooses the location</string>
+		</array>
+		<key>QuestionText</key>
+		<string>The cameraman ____.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>0</integer>
+		<key>options</key>
+		<array>
+			<string>broadband</string>
+			<string>broadnet</string>
+			<string>bandspeed</string>
+			<string>broadspeed</string>
+		</array>
+		<key>QuestionText</key>
+		<string>High speed internet is called ____.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>0</integer>
+		<key>options</key>
+		<array>
+			<string>free TV</string>
+			<string>pay TV</string>
+			<string>extra TV</string>
+			<string>more TV</string>
+		</array>
+		<key>QuestionText</key>
+		<string>TV channels you pay for are called ____.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>2</integer>
+		<key>options</key>
+		<array>
+			<string>talk</string>
+			<string>read</string>
+			<string>dialogue</string>
+			<string>words</string>
+		</array>
+		<key>QuestionText</key>
+		<string>An actor&apos;s speech in a movie or on TV is called ____.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>0</integer>
+		<key>options</key>
+		<array>
+			<string>the cast</string>
+			<string>the crew</string>
+			<string>the props</string>
+			<string>the scenese</string>
+		</array>
+		<key>QuestionText</key>
+		<string>All the people who are acting in a film are ____.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>0</integer>
+		<key>options</key>
+		<array>
+			<string>the box</string>
+			<string>the light</string>
+			<string>the glass</string>
+			<string>the square</string>
+		</array>
+		<key>QuestionText</key>
+		<string>A slang word for the TV is ____.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>2</integer>
+		<key>options</key>
+		<array>
+			<string>under titles</string>
+			<string>translations</string>
+			<string>subtitles</string>
+			<string>speech</string>
+		</array>
+		<key>QuestionText</key>
+		<string>Words at the bottom of a movie screen when an actor is talking are called ____.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>0</integer>
+		<key>options</key>
+		<array>
+			<string>studios</string>
+			<string>programmes</string>
+			<string>films</string>
+			<string>plays</string>
+		</array>
+		<key>QuestionText</key>
+		<string>Comedies and dramas on TV are kinds of ____.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>2</integer>
+		<key>options</key>
+		<array>
+			<string>down it</string>
+			<string>load it</string>
+			<string>download it</string>
+			<string>bring it down</string>
+		</array>
+		<key>QuestionText</key>
+		<string>If you want to keep something from the internet on your computer, you ____.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>3</integer>
+		<key>options</key>
+		<array>
+			<string>actress</string>
+			<string>director</string>
+			<string>producer</string>
+			<string>writer</string>
+		</array>
+		<key>QuestionText</key>
+		<string>The person who makes the story for a film is the ____</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>2</integer>
+		<key>options</key>
+		<array>
+			<string>web places</string>
+			<string>webs</string>
+			<string>websites</string>
+			<string>internet places</string>
+		</array>
+		<key>QuestionText</key>
+		<string>Most companies have ____ on the internet.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>1</integer>
+		<key>options</key>
+		<array>
+			<string>the inter</string>
+			<string>the net</string>
+			<string>the netty</string>
+			<string>the wire</string>
+		</array>
+		<key>QuestionText</key>
+		<string>&apos;Internet&apos; can be shortened to ____.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>1</integer>
+		<key>options</key>
+		<array>
+			<string>swimming</string>
+			<string>surfing</string>
+			<string>sailing</string>
+			<string>floating</string>
+		</array>
+		<key>QuestionText</key>
+		<string>When you look at different sites on the internet you are ____.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>0</integer>
+		<key>options</key>
+		<array>
+			<string>the star</string>
+			<string>the cast</string>
+			<string>the audience</string>
+			<string>the sum</string>
+		</array>
+		<key>QuestionText</key>
+		<string>The most important person in a film is ____.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>3</integer>
+		<key>options</key>
+		<array>
+			<string>a chain</string>
+			<string>a connection</string>
+			<string>a relation</string>
+			<string>a link</string>
+		</array>
+		<key>QuestionText</key>
+		<string>If you want to show a friend something on the internet, you send them ____.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>2</integer>
+		<key>options</key>
+		<array>
+			<string>desktop</string>
+			<string>carry computer</string>
+			<string>laptop</string>
+			<string>small computer</string>
+		</array>
+		<key>QuestionText</key>
+		<string>A computer you can carry is called a ____.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>3</integer>
+		<key>options</key>
+		<array>
+			<string>the direct</string>
+			<string>the actor</string>
+			<string>the rector</string>
+			<string>the director</string>
+		</array>
+		<key>QuestionText</key>
+		<string>The person who makes all the decisions about a film is ____.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>0</integer>
+		<key>options</key>
+		<array>
+			<string>the movies</string>
+			<string>the screen</string>
+			<string>the room</string>
+			<string>the show</string>
+		</array>
+		<key>QuestionText</key>
+		<string>Another word for cinema is ____.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>2</integer>
+		<key>options</key>
+		<array>
+			<string>a channel chooser</string>
+			<string>a channel control</string>
+			<string>a remote control</string>
+			<string>a remote channel</string>
+		</array>
+		<key>QuestionText</key>
+		<string>To change TV channel while sitting down, you use ____.</string>
+	</dict>
+</array>
 </plist>

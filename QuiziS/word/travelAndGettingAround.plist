@@ -2,265 +2,265 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <array>
-    <dict>
-             <key>correctAns</key>
-             <integer>0</integer>
-             <key>options</key>
-             <array>
-                 <string>stop</string>
-                 <string>place</string>
-                 <string>go</string>
-                 <string>end</string>
-             </array>
-             <key>QuestionText</key>
-             <string>A street or lane that has no exit is a 'dead ____.'</string>
-         </dict>
-    <dict>
-             <key>correctAns</key>
-             <integer>0</integer>
-             <key>options</key>
-             <array>
-                 <string>check off</string>
-                 <string>check in</string>
-                 <string>check at</string>
-                 <string>check list</string>
-             </array>
-             <key>QuestionText</key>
-             <string>To get your room key from reception you must ____.</string>
-         </dict>
-    <dict>
-             <key>correctAns</key>
-             <integer>0</integer>
-             <key>options</key>
-             <array>
-                 <string>round</string>
-                 <string>right</string>
-                 <string>left</string>
-                 <string>from</string>
-             </array>
-             <key>QuestionText</key>
-             <string>It is just ____ the corner from here.</string>
-         </dict>
-    <dict>
-             <key>correctAns</key>
-             <integer>0</integer>
-             <key>options</key>
-             <array>
-                 <string>intersection</string>
-                 <string>interment</string>
-                 <string>interterm</string>
-                 <string>interlay</string>
-             </array>
-             <key>QuestionText</key>
-             <string>A place where 3 or more streets meet is called an ____.</string>
-         </dict>
-    <dict>
-             <key>correctAns</key>
-             <integer>0</integer>
-             <key>options</key>
-             <array>
-                 <string>to</string>
-                 <string>ahead</string>
-                 <string>towards</string>
-                 <string>at</string>
-             </array>
-             <key>QuestionText</key>
-             <string>Go straight ____. YOu can't miss it.</string>
-         </dict>
-    <dict>
-             <key>correctAns</key>
-             <integer>0</integer>
-             <key>options</key>
-             <array>
-                 <string>passcard</string>
-                 <string>passport</string>
-                 <string>passbook</string>
-                 <string>pass ID</string>
-             </array>
-             <key>QuestionText</key>
-             <string>The identification book you carry to enter another country is called a ____.</string>
-         </dict>
-    <dict>
-             <key>correctAns</key>
-             <integer>0</integer>
-             <key>options</key>
-             <array>
-                 <string>parts</string>
-                 <string>tracks</string>
-                 <string>carriages</string>
-                 <string>cars</string>
-             </array>
-             <key>QuestionText</key>
-             <string>Different sections of a train are ____.</string>
-         </dict>
-    <dict>
-             <key>correctAns</key>
-             <integer>0</integer>
-             <key>options</key>
-             <array>
-                 <string>bus off</string>
-                 <string>bus on</string>
-                 <string>bus stop</string>
-                 <string>bus go</string>
-             </array>
-             <key>QuestionText</key>
-             <string>You get on and off a bus at a ____.</string>
-         </dict>
-    <dict>
-             <key>correctAns</key>
-             <integer>0</integer>
-             <key>options</key>
-             <array>
-                 <string>up face</string>
-                 <string>about face</string>
-                 <string>U-turn</string>
-                 <string>u like</string>
-             </array>
-             <key>QuestionText</key>
-             <string>Turning and going back in the opposite direction is a ____.</string>
-         </dict>
-    <dict>
-             <key>correctAns</key>
-             <integer>0</integer>
-             <key>options</key>
-             <array>
-                 <string>taxi stops</string>
-                 <string>taxi waits</string>
-                 <string>taxi stands</string>
-                 <string>taxi spots</string>
-             </array>
-             <key>QuestionText</key>
-             <string>Some cities have places to wait for taxis called ____.</string>
-         </dict>
-    <dict>
-             <key>correctAns</key>
-             <integer>0</integer>
-             <key>options</key>
-             <array>
-                 <string>returnee</string>
-                 <string>returner</string>
-                 <string>return</string>
-                 <string>one way</string>
-             </array>
-             <key>QuestionText</key>
-             <string>When we are going and coming back we get a ____ ticket.</string>
-         </dict>
-    <dict>
-             <key>correctAns</key>
-             <integer>0</integer>
-             <key>options</key>
-             <array>
-                 <string>right under it</string>
-                 <string>right over it</string>
-                 <string>standing on it</string>
-                 <string>in it</string>
-             </array>
-             <key>QuestionText</key>
-             <string>If you are underneath something, we can say you are ____.</string>
-         </dict>
-    <dict>
-             <key>correctAns</key>
-             <integer>0</integer>
-             <key>options</key>
-             <array>
-                 <string>out of reach</string>
-                 <string>outside</string>
-                 <string>out of step</string>
-                 <string>out of the way</string>
-             </array>
-             <key>QuestionText</key>
-             <string>If it is not in the direction you are going it is ____.</string>
-         </dict>
-    <dict>
-             <key>correctAns</key>
-             <integer>0</integer>
-             <key>options</key>
-             <array>
-                 <string>single</string>
-                 <string>singular</string>
-                 <string>at one</string>
-                 <string>one direction</string>
-             </array>
-             <key>QuestionText</key>
-             <string>A one-way ticket is also known as  a ____.</string>
-         </dict>
-    <dict>
-             <key>correctAns</key>
-             <integer>0</integer>
-             <key>options</key>
-             <array>
-                 <string>Excuse</string>
-                 <string>Bless you</string>
-                 <string>Excuse you</string>
-                 <string>Excuse me</string>
-             </array>
-             <key>QuestionText</key>
-             <string>____! is there a bank near here?</string>
-         </dict>
-    <dict>
-             <key>correctAns</key>
-             <integer>0</integer>
-             <key>options</key>
-             <array>
-                 <string>bicycle road</string>
-                 <string>bicycle lane</string>
-                 <string>bicycle street</string>
-                 <string>bicycle way</string>
-             </array>
-             <key>QuestionText</key>
-             <string>A place on the road only for use by bicycles is a ____.</string>
-         </dict>
-    <dict>
-             <key>correctAns</key>
-             <integer>0</integer>
-             <key>options</key>
-             <array>
-                 <string>key ring</string>
-                 <string>key card</string>
-                 <string>card ring</string>
-                 <string>ring card</string>
-             </array>
-             <key>QuestionText</key>
-             <string>Hotels often give you a plastic ____ to open your bedroom door.</string>
-         </dict>
-    <dict>
-             <key>correctAns</key>
-             <integer>0</integer>
-             <key>options</key>
-             <array>
-                 <string>receiving</string>
-                 <string>welcome</string>
-                 <string>entry</string>
-                 <string>reception</string>
-             </array>
-             <key>QuestionText</key>
-             <string>The place you check in is called _____.</string>
-         </dict>
-    <dict>
-             <key>correctAns</key>
-             <integer>0</integer>
-             <key>options</key>
-             <array>
-                 <string>Business</string>
-                 <string>Club</string>
-                 <string>Premium</string>
-                 <string>Economy</string>
-             </array>
-             <key>QuestionText</key>
-             <string>The cheapest class on a plane is ____.</string>
-         </dict>
-    <dict>
-             <key>correctAns</key>
-             <integer>0</integer>
-             <key>options</key>
-             <array>
-                 <string>subservice</string>
-                 <string>subway</string>
-                 <string>subcarrier</string>
-                 <string>seatrain</string>
-             </array>
-             <key>QuestionText</key>
-             <string>A train that runs below the ground can be called a ____.</string>
-         </dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>3</integer>
+		<key>options</key>
+		<array>
+			<string>stop</string>
+			<string>place</string>
+			<string>go</string>
+			<string>end</string>
+		</array>
+		<key>QuestionText</key>
+		<string>A street or lane that has no exit is a &apos;dead ____.&apos;</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>1</integer>
+		<key>options</key>
+		<array>
+			<string>check off</string>
+			<string>check in</string>
+			<string>check at</string>
+			<string>check list</string>
+		</array>
+		<key>QuestionText</key>
+		<string>To get your room key from reception you must ____.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>0</integer>
+		<key>options</key>
+		<array>
+			<string>round</string>
+			<string>right</string>
+			<string>left</string>
+			<string>from</string>
+		</array>
+		<key>QuestionText</key>
+		<string>It is just ____ the corner from here.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>0</integer>
+		<key>options</key>
+		<array>
+			<string>intersection</string>
+			<string>interment</string>
+			<string>interterm</string>
+			<string>interlay</string>
+		</array>
+		<key>QuestionText</key>
+		<string>A place where 3 or more streets meet is called an ____.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>1</integer>
+		<key>options</key>
+		<array>
+			<string>to</string>
+			<string>ahead</string>
+			<string>towards</string>
+			<string>at</string>
+		</array>
+		<key>QuestionText</key>
+		<string>Go straight ____. You can&apos;t miss it.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>1</integer>
+		<key>options</key>
+		<array>
+			<string>passcard</string>
+			<string>passport</string>
+			<string>passbook</string>
+			<string>pass ID</string>
+		</array>
+		<key>QuestionText</key>
+		<string>The identification book you carry to enter another country is called a ____.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>2</integer>
+		<key>options</key>
+		<array>
+			<string>parts</string>
+			<string>tracks</string>
+			<string>carriages</string>
+			<string>cars</string>
+		</array>
+		<key>QuestionText</key>
+		<string>Different sections of a train are ____.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>2</integer>
+		<key>options</key>
+		<array>
+			<string>bus off</string>
+			<string>bus on</string>
+			<string>bus stop</string>
+			<string>bus go</string>
+		</array>
+		<key>QuestionText</key>
+		<string>You get on and off a bus at a ____.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>2</integer>
+		<key>options</key>
+		<array>
+			<string>up face</string>
+			<string>about face</string>
+			<string>U-turn</string>
+			<string>u like</string>
+		</array>
+		<key>QuestionText</key>
+		<string>Turning and going back in the opposite direction is a ____.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>2</integer>
+		<key>options</key>
+		<array>
+			<string>taxi stops</string>
+			<string>taxi waits</string>
+			<string>taxi stands</string>
+			<string>taxi spots</string>
+		</array>
+		<key>QuestionText</key>
+		<string>Some cities have places to wait for taxis called ____.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>2</integer>
+		<key>options</key>
+		<array>
+			<string>returnee</string>
+			<string>returner</string>
+			<string>return</string>
+			<string>one way</string>
+		</array>
+		<key>QuestionText</key>
+		<string>When we are going and coming back we get a ____ ticket.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>0</integer>
+		<key>options</key>
+		<array>
+			<string>right under it</string>
+			<string>right over it</string>
+			<string>standing on it</string>
+			<string>in it</string>
+		</array>
+		<key>QuestionText</key>
+		<string>If you are underneath something, we can say you are ____.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>3</integer>
+		<key>options</key>
+		<array>
+			<string>out of reach</string>
+			<string>outside</string>
+			<string>out of step</string>
+			<string>out of the way</string>
+		</array>
+		<key>QuestionText</key>
+		<string>If it is not in the direction you are going it is ____.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>0</integer>
+		<key>options</key>
+		<array>
+			<string>single</string>
+			<string>singular</string>
+			<string>at one</string>
+			<string>one direction</string>
+		</array>
+		<key>QuestionText</key>
+		<string>A one-way ticket is also known as  a ____.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>3</integer>
+		<key>options</key>
+		<array>
+			<string>Excuse</string>
+			<string>Bless you</string>
+			<string>Excuse you</string>
+			<string>Excuse me</string>
+		</array>
+		<key>QuestionText</key>
+		<string>____! is there a bank near here?</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>1</integer>
+		<key>options</key>
+		<array>
+			<string>bicycle road</string>
+			<string>bicycle lane</string>
+			<string>bicycle street</string>
+			<string>bicycle way</string>
+		</array>
+		<key>QuestionText</key>
+		<string>A place on the road only for use by bicycles is a ____.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>1</integer>
+		<key>options</key>
+		<array>
+			<string>key ring</string>
+			<string>key card</string>
+			<string>card ring</string>
+			<string>ring card</string>
+		</array>
+		<key>QuestionText</key>
+		<string>Hotels often give you a plastic ____ to open your bedroom door.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>3</integer>
+		<key>options</key>
+		<array>
+			<string>receiving</string>
+			<string>welcome</string>
+			<string>entry</string>
+			<string>reception</string>
+		</array>
+		<key>QuestionText</key>
+		<string>The place you check in is called _____.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>3</integer>
+		<key>options</key>
+		<array>
+			<string>Business</string>
+			<string>Club</string>
+			<string>Premium</string>
+			<string>Economy</string>
+		</array>
+		<key>QuestionText</key>
+		<string>The cheapest class on a plane is ____.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>1</integer>
+		<key>options</key>
+		<array>
+			<string>subservice</string>
+			<string>subway</string>
+			<string>subcarrier</string>
+			<string>seatrain</string>
+		</array>
+		<key>QuestionText</key>
+		<string>A train that runs below the ground can be called a ____.</string>
+	</dict>
 </array>
 </plist>

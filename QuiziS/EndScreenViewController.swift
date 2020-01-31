@@ -48,6 +48,7 @@ class EndScreenViewController: UIViewController {
         if currentQuesNo < numberofQuestions{
             currentQuesNo = currentQuesNo + 1
             questionLabel.text = (self.parent as? QuestionViewController)?.reviewQuestions[currentQuesNo].questionText
+            correctAnsLabel.text = (self.parent as? QuestionViewController)?.reviewQuestions[currentQuesNo].options[((self.parent as? QuestionViewController)?.reviewQuestions[currentQuesNo].correctAns)!]
             if  ((self.parent as? QuestionViewController)?.reviewQuestions[currentQuesNo].isAnswered)!{
                 yourAnsLabel.text = (self.parent as? QuestionViewController)?.reviewQuestions[currentQuesNo].options[((self.parent as? QuestionViewController)?.reviewQuestions[currentQuesNo].wrongAns)!]
                 displayAnswerButtonImage(question: ((self.parent as? QuestionViewController)?.reviewQuestions[currentQuesNo])!)
@@ -66,6 +67,7 @@ class EndScreenViewController: UIViewController {
         if currentQuesNo > 0{
              currentQuesNo = currentQuesNo - 1
               questionLabel.text = (self.parent as? QuestionViewController)?.reviewQuestions[currentQuesNo].questionText
+             correctAnsLabel.text = (self.parent as? QuestionViewController)?.reviewQuestions[currentQuesNo].options[((self.parent as? QuestionViewController)?.reviewQuestions[currentQuesNo].correctAns)!]
                  if  ((self.parent as? QuestionViewController)?.reviewQuestions[currentQuesNo].isAnswered)!{
                      yourAnsLabel.text = (self.parent as? QuestionViewController)?.reviewQuestions[currentQuesNo].options[((self.parent as? QuestionViewController)?.reviewQuestions[currentQuesNo].wrongAns)!]
                      displayAnswerButtonImage(question: ((self.parent as? QuestionViewController)?.reviewQuestions[currentQuesNo])!)

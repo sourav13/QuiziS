@@ -8,7 +8,7 @@
 
 import Foundation
 class Grammar{
-    func getPlist(withName name: String) -> AnyObject?
+    private func getPlist(withName name: String) -> AnyObject?
     {
         if  let path = Bundle.main.path(forResource: name, ofType: "plist"),
             let xml = FileManager.default.contents(atPath: path)

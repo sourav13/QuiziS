@@ -1,266 +1,266 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-    <array>
-        <dict>
-             <key>correctAns</key>
-             <integer>0</integer>
-             <key>options</key>
-             <array>
-                 <string>bathe myself</string>
-                 <string>go to the bath</string>
-                 <string>be in the bath</string>
-                 <string>have a bath</string>
-             </array>
-             <key>QuestionText</key>
-             <string>I'm feeling tired so I'm going to ____</string>
-         </dict>
-        <dict>
-               <key>correctAns</key>
-               <integer>0</integer>
-               <key>options</key>
-               <array>
-                   <string>cushion</string>
-                   <string>pillow</string>
-                   <string>blanket</string>
-                   <string>sheet</string>
-               </array>
-               <key>QuestionText</key>
-               <string>When you go to bed you rest your head on a ____</string>
-           </dict>
-        <dict>
-               <key>correctAns</key>
-               <integer>0</integer>
-               <key>options</key>
-               <array>
-                   <string>take a day off</string>
-                   <string>take an extra day</string>
-                   <string>take off a day</string>
-                   <string>take a rest day</string>
-               </array>
-               <key>QuestionText</key>
-               <string>When you don't work for one day you ____.</string>
-           </dict>
-        <dict>
-            <key>correctAns</key>
-            <integer>0</integer>
-            <key>options</key>
-            <array>
-                <string>have</string>
-                <string>make</string>
-                <string>get</string>
-                <string>do</string>
-            </array>
-            <key>QuestionText</key>
-            <string>You work too much. You should ____ a rest.</string>
-        </dict>
-        <dict>
-        <key>correctAns</key>
-        <integer>0</integer>
-        <key>options</key>
-        <array>
-            <string>to break</string>
-            <string>a break</string>
-            <string>a stop</string>
-            <string>to be broken</string>
-        </array>
-        <key>QuestionText</key>
-        <string>If you have been working too much, you need ____.</string>
-    </dict>
-<dict>
-    <key>correctAns</key>
-    <integer>0</integer>
-    <key>options</key>
-    <array>
-        <string>calm</string>
-        <string>excited</string>
-        <string>stressed</string>
-        <string>energetic</string>
-    </array>
-    <key>QuestionText</key>
-    <string>To be relaxed you must feel ____.</string>
-</dict>
-<dict>
-    <key>correctAns</key>
-    <integer>0</integer>
-    <key>options</key>
-    <array>
-        <string>sleep</string>
-        <string>walk</string>
-        <string>eat something</string>
-        <string>drink something</string>
-    </array>
-    <key>QuestionText</key>
-    <string>I feel like having a nap. 'Nap' means ____.</string>
-</dict>
-<dict>
-    <key>correctAns</key>
-    <integer>0</integer>
-    <key>options</key>
-    <array>
-        <string>stress yourself</string>
-        <string>get stressed</string>
-        <string>make stress</string>
-        <string>fall stressed</string>
-    </array>
-    <key>QuestionText</key>
-    <string>If you work too hard and you don't relax, you ____.</string>
-</dict>
-<dict>
-    <key>correctAns</key>
-    <integer>0</integer>
-    <key>options</key>
-    <array>
-        <string>noiseless</string>
-        <string>soundless</string>
-        <string>peace</string>
-        <string>sounds</string>
-    </array>
-    <key>QuestionText</key>
-    <string>Sometimes I just like ____ and quiet.</string>
-</dict>
-<dict>
-    <key>correctAns</key>
-    <integer>0</integer>
-    <key>options</key>
-    <array>
-        <string>to</string>
-        <string>for</string>
-        <string>on</string>
-        <string>in</string>
-    </array>
-    <key>QuestionText</key>
-    <string>I want to relax so I'm going ____ holiday.</string>
-</dict>
-<dict>
-    <key>correctAns</key>
-    <integer>0</integer>
-    <key>options</key>
-    <array>
-        <string>take</string>
-        <string>have</string>
-        <string>hold</string>
-        <string>eat</string>
-    </array>
-    <key>QuestionText</key>
-    <string>When I relax I like to ____ a cup of tea.</string>
-</dict>
-<dict>
-    <key>correctAns</key>
-    <integer>0</integer>
-    <key>options</key>
-    <array>
-        <string>make yourself work</string>
-        <string>are angry with yourself</string>
-        <string>buy someone a present</string>
-        <string>buy yourself a present</string>
-    </array>
-    <key>QuestionText</key>
-    <string>If you treat yourself, it means you ____.</string>
-</dict>
-<dict>
-    <key>correctAns</key>
-    <integer>0</integer>
-    <key>options</key>
-    <array>
-        <string>blinking</string>
-        <string>thinking</string>
-        <string>sleeping</string>
-        <string>yawning</string>
-    </array>
-    <key>QuestionText</key>
-    <string>I'm so tired I can't stop ____.</string>
-</dict>
-<dict>
-    <key>correctAns</key>
-    <integer>0</integer>
-    <key>options</key>
-    <array>
-        <string>seat</string>
-        <string>chair</string>
-        <string>sofa</string>
-        <string>stool</string>
-    </array>
-    <key>QuestionText</key>
-    <string>What's another word for couch?</string>
-</dict>
-<dict>
-    <key>correctAns</key>
-    <integer>0</integer>
-    <key>options</key>
-    <array>
-        <string>undersleep</string>
-        <string>sleep over</string>
-        <string>oversleep</string>
-        <string>sleep much</string>
-    </array>
-    <key>QuestionText</key>
-    <string>If you don't wake up on time, you ____.</string>
-</dict>
-<dict>
-    <key>correctAns</key>
-    <integer>0</integer>
-    <key>options</key>
-    <array>
-        <string>feet</string>
-        <string>body</string>
-        <string>arms</string>
-        <string>hands</string>
-    </array>
-    <key>QuestionText</key>
-    <string>Relax... put your ____ up.</string>
-</dict>
-<dict>
-    <key>correctAns</key>
-    <integer>0</integer>
-    <key>options</key>
-    <array>
-        <string>in</string>
-        <string>of</string>
-        <string>off</string>
-        <string>to</string>
-    </array>
-    <key>QuestionText</key>
-    <string>I'm going to take some time ____ work to go on holiday.</string>
-</dict>
-<dict>
-    <key>correctAns</key>
-    <integer>0</integer>
-    <key>options</key>
-    <array>
-        <string>No time</string>
-        <string>Extra time</string>
-        <string>Spare time</string>
-        <string>Double time</string>
-    </array>
-    <key>QuestionText</key>
-    <string>What's another expression for 'free time'?</string>
-</dict>
-<dict>
-    <key>correctAns</key>
-    <integer>0</integer>
-    <key>options</key>
-    <array>
-        <string>don't cook yourself</string>
-        <string>eat in a restaurant</string>
-        <string>eat in a cafe</string>
-        <string>cook a meal for friends</string>
-    </array>
-    <key>QuestionText</key>
-    <string>If you have a takeaway, you ____.</string>
-</dict>
-<dict>
-    <key>correctAns</key>
-    <integer>0</integer>
-    <key>options</key>
-    <array>
-        <string>go to a walk</string>
-        <string>go walk</string>
-        <string>go for a walk</string>
-        <string>go for walking</string>
-    </array>
-    <key>QuestionText</key>
-    <string>A nice way to relax is to ____.</string>
-</dict>
-    </array>
+<array>
+	<dict>
+		<key>correctAns</key>
+		<integer>3</integer>
+		<key>options</key>
+		<array>
+			<string>bathe myself</string>
+			<string>go to the bath</string>
+			<string>be in the bath</string>
+			<string>have a bath</string>
+		</array>
+		<key>QuestionText</key>
+		<string>I&apos;m feeling tired so I&apos;m going to ____</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>1</integer>
+		<key>options</key>
+		<array>
+			<string>cushion</string>
+			<string>pillow</string>
+			<string>blanket</string>
+			<string>sheet</string>
+		</array>
+		<key>QuestionText</key>
+		<string>When you go to bed you rest your head on a ____</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>0</integer>
+		<key>options</key>
+		<array>
+			<string>take a day off</string>
+			<string>take an extra day</string>
+			<string>take off a day</string>
+			<string>take a rest day</string>
+		</array>
+		<key>QuestionText</key>
+		<string>When you don&apos;t work for one day you ____.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>0</integer>
+		<key>options</key>
+		<array>
+			<string>have</string>
+			<string>make</string>
+			<string>get</string>
+			<string>do</string>
+		</array>
+		<key>QuestionText</key>
+		<string>You work too much. You should ____ a rest.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>1</integer>
+		<key>options</key>
+		<array>
+			<string>to break</string>
+			<string>a break</string>
+			<string>a stop</string>
+			<string>to be broken</string>
+		</array>
+		<key>QuestionText</key>
+		<string>If you have been working too much, you need ____.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>0</integer>
+		<key>options</key>
+		<array>
+			<string>calm</string>
+			<string>excited</string>
+			<string>stressed</string>
+			<string>energetic</string>
+		</array>
+		<key>QuestionText</key>
+		<string>To be relaxed you must feel ____.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>0</integer>
+		<key>options</key>
+		<array>
+			<string>sleep</string>
+			<string>walk</string>
+			<string>eat something</string>
+			<string>drink something</string>
+		</array>
+		<key>QuestionText</key>
+		<string>I feel like having a nap. &apos;Nap&apos; means ____.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>0</integer>
+		<key>options</key>
+		<array>
+			<string>stress yourself</string>
+			<string>get stressed</string>
+			<string>make stress</string>
+			<string>fall stressed</string>
+		</array>
+		<key>QuestionText</key>
+		<string>If you work too hard and you don&apos;t relax, you ____.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>2</integer>
+		<key>options</key>
+		<array>
+			<string>noiseless</string>
+			<string>soundless</string>
+			<string>peace</string>
+			<string>sounds</string>
+		</array>
+		<key>QuestionText</key>
+		<string>Sometimes I just like ____ and quiet.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>2</integer>
+		<key>options</key>
+		<array>
+			<string>to</string>
+			<string>for</string>
+			<string>on</string>
+			<string>in</string>
+		</array>
+		<key>QuestionText</key>
+		<string>I want to relax so I&apos;m going ____ holiday.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>1</integer>
+		<key>options</key>
+		<array>
+			<string>take</string>
+			<string>have</string>
+			<string>hold</string>
+			<string>eat</string>
+		</array>
+		<key>QuestionText</key>
+		<string>When I relax I like to ____ a cup of tea.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>3</integer>
+		<key>options</key>
+		<array>
+			<string>make yourself work</string>
+			<string>are angry with yourself</string>
+			<string>buy someone a present</string>
+			<string>buy yourself a present</string>
+		</array>
+		<key>QuestionText</key>
+		<string>If you treat yourself, it means you ____.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>3</integer>
+		<key>options</key>
+		<array>
+			<string>blinking</string>
+			<string>thinking</string>
+			<string>sleeping</string>
+			<string>yawning</string>
+		</array>
+		<key>QuestionText</key>
+		<string>I&apos;m so tired I can&apos;t stop ____.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>2</integer>
+		<key>options</key>
+		<array>
+			<string>seat</string>
+			<string>chair</string>
+			<string>sofa</string>
+			<string>stool</string>
+		</array>
+		<key>QuestionText</key>
+		<string>What&apos;s another word for couch?</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>2</integer>
+		<key>options</key>
+		<array>
+			<string>undersleep</string>
+			<string>sleep over</string>
+			<string>oversleep</string>
+			<string>sleep much</string>
+		</array>
+		<key>QuestionText</key>
+		<string>If you don&apos;t wake up on time, you ____.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>3</integer>
+		<key>options</key>
+		<array>
+			<string>feet</string>
+			<string>body</string>
+			<string>arms</string>
+			<string>hands</string>
+		</array>
+		<key>QuestionText</key>
+		<string>Relax... put your ____ up.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>2</integer>
+		<key>options</key>
+		<array>
+			<string>in</string>
+			<string>of</string>
+			<string>off</string>
+			<string>to</string>
+		</array>
+		<key>QuestionText</key>
+		<string>I&apos;m going to take some time ____ work to go on holiday.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>2</integer>
+		<key>options</key>
+		<array>
+			<string>No time</string>
+			<string>Extra time</string>
+			<string>Spare time</string>
+			<string>Double time</string>
+		</array>
+		<key>QuestionText</key>
+		<string>What&apos;s another expression for &apos;free time&apos;?</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>0</integer>
+		<key>options</key>
+		<array>
+			<string>don&apos;t cook yourself</string>
+			<string>eat in a restaurant</string>
+			<string>eat in a cafe</string>
+			<string>cook a meal for friends</string>
+		</array>
+		<key>QuestionText</key>
+		<string>If you have a takeaway, you ____.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>2</integer>
+		<key>options</key>
+		<array>
+			<string>go to a walk</string>
+			<string>go walk</string>
+			<string>go for a walk</string>
+			<string>go for walking</string>
+		</array>
+		<key>QuestionText</key>
+		<string>A nice way to relax is to ____.</string>
+	</dict>
+</array>
 </plist>

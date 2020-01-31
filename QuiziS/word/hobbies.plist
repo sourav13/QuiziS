@@ -1,266 +1,266 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-    <array>
-        <dict>
-            <key>correctAns</key>
-            <integer>0</integer>
-            <key>options</key>
-            <array>
-                <string>red</string>
-                <string>yellow</string>
-                <string>green</string>
-                <string>black</string>
-            </array>
-            <key>QuestionText</key>
-            <string>If you are a gardener, you have ____ fingers.</string>
-        </dict>
-        <dict>
-               <key>correctAns</key>
-               <integer>0</integer>
-               <key>options</key>
-               <array>
-                   <string>A pitch</string>
-                   <string>A gym</string>
-                   <string>A stadium</string>
-                   <string>A court</string>
-               </array>
-               <key>QuestionText</key>
-               <string>What is the name of a large room with machines where you can do exercises?</string>
-           </dict>
-        <dict>
-               <key>correctAns</key>
-               <integer>0</integer>
-               <key>options</key>
-               <array>
-                   <string>Hobbys</string>
-                   <string>Hobbyist</string>
-                   <string>Hobbies</string>
-                   <string>Hobbits</string>
-               </array>
-               <key>QuestionText</key>
-               <string>What's the plural form of 'hobby'?</string>
-           </dict>
-        <dict>
-               <key>correctAns</key>
-               <integer>0</integer>
-               <key>options</key>
-               <array>
-                   <string>bowling</string>
-                   <string>rolling</string>
-                   <string>heaving</string>
-                   <string>rowing</string>
-               </array>
-               <key>QuestionText</key>
-               <string>Rolling a ball down a lane to hit 10 pins is called ____.</string>
-           </dict>
-        <dict>
-               <key>correctAns</key>
-               <integer>0</integer>
-               <key>options</key>
-               <array>
-                   <string>moulding</string>
-                   <string>sculpting</string>
-                   <string>pottery</string>
-                   <string>gliding</string>
-               </array>
-               <key>QuestionText</key>
-               <string>Making vases and cups from clay is called ____.</string>
-           </dict>
-        <dict>
-               <key>correctAns</key>
-               <integer>3</integer>
-               <key>options</key>
-               <array>
-                   <string>scratching</string>
-                   <string>pencilling</string>
-                   <string>slating</string>
-                   <string>sketching</string>
-               </array>
-               <key>QuestionText</key>
-               <string>The outlines of your drawing often begins with ____.</string>
-           </dict>
-        <dict>
-               <key>correctAns</key>
-               <integer>0</integer>
-               <key>options</key>
-               <array>
-                   <string>The academy</string>
-                   <string>The stadium</string>
-                   <string>The gym</string>
-                   <string>The exercise house</string>
-               </array>
-               <key>QuestionText</key>
-               <string>Where do you go to do exercise?</string>
-           </dict>
-        <dict>
-               <key>correctAns</key>
-               <integer>0</integer>
-               <key>options</key>
-               <array>
-                   <string>interest</string>
-                   <string>interested</string>
-                   <string>interesting</string>
-                   <string>was interesting</string>
-               </array>
-               <key>QuestionText</key>
-               <string>I'm ____ in hip-hop music.</string>
-           </dict>
-        <dict>
-               <key>correctAns</key>
-               <integer>0</integer>
-               <key>options</key>
-               <array>
-                   <string>friend</string>
-                   <string>liker</string>
-                   <string>enjoyer</string>
-                   <string>fan</string>
-               </array>
-               <key>QuestionText</key>
-               <string>I'm a big ____ of tennis.</string>
-           </dict>
-        <dict>
-               <key>correctAns</key>
-               <integer>0</integer>
-               <key>options</key>
-               <array>
-                   <string>in</string>
-                   <string>on</string>
-                   <string>for</string>
-                   <string>of</string>
-               </array>
-               <key>QuestionText</key>
-               <string>I'm very interested ____ old cars</string>
-           </dict>
-        <dict>
-               <key>correctAns</key>
-               <integer>2</integer>
-               <key>options</key>
-               <array>
-                   <string>long</string>
-                   <string>far</string>
-                   <string>deep</string>
-                   <string>big</string>
-               </array>
-               <key>QuestionText</key>
-               <string>Fishing out in the ocean is called '____ sea fishing'.</string>
-           </dict>
-        <dict>
-               <key>correctAns</key>
-               <integer>0</integer>
-               <key>options</key>
-               <array>
-                   <string>Trotting</string>
-                   <string>Jogging</string>
-                   <string>Moving</string>
-                   <string>Striding</string>
-               </array>
-               <key>QuestionText</key>
-               <string>I like to go running. What's the word for a light running?</string>
-           </dict>
-        <dict>
-               <key>correctAns</key>
-               <integer>0</integer>
-               <key>options</key>
-               <array>
-                   <string>cooking</string>
-                   <string>serving</string>
-                   <string>boiling</string>
-                   <string>frying</string>
-               </array>
-               <key>QuestionText</key>
-               <string>Many people, especially chefs, enjoy ____.</string>
-           </dict>
-        <dict>
-               <key>correctAns</key>
-               <integer>0</integer>
-               <key>options</key>
-               <array>
-                   <string>do</string>
-                   <string>go</string>
-                   <string>be</string>
-                   <string>make</string>
-               </array>
-               <key>QuestionText</key>
-               <string>I love to ____ swimming.</string>
-           </dict>
-        <dict>
-               <key>correctAns</key>
-               <integer>0</integer>
-               <key>options</key>
-               <array>
-                   <string>group</string>
-                   <string>club</string>
-                   <string>area</string>
-                   <string>members</string>
-               </array>
-               <key>QuestionText</key>
-               <string>If you have a hobby, you may join a ____.</string>
-           </dict>
-        <dict>
-               <key>correctAns</key>
-               <integer>0</integer>
-               <key>options</key>
-               <array>
-                   <string>gathering</string>
-                   <string>collaborating</string>
-                   <string>collecting</string>
-                   <string>colloguing</string>
-               </array>
-               <key>QuestionText</key>
-               <string>My hobby is ____ stamps.</string>
-           </dict>
-        <dict>
-               <key>correctAns</key>
-               <integer>0</integer>
-               <key>options</key>
-               <array>
-                   <string>time when you are free</string>
-                   <string>time whenn you sleep</string>
-                   <string>time when you work</string>
-                   <string>time when you are bored</string>
-               </array>
-               <key>QuestionText</key>
-               <string>Your leisure time is time when ____.</string>
-           </dict>
-        <dict>
-               <key>correctAns</key>
-               <integer>0</integer>
-               <key>options</key>
-               <array>
-                   <string>favoured</string>
-                   <string>favourite</string>
-                   <string>best</string>
-                   <string>fervid</string>
-               </array>
-               <key>QuestionText</key>
-               <string>Watching movies is my ____ hobby.</string>
-           </dict>
-        <dict>
-               <key>correctAns</key>
-               <integer>0</integer>
-               <key>options</key>
-               <array>
-                   <string>bore</string>
-                   <string>bored</string>
-                   <string>boring</string>
-                   <string>is bored</string>
-               </array>
-               <key>QuestionText</key>
-               <string>I thought the movie was ____.</string>
-           </dict>
-        <dict>
-               <key>correctAns</key>
-               <integer>0</integer>
-               <key>options</key>
-               <array>
-                   <string>playing</string>
-                   <string>to play</string>
-                   <string>play</string>
-                   <string>for play</string>
-               </array>
-               <key>QuestionText</key>
-               <string>I enjoy ____ golf.</string>
-           </dict>
-    </array>
+<array>
+	<dict>
+		<key>correctAns</key>
+		<integer>0</integer>
+		<key>options</key>
+		<array>
+			<string>red</string>
+			<string>yellow</string>
+			<string>green</string>
+			<string>black</string>
+		</array>
+		<key>QuestionText</key>
+		<string>If you are a gardener, you have ____ fingers.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>1</integer>
+		<key>options</key>
+		<array>
+			<string>A pitch</string>
+			<string>A gym</string>
+			<string>A stadium</string>
+			<string>A court</string>
+		</array>
+		<key>QuestionText</key>
+		<string>What is the name of a large room with machines where you can do exercises?</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>2</integer>
+		<key>options</key>
+		<array>
+			<string>Hobbys</string>
+			<string>Hobbyist</string>
+			<string>Hobbies</string>
+			<string>Hobbits</string>
+		</array>
+		<key>QuestionText</key>
+		<string>What&apos;s the plural form of &apos;hobby&apos;?</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>0</integer>
+		<key>options</key>
+		<array>
+			<string>bowling</string>
+			<string>rolling</string>
+			<string>heaving</string>
+			<string>rowing</string>
+		</array>
+		<key>QuestionText</key>
+		<string>Rolling a ball down a lane to hit 10 pins is called ____.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>2</integer>
+		<key>options</key>
+		<array>
+			<string>moulding</string>
+			<string>sculpting</string>
+			<string>pottery</string>
+			<string>gliding</string>
+		</array>
+		<key>QuestionText</key>
+		<string>Making vases and cups from clay is called ____.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>3</integer>
+		<key>options</key>
+		<array>
+			<string>scratching</string>
+			<string>pencilling</string>
+			<string>slating</string>
+			<string>sketching</string>
+		</array>
+		<key>QuestionText</key>
+		<string>The outlines of your drawing often begins with ____.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>2</integer>
+		<key>options</key>
+		<array>
+			<string>The academy</string>
+			<string>The stadium</string>
+			<string>The gym</string>
+			<string>The exercise house</string>
+		</array>
+		<key>QuestionText</key>
+		<string>Where do you go to do exercise?</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>1</integer>
+		<key>options</key>
+		<array>
+			<string>interest</string>
+			<string>interested</string>
+			<string>interesting</string>
+			<string>was interesting</string>
+		</array>
+		<key>QuestionText</key>
+		<string>I&apos;m ____ in hip-hop music.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>3</integer>
+		<key>options</key>
+		<array>
+			<string>friend</string>
+			<string>liker</string>
+			<string>enjoyer</string>
+			<string>fan</string>
+		</array>
+		<key>QuestionText</key>
+		<string>I&apos;m a big ____ of tennis.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>0</integer>
+		<key>options</key>
+		<array>
+			<string>in</string>
+			<string>on</string>
+			<string>for</string>
+			<string>of</string>
+		</array>
+		<key>QuestionText</key>
+		<string>I&apos;m very interested ____ old cars</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>2</integer>
+		<key>options</key>
+		<array>
+			<string>long</string>
+			<string>far</string>
+			<string>deep</string>
+			<string>big</string>
+		</array>
+		<key>QuestionText</key>
+		<string>Fishing out in the ocean is called &apos;____ sea fishing&apos;.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>1</integer>
+		<key>options</key>
+		<array>
+			<string>Trotting</string>
+			<string>Jogging</string>
+			<string>Moving</string>
+			<string>Striding</string>
+		</array>
+		<key>QuestionText</key>
+		<string>I like to go running. What&apos;s the word for a light running?</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>0</integer>
+		<key>options</key>
+		<array>
+			<string>cooking</string>
+			<string>serving</string>
+			<string>boiling</string>
+			<string>frying</string>
+		</array>
+		<key>QuestionText</key>
+		<string>Many people, especially chefs, enjoy ____.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>1</integer>
+		<key>options</key>
+		<array>
+			<string>do</string>
+			<string>go</string>
+			<string>be</string>
+			<string>make</string>
+		</array>
+		<key>QuestionText</key>
+		<string>I love to ____ swimming.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>1</integer>
+		<key>options</key>
+		<array>
+			<string>group</string>
+			<string>club</string>
+			<string>area</string>
+			<string>members</string>
+		</array>
+		<key>QuestionText</key>
+		<string>If you have a hobby, you may join a ____.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>2</integer>
+		<key>options</key>
+		<array>
+			<string>gathering</string>
+			<string>collaborating</string>
+			<string>collecting</string>
+			<string>colloguing</string>
+		</array>
+		<key>QuestionText</key>
+		<string>My hobby is ____ stamps.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>0</integer>
+		<key>options</key>
+		<array>
+			<string>time when you are free</string>
+			<string>time whenn you sleep</string>
+			<string>time when you work</string>
+			<string>time when you are bored</string>
+		</array>
+		<key>QuestionText</key>
+		<string>Your leisure time is time when ____.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>1</integer>
+		<key>options</key>
+		<array>
+			<string>favoured</string>
+			<string>favourite</string>
+			<string>best</string>
+			<string>fervid</string>
+		</array>
+		<key>QuestionText</key>
+		<string>Watching movies is my ____ hobby.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>2</integer>
+		<key>options</key>
+		<array>
+			<string>bore</string>
+			<string>bored</string>
+			<string>boring</string>
+			<string>is bored</string>
+		</array>
+		<key>QuestionText</key>
+		<string>I thought the movie was ____.</string>
+	</dict>
+	<dict>
+		<key>correctAns</key>
+		<integer>0</integer>
+		<key>options</key>
+		<array>
+			<string>playing</string>
+			<string>to play</string>
+			<string>play</string>
+			<string>for play</string>
+		</array>
+		<key>QuestionText</key>
+		<string>I enjoy ____ golf.</string>
+	</dict>
+</array>
 </plist>

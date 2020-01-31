@@ -25,7 +25,7 @@ class QuestionViewController: UIViewController {
     @IBOutlet weak var endScreen: UIView!
     
     @IBOutlet weak var progressView: UIProgressView!
-    var timer: Timer?
+    weak var timer: Timer?
     var currentQuestion: Question?
     var currentQuestionNumber:Int?
     var count = 60
@@ -33,13 +33,13 @@ class QuestionViewController: UIViewController {
     var selectedGrammarType: Int = 0
     let grammer  = Grammar()
     var questions = [Question]()
-    var questionTimer:Timer?
+    weak var questionTimer:Timer?
     var questioncount :Double = 10
     var categoryType:Int = 0
     var reviewQuestions = [Question]()
     var yourAnswers :  [Int:Int] = [:]
     var questionCountNum = 0
-    
+    var isEnded = false
     override func viewDidLoad() {
         super.viewDidLoad()
         setUp()
@@ -130,11 +130,11 @@ class QuestionViewController: UIViewController {
     }
     
     func startQuestionTimer(){
-        if questionTimer != nil{
-            questionTimer?.invalidate()
-            
+        if self.questionTimer != nil{
+            self.questionTimer?.invalidate()
+            self.questionTimer = nil
         }
-         questionTimer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateQuestionTimer), userInfo: nil, repeats: true)
+        self.questionTimer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateQuestionTimer), userInfo: nil, repeats: true)
     }
     
     @objc func updateTime(){
@@ -156,7 +156,8 @@ class QuestionViewController: UIViewController {
     }
     
     @objc func updateQuestionTimer(){
-        if questionTimer != nil{
+        if !isEnded{
+        if self.questionTimer != nil{
             if questioncount >= 2 {
                 if questioncount.truncatingRemainder(dividingBy: 10) == 0{
                         progressView.setProgress(Float(1), animated: true)
@@ -170,14 +171,13 @@ class QuestionViewController: UIViewController {
                 progressView.setProgress(Float(0.1), animated: true)
                 questioncount = 10
                 if reviewQuestions.contains(getCurrentQuestion(currentQuestion: currentQuestionNumber!)!){
-                 //   let index =  reviewQuestions.firstIndex(of: getCurrentQuestion(currentQuestion: currentQuestionNumber!))
-                      
                 }else{
                     reviewQuestions.append(getCurrentQuestion(currentQuestion: currentQuestionNumber!)!)
                 }
                 currentQuestionNumber = getRandomQuestion()
             }
         }
+    }
     }
     
     func showEndScreen(){
@@ -215,7 +215,6 @@ class QuestionViewController: UIViewController {
        }else{
         
         }
- //       questions.remove(at:currentQuestionNumber!)
         currentQuestionNumber = getRandomQuestion()
 
         questioncount = 10
@@ -274,10 +273,10 @@ class QuestionViewController: UIViewController {
     }
     
     func invalidateTimers(){
-        timer?.invalidate()
-        questionTimer?.invalidate()
-        timer = Timer()
-        questionTimer = Timer()
+        self.timer?.invalidate()
+        self.questionTimer?.invalidate()
+        self.timer = nil
+        self.questionTimer = nil
     }
     func gameReview(){
         //get child
@@ -302,7 +301,7 @@ class QuestionViewController: UIViewController {
         }
     }
     func endGame(){
-        print(reviewQuestions)
+        isEnded  = true
         invalidateTimers()
         gameReview()
         showEndScreen()
