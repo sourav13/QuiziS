@@ -17,12 +17,15 @@ class EndScreenViewController: UIViewController {
     
     @IBOutlet weak var currentAnswerButton: UIButton!
     @IBOutlet weak var previousButton: UIButton!
+    
     var currentQuesNo = 0
     var numberofQuestions =  0
+    var reviewQuestions: ReviewQuestions?
+    var questionViewController: QuestionViewController?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-         previousButton.isHidden = true
-        // Do any additional setup after loading the view.
+        previousButton.isHidden = true
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -45,13 +48,15 @@ class EndScreenViewController: UIViewController {
     }
     
     @IBAction func nextButtonAction(_ sender: UIButton) {
+        questionViewController = (self.parent as? QuestionViewController)
         if currentQuesNo < numberofQuestions{
             currentQuesNo = currentQuesNo + 1
-            questionLabel.text = (self.parent as? QuestionViewController)?.reviewQuestions[currentQuesNo].questionText
-            correctAnsLabel.text = (self.parent as? QuestionViewController)?.reviewQuestions[currentQuesNo].options[((self.parent as? QuestionViewController)?.reviewQuestions[currentQuesNo].correctAns)!]
-            if  ((self.parent as? QuestionViewController)?.reviewQuestions[currentQuesNo].isAnswered)!{
-                yourAnsLabel.text = (self.parent as? QuestionViewController)?.reviewQuestions[currentQuesNo].options[((self.parent as? QuestionViewController)?.reviewQuestions[currentQuesNo].wrongAns)!]
-                displayAnswerButtonImage(question: ((self.parent as? QuestionViewController)?.reviewQuestions[currentQuesNo])!)
+            questionLabel.text = reviewQuestions?.reviewQuestions[currentQuesNo].questionText
+            
+            correctAnsLabel.text = reviewQuestions?.reviewQuestions[currentQuesNo].options[(reviewQuestions?.reviewQuestions[currentQuesNo].correctAns)!]
+            if  (reviewQuestions?.reviewQuestions[currentQuesNo].isAnswered)!{
+                yourAnsLabel.text = reviewQuestions?.reviewQuestions[currentQuesNo].options[(reviewQuestions?.reviewQuestions[currentQuesNo].wrongAns)!]
+                displayAnswerButtonImage(question: (reviewQuestions?.reviewQuestions[currentQuesNo])!)
             }else{
                 yourAnsLabel.text = ""
                 currentAnswerButton.setImage(UIImage(systemName: "xmark"), for: .normal)
@@ -64,13 +69,14 @@ class EndScreenViewController: UIViewController {
         }
     }
     @IBAction func previousButtonAction(_ sender: UIButton) {
+        questionViewController = (self.parent as? QuestionViewController)
         if currentQuesNo > 0{
              currentQuesNo = currentQuesNo - 1
-              questionLabel.text = (self.parent as? QuestionViewController)?.reviewQuestions[currentQuesNo].questionText
-             correctAnsLabel.text = (self.parent as? QuestionViewController)?.reviewQuestions[currentQuesNo].options[((self.parent as? QuestionViewController)?.reviewQuestions[currentQuesNo].correctAns)!]
-                 if  ((self.parent as? QuestionViewController)?.reviewQuestions[currentQuesNo].isAnswered)!{
-                     yourAnsLabel.text = (self.parent as? QuestionViewController)?.reviewQuestions[currentQuesNo].options[((self.parent as? QuestionViewController)?.reviewQuestions[currentQuesNo].wrongAns)!]
-                     displayAnswerButtonImage(question: ((self.parent as? QuestionViewController)?.reviewQuestions[currentQuesNo])!)
+              questionLabel.text = reviewQuestions?.reviewQuestions[currentQuesNo].questionText
+             correctAnsLabel.text = reviewQuestions?.reviewQuestions[currentQuesNo].options[(reviewQuestions?.reviewQuestions[currentQuesNo].correctAns)!]
+                 if  (reviewQuestions?.reviewQuestions[currentQuesNo].isAnswered)!{
+                     yourAnsLabel.text = reviewQuestions?.reviewQuestions[currentQuesNo].options[(reviewQuestions?.reviewQuestions[currentQuesNo].wrongAns)!]
+                     displayAnswerButtonImage(question: (reviewQuestions?.reviewQuestions[currentQuesNo])!)
                  }else{
                      yourAnsLabel.text = ""
                      currentAnswerButton.setImage(UIImage(systemName: "xmark"), for: .normal)

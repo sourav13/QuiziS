@@ -25,79 +25,42 @@ class QuestionViewController: UIViewController {
     @IBOutlet weak var endScreen: UIView!
     
     @IBOutlet weak var progressView: UIProgressView!
+    
     weak var timer: Timer?
+    
+    
     var currentQuestion: Question?
     var currentQuestionNumber:Int?
     var count = 60
     var score = 0
     var selectedGrammarType: Int = 0
-    let grammer  = Grammar()
-    var questions = [Question]()
+
     weak var questionTimer:Timer?
     var questioncount :Double = 10
     var categoryType:Int = 0
-    var reviewQuestions = [Question]()
     var yourAnswers :  [Int:Int] = [:]
     var questionCountNum = 0
     var isEnded = false
+  
+    var reviewQuestions = ReviewQuestions()
+    var Ques = Questions()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setUp()
-        // Do any additional setup after loading the view.
     }
     func setUp(){
         pauseScreen.isHidden = true
         endScreen.isHidden = true
         switch categoryType{
-            case 0: loadRespectiveQuestions()
-            case 1: loadRespectiveWords()
-            default: loadRespectiveQuestions()
+            case 0: Ques.questions =  Ques.loadRespectiveQuestions(selectedGrammarType:selectedGrammarType )
+            case 1: Ques.questions =  Ques.loadRespectiveWords(selectedGrammarType:selectedGrammarType )
+            default:  Ques.questions = Ques.loadRespectiveQuestions(selectedGrammarType:selectedGrammarType )
         }
         initialSetup()
     }
-    func loadRespectiveQuestions(){
-        switch(selectedGrammarType){
-            case 0: questions = grammer.grammar(grammarType: GrammarType.prepositions.rawValue)
-            case 1: questions = grammer.grammar(grammarType: GrammarType.irregularverbs.rawValue)
-            case 2: questions = grammer.grammar(grammarType: GrammarType.adjectivesandadverbs.rawValue)
-            case 3: questions = grammer.grammar(grammarType: GrammarType.countableanduncountables.rawValue)
-            case 4: questions = grammer.grammar(grammarType: GrammarType.infinitivesorgerunds.rawValue)
-            case 5: questions = grammer.grammar(grammarType: GrammarType.moreorless.rawValue)
-            case 6: questions = grammer.grammar(grammarType: GrammarType.expressionsofcolor.rawValue)
-            case 7: questions = grammer.grammar(grammarType: GrammarType.fewandlittle.rawValue)
-            case 8: questions = grammer.grammar(grammarType: GrammarType.adverbialclauses.rawValue)
-            case 9: questions = grammer.grammar(grammarType: GrammarType.modals.rawValue)
-            case 10: questions = grammer.grammar(grammarType:GrammarType.linkers.rawValue)
-            case 11: questions = grammer.grammar(grammarType:GrammarType.conjunctions.rawValue)
-            default: questions = grammer.grammar(grammarType:GrammarType.prepositions.rawValue)
-        }
-    }
-    
-    
-    func loadRespectiveWords(){
-        switch(selectedGrammarType){
-           case 0: questions = grammer.grammar(grammarType: WordType.foodAndRestaurants.rawValue)
-           case 1: questions = grammer.grammar(grammarType: WordType.smallTalk.rawValue)
-           case 2: questions = grammer.grammar(grammarType: WordType.travelAndGettingAround.rawValue)
-           case 3: questions = grammer.grammar(grammarType: WordType.hobbies.rawValue)
-           case 4: questions = grammer.grammar(grammarType: WordType.idioms.rawValue)
-           case 5: questions = grammer.grammar(grammarType: WordType.expressYourself.rawValue)
-           case 6: questions = grammer.grammar(grammarType: WordType.filmsTvInternet.rawValue)
-           case 7: questions = grammer.grammar(grammarType: WordType.atWork.rawValue)
-           case 8: questions = grammer.grammar(grammarType: WordType.takingItEasy.rawValue)
-           case 9: questions = grammer.grammar(grammarType: WordType.shopping.rawValue)
-           default: questions = grammer.grammar(grammarType:WordType.foodAndRestaurants.rawValue)
-        }
-    }
-    
-    
-    func getCurrentQuestion(currentQuestion:Int)->Question?{
-        if questions.isEmpty{
-            return nil
-        }else{
-            return questions[currentQuestion]
-        }
-    }
+  
+
     
     func initialSetup(){
         setintialScore()
@@ -117,14 +80,15 @@ class QuestionViewController: UIViewController {
         questionCountNum = 0
         currentQuestionNumber = getRandomQuestion()
         //setup Initial question text and button titles.
-        setButtonTitles(question: getCurrentQuestion(currentQuestion: currentQuestionNumber!)!)
-        setQuestionText(question:getCurrentQuestion(currentQuestion: currentQuestionNumber!)!)
+        setButtonTitles(question: Ques.getCurrentQuestion(currentQuestion: currentQuestionNumber!)!)
+        setQuestionText(question:Ques.getCurrentQuestion(currentQuestion: currentQuestionNumber!)!)
 
     }
     
     func startTimer(){
         if timer != nil{
             timer?.invalidate()
+            timer = nil
         }
          timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
     }
@@ -134,7 +98,8 @@ class QuestionViewController: UIViewController {
             self.questionTimer?.invalidate()
             self.questionTimer = nil
         }
-        self.questionTimer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateQuestionTimer), userInfo: nil, repeats: true)
+            self.questionTimer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateQuestionTimer), userInfo: nil, repeats: true)
+        
     }
     
     @objc func updateTime(){
@@ -147,7 +112,6 @@ class QuestionViewController: UIViewController {
                     let seconds = String(count%60)
                     timeLabel.text = "Time: \(seconds)"
                 }
-               
                 count -= 1
             }else{
                endGame()
@@ -170,9 +134,8 @@ class QuestionViewController: UIViewController {
             }else{
                 progressView.setProgress(Float(0.1), animated: true)
                 questioncount = 10
-                if reviewQuestions.contains(getCurrentQuestion(currentQuestion: currentQuestionNumber!)!){
-                }else{
-                    reviewQuestions.append(getCurrentQuestion(currentQuestion: currentQuestionNumber!)!)
+                if  !reviewQuestions.reviewQuestions.contains(Ques.getCurrentQuestion(currentQuestion: currentQuestionNumber!)!){
+                    reviewQuestions.reviewQuestions.append(Ques.getCurrentQuestion(currentQuestion: currentQuestionNumber!)!)
                 }
                 currentQuestionNumber = getRandomQuestion()
             }
@@ -197,21 +160,21 @@ class QuestionViewController: UIViewController {
     }
     
     @IBAction func answerButtonAction(_ sender: UIButton) {
-        checkAnswer(question: getCurrentQuestion(currentQuestion: currentQuestionNumber!)!,sender: sender)
+        checkAnswer(question: Ques.getCurrentQuestion(currentQuestion: currentQuestionNumber!)!,sender: sender)
     
-        if reviewQuestions.contains(getCurrentQuestion(currentQuestion: currentQuestionNumber!)!){
-         let index =  reviewQuestions.firstIndex(of: getCurrentQuestion(currentQuestion: currentQuestionNumber!)!)
+        if reviewQuestions.reviewQuestions.contains(Ques.getCurrentQuestion(currentQuestion: currentQuestionNumber!)!){
+            let index =  reviewQuestions.reviewQuestions.firstIndex(of: Ques.getCurrentQuestion(currentQuestion: currentQuestionNumber!)!)
             //set isanswered to true and the answer to the button tag.
-            reviewQuestions[index!].isAnswered = true
-            reviewQuestions[index!].wrongAns = sender.tag
+            reviewQuestions.reviewQuestions[index!].isAnswered = true
+            reviewQuestions.reviewQuestions[index!].wrongAns = sender.tag
         }else{
-            reviewQuestions.append(getCurrentQuestion(currentQuestion: currentQuestionNumber!)!)
-            reviewQuestions[reviewQuestions.count-1].isAnswered = true
-            reviewQuestions[reviewQuestions.count-1].wrongAns = sender.tag
+            reviewQuestions.reviewQuestions.append(Ques.getCurrentQuestion(currentQuestion: currentQuestionNumber!)!)
+            reviewQuestions.reviewQuestions[reviewQuestions.reviewQuestions.count-1].isAnswered = true
+            reviewQuestions.reviewQuestions[reviewQuestions.reviewQuestions.count-1].wrongAns = sender.tag
           
         }
-       if sender.title(for: .normal) ==  getCurrentQuestion(currentQuestion: currentQuestionNumber!)!.options[ getCurrentQuestion(currentQuestion: currentQuestionNumber!)!.correctAns]{
-                questions.remove(at:currentQuestionNumber!)
+        if sender.title(for: .normal) ==  Ques.getCurrentQuestion(currentQuestion: currentQuestionNumber!)!.options[ Ques.getCurrentQuestion(currentQuestion: currentQuestionNumber!)!.correctAns]{
+            Ques.questions.remove(at:currentQuestionNumber!)
        }else{
         
         }
@@ -224,10 +187,10 @@ class QuestionViewController: UIViewController {
     func getRandomQuestion()->Int{
        var randomIndex = 0
 
-        if questions.count > 0{
-            randomIndex = Int(arc4random_uniform(UInt32(questions.count-1)))
+        if Ques.questions.count > 0{
+            randomIndex = Int(arc4random_uniform(UInt32(Ques.questions.count-1)))
             currentQuestionNumber = randomIndex
-            currentQuestion = getCurrentQuestion(currentQuestion: currentQuestionNumber!)
+            currentQuestion = Ques.getCurrentQuestion(currentQuestion: currentQuestionNumber!)
             setButtonTitles(question: currentQuestion!)
             setQuestionText(question: currentQuestion!)
             questionNumberLabel.text = "\(questionCountNum + 1)"
@@ -247,11 +210,11 @@ class QuestionViewController: UIViewController {
     }
     
     @IBAction func skipButtonAction(_ sender: Any) {
-        if reviewQuestions.contains(getCurrentQuestion(currentQuestion: currentQuestionNumber!)!){
+        if reviewQuestions.reviewQuestions.contains(Ques.getCurrentQuestion(currentQuestion: currentQuestionNumber!)!){
    //      let index =  reviewQuestions.firstIndex(of: getCurrentQuestion(currentQuestion: currentQuestionNumber!))
            
         }else{
-            reviewQuestions.append(getCurrentQuestion(currentQuestion: currentQuestionNumber!)!)
+            reviewQuestions.reviewQuestions.append(Ques.getCurrentQuestion(currentQuestion: currentQuestionNumber!)!)
         }
         
         currentQuestionNumber = getRandomQuestion()
@@ -268,8 +231,8 @@ class QuestionViewController: UIViewController {
         setvaluesForAnsweredQuestion(sender:sender)
     }
     func setvaluesForAnsweredQuestion(sender:UIButton){
-        questions[currentQuestionNumber!].isAnswered = true
-        questions[currentQuestionNumber!].wrongAns = sender.tag
+        Ques.questions[currentQuestionNumber!].isAnswered = true
+        Ques.questions[currentQuestionNumber!].wrongAns = sender.tag
     }
     
     func invalidateTimers(){
@@ -281,16 +244,17 @@ class QuestionViewController: UIViewController {
     func gameReview(){
         //get child
         let endScreen = children.last as? EndScreenViewController
-        endScreen?.questionLabel.text = reviewQuestions[0].questionText
-        endScreen?.correctAnsLabel.text = reviewQuestions[0].options[reviewQuestions[0].correctAns]
-        if reviewQuestions[0].isAnswered{
-            endScreen?.yourAnsLabel.text = reviewQuestions[0].options[reviewQuestions[0].wrongAns]
-            displayAnswerButtonImage(question: reviewQuestions[0], endScreen: endScreen!)
+        endScreen?.questionLabel.text = reviewQuestions.reviewQuestions[0].questionText
+        endScreen?.correctAnsLabel.text = reviewQuestions.reviewQuestions[0].options[reviewQuestions.reviewQuestions[0].correctAns]
+        if reviewQuestions.reviewQuestions[0].isAnswered{
+            endScreen?.yourAnsLabel.text = reviewQuestions.reviewQuestions[0].options[reviewQuestions.reviewQuestions[0].wrongAns]
+            displayAnswerButtonImage(question: reviewQuestions.reviewQuestions[0], endScreen: endScreen!)
         }else{
             endScreen?.yourAnsLabel.text = ""
             endScreen?.currentAnswerButton.setImage(UIImage(systemName: "xmark"), for: .normal)
         }
-        endScreen?.numberofQuestions = reviewQuestions.count - 1
+        endScreen?.numberofQuestions = reviewQuestions.reviewQuestions.count - 1
+        endScreen?.reviewQuestions = reviewQuestions
         
     }
     func displayAnswerButtonImage(question:Question,endScreen:EndScreenViewController){

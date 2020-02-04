@@ -70,6 +70,8 @@
 		189A8B9323CE871A0044DCDF /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189A8B9223CE871A0044DCDF /* QuestionViewController.swift */; };
 		189A8B9523CEB23C0044DCDF /* Grammar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189A8B9423CEB23C0044DCDF /* Grammar.swift */; };
 		189A8B9723CEBCCD0044DCDF /* GrammarTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189A8B9623CEBCCD0044DCDF /* GrammarTypeViewController.swift */; };
+		18B7CAE823E4A5B9009C238A /* reviewQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B7CAE723E4A5B9009C238A /* reviewQuestions.swift */; };
+		18C23B1F23E95C7500C84664 /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C23B1E23E95C7500C84664 /* Questions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,6 +137,8 @@
 		189A8B9223CE871A0044DCDF /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		189A8B9423CEB23C0044DCDF /* Grammar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Grammar.swift; sourceTree = "<group>"; };
 		189A8B9623CEBCCD0044DCDF /* GrammarTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrammarTypeViewController.swift; sourceTree = "<group>"; };
+		18B7CAE723E4A5B9009C238A /* reviewQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reviewQuestions.swift; sourceTree = "<group>"; };
+		18C23B1E23E95C7500C84664 /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,7 +231,9 @@
 				186FB84123D0357A00079E32 /* EndScreenViewController.swift */,
 				189A8B9623CEBCCD0044DCDF /* GrammarTypeViewController.swift */,
 				189A8B9223CE871A0044DCDF /* QuestionViewController.swift */,
+				18C23B1E23E95C7500C84664 /* Questions.swift */,
 				186FB83F23CFED1500079E32 /* PauseScreenViewController.swift */,
+				18B7CAE723E4A5B9009C238A /* reviewQuestions.swift */,
 				189A8B9023CE86600044DCDF /* Question.swift */,
 				189A8B9423CEB23C0044DCDF /* Grammar.swift */,
 				189A8B8E23CE6DB90044DCDF /* GrammarTableViewCell.swift */,
@@ -446,8 +452,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18B7CAE823E4A5B9009C238A /* reviewQuestions.swift in Sources */,
 				186FB84023CFED1500079E32 /* PauseScreenViewController.swift in Sources */,
 				189A8B6423CE5EA60044DCDF /* QuiziS.xcdatamodeld in Sources */,
+				18C23B1F23E95C7500C84664 /* Questions.swift in Sources */,
 				186FB84223D0357A00079E32 /* EndScreenViewController.swift in Sources */,
 				189A8B5E23CE5EA60044DCDF /* ViewController.swift in Sources */,
 				189A8B5A23CE5EA60044DCDF /* AppDelegate.swift in Sources */,

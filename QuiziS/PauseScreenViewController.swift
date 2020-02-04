@@ -9,7 +9,7 @@
 import UIKit
 
 class PauseScreenViewController: UIViewController {
-
+    var questionViewController : QuestionViewController?
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -20,14 +20,17 @@ class PauseScreenViewController: UIViewController {
     @IBAction func resumeButtonAction(_ sender: UIButton) {
         self.navigationController?.setNavigationBarHidden(false, animated: false)
         self.view.isHidden = true
-        (self.parent as? QuestionViewController)?.pauseScreen.isHidden = true
-        (self.parent as? QuestionViewController)?.startTimer()
-        (self.parent as? QuestionViewController)?.startQuestionTimer()
+        resumeActions()
     }
     
     @IBAction func exitButtonAction(_ sender: UIButton) {
         self.navigationController?.setNavigationBarHidden(false, animated: true)
     }
     
-
+    func resumeActions(){
+        questionViewController = (self.parent as? QuestionViewController)
+        questionViewController?.pauseScreen.isHidden = true
+        questionViewController?.startTimer()
+        questionViewController?.startQuestionTimer()
+    }
 }

@@ -8,7 +8,7 @@
 
 import Foundation
 class Grammar{
-    private func getPlist(withName name: String) -> AnyObject?
+    private static func getPlist(withName name: String) -> AnyObject?
     {
         if  let path = Bundle.main.path(forResource: name, ofType: "plist"),
             let xml = FileManager.default.contents(atPath: path)
@@ -18,7 +18,7 @@ class Grammar{
         return nil
     }
     
-    func grammar(grammarType:String)->[Question]{
+    static func grammar(grammarType:String)->[Question]{
         guard let array =  getPlist(withName: grammarType) as? [AnyObject] else {return []}
         var questions = [Question]()
         for x in array{
