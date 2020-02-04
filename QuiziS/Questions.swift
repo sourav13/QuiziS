@@ -13,7 +13,7 @@ class Questions{
     var questions = [Question]()
     var currentQuestion: Question?
     var currentQuestionNumber:Int?
-    
+    var score = 0
     
     func loadRespectiveQuestions(selectedGrammarType:Int)->[Question]{
           switch(selectedGrammarType){
@@ -61,5 +61,21 @@ class Questions{
         questions[currentQuestionNumber!].isAnswered = true
         questions[currentQuestionNumber!].wrongAns = sender.tag
     }
-      
+    func CheckAnswer(question:Question,sender:UIButton,handler:(Int) -> Void) {
+      if sender.title(for: .normal) == question.options[question.correctAns]{
+                score = score + 1
+                handler(score)
+            }
+        setValuesForAnsweredQuestion(sender:sender)
+    }
+   
+    func getRandomQuestion(handler:() -> Void)->Int{
+        var randomIndex = 0
+        randomIndex = Int(arc4random_uniform(UInt32(questions.count-1)))
+        currentQuestionNumber = randomIndex
+        currentQuestion = getCurrentQuestion(currentQuestion: currentQuestionNumber!)
+        handler()
+        return randomIndex
+      }
+
 }

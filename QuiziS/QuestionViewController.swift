@@ -30,13 +30,12 @@ class QuestionViewController: UIViewController {
     
     
     var count = 60
-    var score = 0
     var selectedGrammarType: Int = 0
 
     weak var questionTimer:Timer?
     var questioncount :Double = 10
     var categoryType:Int = 0
-    var yourAnswers :  [Int:Int] = [:]
+    
     var questionCountNum = 0
     var isEnded = false
   
@@ -70,7 +69,7 @@ class QuestionViewController: UIViewController {
     }
     
     func setintialScore(){
-         score = 0
+         Ques.score = 0
          scoreLabel.text = "Score:0"
     }
     
@@ -177,27 +176,22 @@ class QuestionViewController: UIViewController {
         
         }
         Ques.currentQuestionNumber = getRandomQuestion()
-
         questioncount = 10
         startQuestionTimer()
         
     }
     func getRandomQuestion()->Int{
-       var randomIndex = 0
-
-        if Ques.questions.count > 0{
-            randomIndex = Int(arc4random_uniform(UInt32(Ques.questions.count-1)))
-            Ques.currentQuestionNumber = randomIndex
-            Ques.currentQuestion = Ques.getCurrentQuestion(currentQuestion: Ques.currentQuestionNumber!)
-            setButtonTitles(question: Ques.currentQuestion!)
-            setQuestionText(question: Ques.currentQuestion!)
-            questionNumberLabel.text = "\(questionCountNum + 1)"
-            questionCountNum += 1
-        }else{
-            endGame()
+       return Ques.getRandomQuestion {
+            if Ques.questions.count > 0{
+                  setButtonTitles(question: Ques.currentQuestion!)
+                  setQuestionText(question: Ques.currentQuestion!)
+                  questionNumberLabel.text = "\(questionCountNum + 1)"
+                  questionCountNum += 1
+            }
+            else{
+                 endGame()
+            }
         }
-        return randomIndex
-
     }
 
     @IBAction func pauseButtonAction(_ sender: UIBarButtonItem) {
@@ -221,12 +215,9 @@ class QuestionViewController: UIViewController {
     }
     
     func checkAnswer(question:Question,sender:UIButton){
-        if sender.title(for: .normal) == question.options[question.correctAns]{
-            score = score+1
-            scoreLabel.text = "Score:\(score)"
+        Ques.CheckAnswer(question: question,sender:sender) { score in
+            self.scoreLabel.text = "Score:\(score)"
         }
-        yourAnswers[Ques.currentQuestionNumber!] = sender.tag
-        setvaluesForAnsweredQuestion(sender:sender)
     }
     func setvaluesForAnsweredQuestion(sender:UIButton){
         Ques.setValuesForAnsweredQuestion(sender: sender)
