@@ -29,8 +29,6 @@ class QuestionViewController: UIViewController {
     weak var timer: Timer?
     
     
-    var currentQuestion: Question?
-    var currentQuestionNumber:Int?
     var count = 60
     var score = 0
     var selectedGrammarType: Int = 0
@@ -78,10 +76,10 @@ class QuestionViewController: UIViewController {
     
     func setinitialQuestion(){
         questionCountNum = 0
-        currentQuestionNumber = getRandomQuestion()
+        Ques.currentQuestionNumber = getRandomQuestion()
         //setup Initial question text and button titles.
-        setButtonTitles(question: Ques.getCurrentQuestion(currentQuestion: currentQuestionNumber!)!)
-        setQuestionText(question:Ques.getCurrentQuestion(currentQuestion: currentQuestionNumber!)!)
+        setButtonTitles(question: Ques.getCurrentQuestion(currentQuestion: Ques.currentQuestionNumber!)!)
+        setQuestionText(question:Ques.getCurrentQuestion(currentQuestion: Ques.currentQuestionNumber!)!)
 
     }
     
@@ -134,10 +132,10 @@ class QuestionViewController: UIViewController {
             }else{
                 progressView.setProgress(Float(0.1), animated: true)
                 questioncount = 10
-                if  !reviewQuestions.reviewQuestions.contains(Ques.getCurrentQuestion(currentQuestion: currentQuestionNumber!)!){
-                    reviewQuestions.reviewQuestions.append(Ques.getCurrentQuestion(currentQuestion: currentQuestionNumber!)!)
+                if  !reviewQuestions.reviewQuestions.contains(Ques.getCurrentQuestion(currentQuestion: Ques.currentQuestionNumber!)!){
+                    reviewQuestions.reviewQuestions.append(Ques.getCurrentQuestion(currentQuestion: Ques.currentQuestionNumber!)!)
                 }
-                currentQuestionNumber = getRandomQuestion()
+                Ques.currentQuestionNumber = getRandomQuestion()
             }
         }
     }
@@ -160,25 +158,25 @@ class QuestionViewController: UIViewController {
     }
     
     @IBAction func answerButtonAction(_ sender: UIButton) {
-        checkAnswer(question: Ques.getCurrentQuestion(currentQuestion: currentQuestionNumber!)!,sender: sender)
+        checkAnswer(question: Ques.getCurrentQuestion(currentQuestion: Ques.currentQuestionNumber!)!,sender: sender)
     
-        if reviewQuestions.reviewQuestions.contains(Ques.getCurrentQuestion(currentQuestion: currentQuestionNumber!)!){
-            let index =  reviewQuestions.reviewQuestions.firstIndex(of: Ques.getCurrentQuestion(currentQuestion: currentQuestionNumber!)!)
+        if reviewQuestions.reviewQuestions.contains(Ques.getCurrentQuestion(currentQuestion: Ques.currentQuestionNumber!)!){
+            let index =  reviewQuestions.reviewQuestions.firstIndex(of: Ques.getCurrentQuestion(currentQuestion: Ques.currentQuestionNumber!)!)
             //set isanswered to true and the answer to the button tag.
             reviewQuestions.reviewQuestions[index!].isAnswered = true
             reviewQuestions.reviewQuestions[index!].wrongAns = sender.tag
         }else{
-            reviewQuestions.reviewQuestions.append(Ques.getCurrentQuestion(currentQuestion: currentQuestionNumber!)!)
+            reviewQuestions.reviewQuestions.append(Ques.getCurrentQuestion(currentQuestion: Ques.currentQuestionNumber!)!)
             reviewQuestions.reviewQuestions[reviewQuestions.reviewQuestions.count-1].isAnswered = true
             reviewQuestions.reviewQuestions[reviewQuestions.reviewQuestions.count-1].wrongAns = sender.tag
           
         }
-        if sender.title(for: .normal) ==  Ques.getCurrentQuestion(currentQuestion: currentQuestionNumber!)!.options[ Ques.getCurrentQuestion(currentQuestion: currentQuestionNumber!)!.correctAns]{
-            Ques.questions.remove(at:currentQuestionNumber!)
+        if sender.title(for: .normal) ==  Ques.getCurrentQuestion(currentQuestion: Ques.currentQuestionNumber!)!.options[ Ques.getCurrentQuestion(currentQuestion: Ques.currentQuestionNumber!)!.correctAns]{
+            Ques.questions.remove(at:Ques.currentQuestionNumber!)
        }else{
         
         }
-        currentQuestionNumber = getRandomQuestion()
+        Ques.currentQuestionNumber = getRandomQuestion()
 
         questioncount = 10
         startQuestionTimer()
@@ -189,10 +187,10 @@ class QuestionViewController: UIViewController {
 
         if Ques.questions.count > 0{
             randomIndex = Int(arc4random_uniform(UInt32(Ques.questions.count-1)))
-            currentQuestionNumber = randomIndex
-            currentQuestion = Ques.getCurrentQuestion(currentQuestion: currentQuestionNumber!)
-            setButtonTitles(question: currentQuestion!)
-            setQuestionText(question: currentQuestion!)
+            Ques.currentQuestionNumber = randomIndex
+            Ques.currentQuestion = Ques.getCurrentQuestion(currentQuestion: Ques.currentQuestionNumber!)
+            setButtonTitles(question: Ques.currentQuestion!)
+            setQuestionText(question: Ques.currentQuestion!)
             questionNumberLabel.text = "\(questionCountNum + 1)"
             questionCountNum += 1
         }else{
@@ -210,14 +208,14 @@ class QuestionViewController: UIViewController {
     }
     
     @IBAction func skipButtonAction(_ sender: Any) {
-        if reviewQuestions.reviewQuestions.contains(Ques.getCurrentQuestion(currentQuestion: currentQuestionNumber!)!){
+        if reviewQuestions.reviewQuestions.contains(Ques.getCurrentQuestion(currentQuestion: Ques.currentQuestionNumber!)!){
    //      let index =  reviewQuestions.firstIndex(of: getCurrentQuestion(currentQuestion: currentQuestionNumber!))
            
         }else{
-            reviewQuestions.reviewQuestions.append(Ques.getCurrentQuestion(currentQuestion: currentQuestionNumber!)!)
+            reviewQuestions.reviewQuestions.append(Ques.getCurrentQuestion(currentQuestion: Ques.currentQuestionNumber!)!)
         }
         
-        currentQuestionNumber = getRandomQuestion()
+        Ques.currentQuestionNumber = getRandomQuestion()
         questioncount = 10
         startQuestionTimer()
     }
@@ -227,12 +225,11 @@ class QuestionViewController: UIViewController {
             score = score+1
             scoreLabel.text = "Score:\(score)"
         }
-        yourAnswers[currentQuestionNumber!] = sender.tag
+        yourAnswers[Ques.currentQuestionNumber!] = sender.tag
         setvaluesForAnsweredQuestion(sender:sender)
     }
     func setvaluesForAnsweredQuestion(sender:UIButton){
-        Ques.questions[currentQuestionNumber!].isAnswered = true
-        Ques.questions[currentQuestionNumber!].wrongAns = sender.tag
+        Ques.setValuesForAnsweredQuestion(sender: sender)
     }
     
     func invalidateTimers(){

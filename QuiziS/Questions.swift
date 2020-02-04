@@ -7,8 +7,14 @@
 //
 
 import Foundation
+import UIKit
+
 class Questions{
-      var questions = [Question]()
+    var questions = [Question]()
+    var currentQuestion: Question?
+    var currentQuestionNumber:Int?
+    
+    
     func loadRespectiveQuestions(selectedGrammarType:Int)->[Question]{
           switch(selectedGrammarType){
               case 0: questions = Grammar.grammar(grammarType: GrammarType.prepositions.rawValue)
@@ -51,5 +57,9 @@ class Questions{
               return questions[currentQuestion]
           }
       }
+    func setValuesForAnsweredQuestion(sender:UIButton){
+        questions[currentQuestionNumber!].isAnswered = true
+        questions[currentQuestionNumber!].wrongAns = sender.tag
+    }
       
 }
